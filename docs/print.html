@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>什么是面向对象 - Rust 程序设计语言 简体中文版</title>
+        <title>trait对象 - Rust 程序设计语言 简体中文版</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Rust 程序设计语言 简体中文版">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
         </script>
 
         <div id="sidebar" class="sidebar">
-            <ul class="chapter"><li><a href="ch01-00-introduction.html"><strong>1.</strong> 介绍</a></li><li><ul class="section"><li><a href="ch01-01-installation.html"><strong>1.1.</strong> 安装</a></li><li><a href="ch01-02-hello-world.html"><strong>1.2.</strong> Hello, World!</a></li></ul></li><li><a href="ch02-00-guessing-game-tutorial.html"><strong>2.</strong> 猜猜看教程</a></li><li><a href="ch03-00-common-programming-concepts.html"><strong>3.</strong> 通用编程概念</a></li><li><ul class="section"><li><a href="ch03-01-variables-and-mutability.html"><strong>3.1.</strong> 变量和可变性</a></li><li><a href="ch03-02-data-types.html"><strong>3.2.</strong> 数据类型</a></li><li><a href="ch03-03-how-functions-work.html"><strong>3.3.</strong> 函数如何工作</a></li><li><a href="ch03-04-comments.html"><strong>3.4.</strong> 注释</a></li><li><a href="ch03-05-control-flow.html"><strong>3.5.</strong> 控制流</a></li></ul></li><li><a href="ch04-00-understanding-ownership.html"><strong>4.</strong> 认识所有权</a></li><li><ul class="section"><li><a href="ch04-01-what-is-ownership.html"><strong>4.1.</strong> 什么是所有权</a></li><li><a href="ch04-02-references-and-borrowing.html"><strong>4.2.</strong> 引用 &amp; 借用</a></li><li><a href="ch04-03-slices.html"><strong>4.3.</strong> Slices</a></li></ul></li><li><a href="ch05-00-structs.html"><strong>5.</strong> 结构体</a></li><li><ul class="section"><li><a href="ch05-01-method-syntax.html"><strong>5.1.</strong> 方法语法</a></li></ul></li><li><a href="ch06-00-enums.html"><strong>6.</strong> 枚举和模式匹配</a></li><li><ul class="section"><li><a href="ch06-01-defining-an-enum.html"><strong>6.1.</strong> 定义枚举</a></li><li><a href="ch06-02-match.html"><strong>6.2.</strong> <code>match</code>控制流运算符</a></li><li><a href="ch06-03-if-let.html"><strong>6.3.</strong> <code>if let</code>简单控制流</a></li></ul></li><li><a href="ch07-00-modules.html"><strong>7.</strong> 模块</a></li><li><ul class="section"><li><a href="ch07-01-mod-and-the-filesystem.html"><strong>7.1.</strong> <code>mod</code>和文件系统</a></li><li><a href="ch07-02-controlling-visibility-with-pub.html"><strong>7.2.</strong> 使用<code>pub</code>控制可见性</a></li><li><a href="ch07-03-importing-names-with-use.html"><strong>7.3.</strong> 使用<code>use</code>导入命名</a></li></ul></li><li><a href="ch08-00-common-collections.html"><strong>8.</strong> 通用集合类型</a></li><li><ul class="section"><li><a href="ch08-01-vectors.html"><strong>8.1.</strong> vector</a></li><li><a href="ch08-02-strings.html"><strong>8.2.</strong> 字符串</a></li><li><a href="ch08-03-hash-maps.html"><strong>8.3.</strong> 哈希 map</a></li></ul></li><li><a href="ch09-00-error-handling.html"><strong>9.</strong> 错误处理</a></li><li><ul class="section"><li><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong>9.1.</strong> <code>panic!</code>与不可恢复的错误</a></li><li><a href="ch09-02-recoverable-errors-with-result.html"><strong>9.2.</strong> <code>Result</code>与可恢复的错误</a></li><li><a href="ch09-03-to-panic-or-not-to-panic.html"><strong>9.3.</strong> <code>panic!</code>还是不<code>panic!</code></a></li></ul></li><li><a href="ch10-00-generics.html"><strong>10.</strong> 泛型、trait 和生命周期</a></li><li><ul class="section"><li><a href="ch10-01-syntax.html"><strong>10.1.</strong> 泛型数据类型</a></li><li><a href="ch10-02-traits.html"><strong>10.2.</strong> trait：定义共享的行为</a></li><li><a href="ch10-03-lifetime-syntax.html"><strong>10.3.</strong> 生命周期与引用有效性</a></li></ul></li><li><a href="ch11-00-testing.html"><strong>11.</strong> 测试</a></li><li><ul class="section"><li><a href="ch11-01-writing-tests.html"><strong>11.1.</strong> 编写测试</a></li><li><a href="ch11-02-running-tests.html"><strong>11.2.</strong> 运行测试</a></li><li><a href="ch11-03-test-organization.html"><strong>11.3.</strong> 测试的组织结构</a></li></ul></li><li><a href="ch12-00-an-io-project.html"><strong>12.</strong> 一个 I/O 项目</a></li><li><ul class="section"><li><a href="ch12-01-accepting-command-line-arguments.html"><strong>12.1.</strong> 接受命令行参数</a></li><li><a href="ch12-02-reading-a-file.html"><strong>12.2.</strong> 读取文件</a></li><li><a href="ch12-03-improving-error-handling-and-modularity.html"><strong>12.3.</strong> 增强错误处理和模块化</a></li><li><a href="ch12-04-testing-the-librarys-functionality.html"><strong>12.4.</strong> 测试库的功能</a></li><li><a href="ch12-05-working-with-environment-variables.html"><strong>12.5.</strong> 处理环境变量</a></li><li><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong>12.6.</strong> 输出到<code>stderr</code>而不是<code>stdout</code></a></li></ul></li><li><a href="ch13-00-functional-features.html"><strong>13.</strong> Rust 中的函数式语言功能</a></li><li><ul class="section"><li><a href="ch13-01-closures.html"><strong>13.1.</strong> 闭包</a></li><li><a href="ch13-02-iterators.html"><strong>13.2.</strong> 迭代器</a></li><li><a href="ch13-03-improving-our-io-project.html"><strong>13.3.</strong> 改进 I/O 项目</a></li><li><a href="ch13-04-performance.html"><strong>13.4.</strong> 性能</a></li></ul></li><li><a href="ch14-00-more-about-cargo.html"><strong>14.</strong> 更多关于 Cargo 和 Crates.io</a></li><li><ul class="section"><li><a href="ch14-01-release-profiles.html"><strong>14.1.</strong> 发布配置</a></li><li><a href="ch14-02-publishing-to-crates-io.html"><strong>14.2.</strong> 将 crate 发布到 Crates.io</a></li><li><a href="ch14-03-cargo-workspaces.html"><strong>14.3.</strong> Cargo 工作空间</a></li><li><a href="ch14-04-installing-binaries.html"><strong>14.4.</strong> 使用<code>cargo install</code>从 Crates.io 安装文件</a></li><li><a href="ch14-05-extending-cargo.html"><strong>14.5.</strong> Cargo 自定义扩展命令</a></li></ul></li><li><a href="ch15-00-smart-pointers.html"><strong>15.</strong> 智能指针</a></li><li><ul class="section"><li><a href="ch15-01-box.html"><strong>15.1.</strong> <code>Box&lt;T&gt;</code>用于已知大小的堆上数据</a></li><li><a href="ch15-02-deref.html"><strong>15.2.</strong> <code>Deref</code> Trait 允许通过引用访问数据</a></li><li><a href="ch15-03-drop.html"><strong>15.3.</strong> <code>Drop</code> Trait 运行清理代码</a></li><li><a href="ch15-04-rc.html"><strong>15.4.</strong> <code>Rc&lt;T&gt;</code> 引用计数智能指针</a></li><li><a href="ch15-05-interior-mutability.html"><strong>15.5.</strong> <code>RefCell&lt;T&gt;</code>和内部可变性模式</a></li><li><a href="ch15-06-reference-cycles.html"><strong>15.6.</strong> 引用循环和内存泄漏是安全的</a></li></ul></li><li><a href="ch16-00-concurrency.html"><strong>16.</strong> 无畏并发</a></li><li><ul class="section"><li><a href="ch16-01-threads.html"><strong>16.1.</strong> 线程</a></li><li><a href="ch16-02-message-passing.html"><strong>16.2.</strong> 消息传递</a></li><li><a href="ch16-03-shared-state.html"><strong>16.3.</strong> 共享状态</a></li><li><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong>16.4.</strong> 可扩展的并发：<code>Sync</code>和<code>Send</code></a></li></ul></li><li><a href="ch17-00-oop.html"><strong>17.</strong> 面向对象</a></li><li><ul class="section"><li><a href="ch17-01-what-is-oo.html"><strong>17.1.</strong> 什么是面向对象</a></li></ul></li></ul>
+            <ul class="chapter"><li><a href="ch01-00-introduction.html"><strong>1.</strong> 介绍</a></li><li><ul class="section"><li><a href="ch01-01-installation.html"><strong>1.1.</strong> 安装</a></li><li><a href="ch01-02-hello-world.html"><strong>1.2.</strong> Hello, World!</a></li></ul></li><li><a href="ch02-00-guessing-game-tutorial.html"><strong>2.</strong> 猜猜看教程</a></li><li><a href="ch03-00-common-programming-concepts.html"><strong>3.</strong> 通用编程概念</a></li><li><ul class="section"><li><a href="ch03-01-variables-and-mutability.html"><strong>3.1.</strong> 变量和可变性</a></li><li><a href="ch03-02-data-types.html"><strong>3.2.</strong> 数据类型</a></li><li><a href="ch03-03-how-functions-work.html"><strong>3.3.</strong> 函数如何工作</a></li><li><a href="ch03-04-comments.html"><strong>3.4.</strong> 注释</a></li><li><a href="ch03-05-control-flow.html"><strong>3.5.</strong> 控制流</a></li></ul></li><li><a href="ch04-00-understanding-ownership.html"><strong>4.</strong> 认识所有权</a></li><li><ul class="section"><li><a href="ch04-01-what-is-ownership.html"><strong>4.1.</strong> 什么是所有权</a></li><li><a href="ch04-02-references-and-borrowing.html"><strong>4.2.</strong> 引用 &amp; 借用</a></li><li><a href="ch04-03-slices.html"><strong>4.3.</strong> Slices</a></li></ul></li><li><a href="ch05-00-structs.html"><strong>5.</strong> 结构体</a></li><li><ul class="section"><li><a href="ch05-01-method-syntax.html"><strong>5.1.</strong> 方法语法</a></li></ul></li><li><a href="ch06-00-enums.html"><strong>6.</strong> 枚举和模式匹配</a></li><li><ul class="section"><li><a href="ch06-01-defining-an-enum.html"><strong>6.1.</strong> 定义枚举</a></li><li><a href="ch06-02-match.html"><strong>6.2.</strong> <code>match</code>控制流运算符</a></li><li><a href="ch06-03-if-let.html"><strong>6.3.</strong> <code>if let</code>简单控制流</a></li></ul></li><li><a href="ch07-00-modules.html"><strong>7.</strong> 模块</a></li><li><ul class="section"><li><a href="ch07-01-mod-and-the-filesystem.html"><strong>7.1.</strong> <code>mod</code>和文件系统</a></li><li><a href="ch07-02-controlling-visibility-with-pub.html"><strong>7.2.</strong> 使用<code>pub</code>控制可见性</a></li><li><a href="ch07-03-importing-names-with-use.html"><strong>7.3.</strong> 使用<code>use</code>导入命名</a></li></ul></li><li><a href="ch08-00-common-collections.html"><strong>8.</strong> 通用集合类型</a></li><li><ul class="section"><li><a href="ch08-01-vectors.html"><strong>8.1.</strong> vector</a></li><li><a href="ch08-02-strings.html"><strong>8.2.</strong> 字符串</a></li><li><a href="ch08-03-hash-maps.html"><strong>8.3.</strong> 哈希 map</a></li></ul></li><li><a href="ch09-00-error-handling.html"><strong>9.</strong> 错误处理</a></li><li><ul class="section"><li><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong>9.1.</strong> <code>panic!</code>与不可恢复的错误</a></li><li><a href="ch09-02-recoverable-errors-with-result.html"><strong>9.2.</strong> <code>Result</code>与可恢复的错误</a></li><li><a href="ch09-03-to-panic-or-not-to-panic.html"><strong>9.3.</strong> <code>panic!</code>还是不<code>panic!</code></a></li></ul></li><li><a href="ch10-00-generics.html"><strong>10.</strong> 泛型、trait 和生命周期</a></li><li><ul class="section"><li><a href="ch10-01-syntax.html"><strong>10.1.</strong> 泛型数据类型</a></li><li><a href="ch10-02-traits.html"><strong>10.2.</strong> trait：定义共享的行为</a></li><li><a href="ch10-03-lifetime-syntax.html"><strong>10.3.</strong> 生命周期与引用有效性</a></li></ul></li><li><a href="ch11-00-testing.html"><strong>11.</strong> 测试</a></li><li><ul class="section"><li><a href="ch11-01-writing-tests.html"><strong>11.1.</strong> 编写测试</a></li><li><a href="ch11-02-running-tests.html"><strong>11.2.</strong> 运行测试</a></li><li><a href="ch11-03-test-organization.html"><strong>11.3.</strong> 测试的组织结构</a></li></ul></li><li><a href="ch12-00-an-io-project.html"><strong>12.</strong> 一个 I/O 项目</a></li><li><ul class="section"><li><a href="ch12-01-accepting-command-line-arguments.html"><strong>12.1.</strong> 接受命令行参数</a></li><li><a href="ch12-02-reading-a-file.html"><strong>12.2.</strong> 读取文件</a></li><li><a href="ch12-03-improving-error-handling-and-modularity.html"><strong>12.3.</strong> 增强错误处理和模块化</a></li><li><a href="ch12-04-testing-the-librarys-functionality.html"><strong>12.4.</strong> 测试库的功能</a></li><li><a href="ch12-05-working-with-environment-variables.html"><strong>12.5.</strong> 处理环境变量</a></li><li><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong>12.6.</strong> 输出到<code>stderr</code>而不是<code>stdout</code></a></li></ul></li><li><a href="ch13-00-functional-features.html"><strong>13.</strong> Rust 中的函数式语言功能</a></li><li><ul class="section"><li><a href="ch13-01-closures.html"><strong>13.1.</strong> 闭包</a></li><li><a href="ch13-02-iterators.html"><strong>13.2.</strong> 迭代器</a></li><li><a href="ch13-03-improving-our-io-project.html"><strong>13.3.</strong> 改进 I/O 项目</a></li><li><a href="ch13-04-performance.html"><strong>13.4.</strong> 性能</a></li></ul></li><li><a href="ch14-00-more-about-cargo.html"><strong>14.</strong> 更多关于 Cargo 和 Crates.io</a></li><li><ul class="section"><li><a href="ch14-01-release-profiles.html"><strong>14.1.</strong> 发布配置</a></li><li><a href="ch14-02-publishing-to-crates-io.html"><strong>14.2.</strong> 将 crate 发布到 Crates.io</a></li><li><a href="ch14-03-cargo-workspaces.html"><strong>14.3.</strong> Cargo 工作空间</a></li><li><a href="ch14-04-installing-binaries.html"><strong>14.4.</strong> 使用<code>cargo install</code>从 Crates.io 安装文件</a></li><li><a href="ch14-05-extending-cargo.html"><strong>14.5.</strong> Cargo 自定义扩展命令</a></li></ul></li><li><a href="ch15-00-smart-pointers.html"><strong>15.</strong> 智能指针</a></li><li><ul class="section"><li><a href="ch15-01-box.html"><strong>15.1.</strong> <code>Box&lt;T&gt;</code>用于已知大小的堆上数据</a></li><li><a href="ch15-02-deref.html"><strong>15.2.</strong> <code>Deref</code> Trait 允许通过引用访问数据</a></li><li><a href="ch15-03-drop.html"><strong>15.3.</strong> <code>Drop</code> Trait 运行清理代码</a></li><li><a href="ch15-04-rc.html"><strong>15.4.</strong> <code>Rc&lt;T&gt;</code> 引用计数智能指针</a></li><li><a href="ch15-05-interior-mutability.html"><strong>15.5.</strong> <code>RefCell&lt;T&gt;</code>和内部可变性模式</a></li><li><a href="ch15-06-reference-cycles.html"><strong>15.6.</strong> 引用循环和内存泄漏是安全的</a></li></ul></li><li><a href="ch16-00-concurrency.html"><strong>16.</strong> 无畏并发</a></li><li><ul class="section"><li><a href="ch16-01-threads.html"><strong>16.1.</strong> 线程</a></li><li><a href="ch16-02-message-passing.html"><strong>16.2.</strong> 消息传递</a></li><li><a href="ch16-03-shared-state.html"><strong>16.3.</strong> 共享状态</a></li><li><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong>16.4.</strong> 可扩展的并发：<code>Sync</code>和<code>Send</code></a></li></ul></li><li><a href="ch17-00-oop.html"><strong>17.</strong> 面向对象</a></li><li><ul class="section"><li><a href="ch17-01-what-is-oo.html"><strong>17.1.</strong> 什么是面向对象</a></li><li><a href="ch17-02-trait-objects.html"><strong>17.2.</strong> trait对象</a></li></ul></li></ul>
         </div>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -218,7 +218,7 @@ main.rs
 $ cd hello_cargo
 </code></pre>
 <p>我们向<code>cargo new</code>传递了<code>--bin</code>因为我们的目标是生成一个可执行程序，而不是一个库。可执行文件是二进制可执行文件，通常就叫做 <strong>二进制文件</strong>（<em>binaries</em>）。项目的名称被定为<code>hello_cargo</code>，同时 Cargo 在一个同名目录中创建它的文件，接着我们可以进入查看。</p>
-<p>如果列出 <em>hello_cargo</em> 目录中的文件，将会看到 Cargo 生成了两个文件和一个目录：一个 <em>Cargo.toml</em> 文件和一个 <em>src</em> 目录，<em>main.rs</em> 文件位于目录中。它也在 <em>hello_cargo</em> 目录初始化了一个 git 仓库，以及一个 <em>.gitignore</em> 文件；你可以改为使用不同的版本控制系统（VCS），或者不使用 VCS，通过<code>--vcs</code>参数。</p>
+<p>如果列出 <em>hello_cargo</em> 目录中的文件，将会看到 Cargo 生成了一个文件和一个目录：一个 <em>Cargo.toml</em> 文件和一个 <em>src</em> 目录，<em>main.rs</em> 文件位于目录中。它也在 <em>hello_cargo</em> 目录初始化了一个 git 仓库，以及一个 <em>.gitignore</em> 文件；你可以改为使用不同的版本控制系统（VCS），或者不使用 VCS，通过<code>--vcs</code>参数。</p>
 <p>使用你选择的文本编辑器（IDE）打开 <em>Cargo.toml</em> 文件。它应该看起来像这样：</p>
 <p><span class="filename">Filename: Cargo.toml</span></p>
 <pre><code class="language-toml">[package]
@@ -389,7 +389,7 @@ let mut bar = 5; // mutable
 <p>我们还没有分析完这行代码。虽然这是单独一行代码，但它只是一个逻辑上代码行（虽然换行了但仍是一个语句）的第一部分。第二部分是这个方法：</p>
 <pre><code class="language-rust,ignore">.expect(&quot;Failed to read line&quot;);
 </code></pre>
-<p>当使用<code>.foo()</code>语法调用方法时，明智的选择是换行并留出空白（缩进）来把长的代码行拆开。我们可以把代码写成这样：</p>
+<p>当使用<code>.expect()</code>语法调用方法时，明智的选择是换行并留出空白（缩进）来把长的代码行拆开。我们可以把代码写成这样：</p>
 <pre><code class="language-rust,ignore">io::stdin().read_line(&amp;mut guess).expect(&quot;Failed to read line&quot;);
 </code></pre>
 <p>不过，过长的代码行难以阅读，所以最好拆开来写，两行代码两个方法调用。现在来看看这行代码干了什么。</p>
@@ -2375,7 +2375,7 @@ fn area(rectangle: &amp;Rectangle) -&gt; u32 {
 <!-- Will add ghosting & wingdings once we're in libreoffice /Carol -->
 <p>这里我们定义了一个结构体并称其为<code>Rectangle</code>。在<code>{}</code>中定义了字段<code>length</code>和<code>width</code>，都是<code>u32</code>类型的。接着在<code>main</code>中，我们创建了一个长度为 50 和宽度为 30 的<code>Rectangle</code>的具体实例。</p>
 <p>函数<code>area</code>现在被定义为接收一个名叫<code>rectangle</code>的参数，它的类型是一个结构体<code>Rectangle</code>实例的不可变借用。第四章讲到过，我们希望借用结构体而不是获取它的所有权这样<code>main</code>函数就可以保持<code>rect1</code>的所有权并继续使用它，所以这就是为什么在函数签名和调用的地方会有<code>&amp;</code>。</p>
-<p><code>area</code>函数访问<code>Rectangle</code>的<code>length</code>和<code>width</code>字段。<code>area</code>的签名现在明确的表明了我们的意图：通过其<code>length</code>和<code>width</code>字段，计算一个<code>Rectangle</code>的面积，。这表明了长度和宽度是相互联系的，并为这些值提供了描述性的名称而不是使用元组的索引值<code>0</code>和<code>1</code>。这是明确性的胜利。</p>
+<p><code>area</code>函数访问<code>Rectangle</code>的<code>length</code>和<code>width</code>字段。<code>area</code>的签名现在明确的表明了我们的意图：通过其<code>length</code>和<code>width</code>字段，计算一个<code>Rectangle</code>的面积，。这表明了长度和宽度是相互联系的，并为这些值提供了描述性的名称而不是使用元组的索引值<code>0</code>和<code>1</code>。结构体胜在更清晰明了。</p>
 <a class="header" href="#通过衍生-trait-增加实用功能" name="通过衍生-trait-增加实用功能"><h3>通过衍生 trait 增加实用功能</h3></a>
 <p>如果能够在调试程序时打印出<code>Rectangle</code>实例来查看其所有字段的值就更好了。列表 5-5 尝试像往常一样使用<code>println!</code>宏：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
@@ -2470,7 +2470,7 @@ struct</span></p>
 <!-- Will add ghosting and wingdings here in libreoffice /Carol -->
 <p>为了使函数定义于<code>Rectangle</code>的上下文中，我们开始了一个<code>impl</code>块（<code>impl</code>是 <em>implementation</em> 的缩写）。接着将函数移动到<code>impl</code>大括号中，并将签名中的第一个（在这里也是唯一一个）参数和函数体中其他地方的对应参数改成<code>self</code>。然后在<code>main</code>中将我们调用<code>area</code>方法并传递<code>rect1</code>作为参数的地方，改成使用<strong>方法语法</strong>在<code>Rectangle</code>实例上调用<code>area</code>方法。方法语法获取一个实例并加上一个点号后跟方法名、括号以及任何参数。</p>
 <p>在<code>area</code>的签名中，开始使用<code>&amp;self</code>来替代<code>rectangle: &amp;Rectangle</code>，因为该方法位于<code>impl Rectangle</code> 上下文中所以 Rust 知道<code>self</code>的类型是<code>Rectangle</code>。注意仍然需要在<code>self</code>前面加上<code>&amp;</code>，就像<code>&amp;Rectangle</code>一样。方法可以选择获取<code>self</code>的所有权，像我们这里一样不可变的借用<code>self</code>，或者可变的借用<code>self</code>，就跟其他别的参数一样。</p>
-<p>这里选择<code>&amp;self</code>跟在函数版本中使用<code>&amp;Rectangle</code>出于同样的理由：我们并不想获取所有权，只希望能够读取结构体中的数据，而不是写入。如果想要能够在方法中改变调用方法的实例的话，需要将抵押给参数改为<code>&amp;mut self</code>。通过仅仅使用<code>self</code>作为第一个参数来使方法获取实例的所有权，不过这是很少见的；这通常用在当方法将<code>self</code>转换成别的实例的时候，同时我们想要防止调用者在转换之后使用原始的实例。</p>
+<p>这里选择<code>&amp;self</code>跟在函数版本中使用<code>&amp;Rectangle</code>出于同样的理由：我们并不想获取所有权，只希望能够读取结构体中的数据，而不是写入。如果想要能够在方法中改变调用方法的实例的话，需要将第一个参数改为<code>&amp;mut self</code>。通过仅仅使用<code>self</code>作为第一个参数来使方法获取实例的所有权，不过这是很少见的；这通常用在当方法将<code>self</code>转换成别的实例的时候，同时我们想要防止调用者在转换之后使用原始的实例。</p>
 <p>使用方法而不是函数，除了使用了方法语法和不需要在每个函数签名中重复<code>self</code>类型外，其主要好处在于组织性。我将某个类型实例能做的所有事情都一起放入<code>impl</code>块中，而不是让将来的用户在我们的代码中到处寻找<code>Rectangle</code>的功能。</p>
 <!-- PROD: START BOX -->
 <blockquote>
@@ -2497,7 +2497,7 @@ struct</span></p>
 p1.distance(&amp;p2);
 (&amp;p1).distance(&amp;p2);
 </code></pre>
-<p>第一行看起来简洁的多。这种自动引用的行为之所以能行得通是因为方法有一个明确的接收者————<code>self</code>的类型。在给出接收者和方法名的前提下，Rust 可以明确的计算出方法是仅仅读取（所以需要<code>&amp;self</code>），做出修改（所以是<code>&amp;mut self</code>）或者是获取所有权（所以是<code>self</code>）。Rust 这种使得借用对方法接收者来说是隐式的做法是其所有权系统人体工程学实践的一大部分。</p>
+<p>第一行看起来简洁的多。这种自动引用的行为之所以能行得通是因为方法有一个明确的接收者————<code>self</code>的类型。在给出接收者和方法名的前提下，Rust 可以明确的计算出方法是仅仅读取（所以需要<code>&amp;self</code>），做出修改（所以是<code>&amp;mut self</code>）或者是获取所有权（所以是<code>self</code>）。Rust 这种使得借用对方法接收者来说是隐式的做法是其所有权系统程序员友好性实现的一大部分。</p>
 </blockquote>
 <!-- PROD: END BOX -->
 <a class="header" href="#带有更多参数的方法" name="带有更多参数的方法"><h3>带有更多参数的方法</h3></a>
@@ -2542,7 +2542,7 @@ impl Rectangle {
 <p>如果结合列表 5-8 的<code>main</code>函数来运行，就会看到想要得到的输出！方法可以在<code>self</code>后增加多个参数，而且这些参数就像函数中的参数一样工作。</p>
 <a class="header" href="#关联函数" name="关联函数"><h3>关联函数</h3></a>
 <p><code>impl</code>块的另一个好用的功能是：允许在<code>impl</code>块中定义<strong>不</strong>以<code>self</code>作为参数的函数。这被称为<strong>关联函数</strong>（<em>associated functions</em>），因为他们与结构体相关联。即便如此他们也是函数而不是方法，因为他们并不作用于一个结构体的实例。你已经使用过一个关联函数了：<code>String::from</code>。</p>
-<p>关联函数经常被用作返回一个结构体新实例的构造函数。例如我们可以一个关联函数，它获取一个维度参数并且用来作为长宽，这样可以更轻松的创建一个正方形<code>Rectangle</code>而不必指定两次同样的值：</p>
+<p>关联函数经常被用作返回一个结构体新实例的构造函数。例如我们可以提供一个关联函数，它接受一个维度参数并且用来作为长和宽，这样可以更轻松的创建一个正方形<code>Rectangle</code>而不必指定两次同样的值：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust"># #[derive(Debug)]
 # struct Rectangle {
@@ -2657,7 +2657,7 @@ let home = IpAddr::V4(127, 0, 0, 1);
 
 let loopback = IpAddr::V6(String::from(&quot;::1&quot;));
 </code></pre>
-<p>这些代码展示了使用枚举来储存两种不同 IP 地址的几种可能的选择。然而，事实证明储存和编码 IP 地址实在是太常见了<a href="https://doc.rust-lang.org/std/net/enum.IpAddr.html">以致标准库提供了一个可供使用的定义！</a><!-- ignore -->让我们看看标准库如何定义<code>IpAddr</code>的：它正有着跟我们定义和使用的一样的枚举和成员，不过它将成员种的地址数据嵌入到了两个不同形式的结构体中，他们对不同的成员的定义是不同的：</p>
+<p>这些代码展示了使用枚举来储存两种不同 IP 地址的几种可能的选择。然而，事实证明储存和编码 IP 地址实在是太常见了<a href="https://doc.rust-lang.org/std/net/enum.IpAddr.html">以致标准库提供了一个可供使用的定义！</a><!-- ignore -->让我们看看标准库如何定义<code>IpAddr</code>的：它正有着跟我们定义和使用的一样的枚举和成员，不过它将成员中的地址数据嵌入到了两个不同形式的结构体中，他们对不同的成员的定义是不同的：</p>
 <pre><code class="language-rust">struct Ipv4Addr {
     // details elided
 }
@@ -2734,7 +2734,7 @@ crashes, which have probably caused a billion dollars of pain and damage in
 the last forty years.</p>
 <p>我称之为我万亿美元的错误。当时，我在在一个面向对象语言设计第一个综合性的面向引用的类型系统。我的目标是通过编译器的自动检查来保证所有引用的应有都应该是绝对安全的。不过我未能抗拒引入一个空引用的诱惑，仅仅是因为它是这么的容易实现。这引发了无数错误、漏洞和系统崩溃，在之后的四十多年中造成了数以万计美元的苦痛和伤害。</p>
 </blockquote>
-<p>空值的为题在于当你尝试像一个非空值那样使用一个空值，会出现某种形式的错误。因为空和非空的属性是无处不在的，非常容易出现这类错误。</p>
+<p>空值的问题在于当你尝试像一个非空值那样使用一个空值，会出现某种形式的错误。因为空和非空的属性是无处不在的，非常容易出现这类错误。</p>
 <p>然而，空值尝试表达的概念仍然是有意义的：空值是一个因为某种原因目前无效或缺失的值。</p>
 <p>问题不在于具体的概念而在于特定的实现。为此，Rust 并没有空值，不过它确实拥有一个可以编码存在或不存在概念的枚举。这个枚举是<code>Option&lt;T&gt;</code>，而且它<a href="https://doc.rust-lang.org/std/option/enum.Option.html">定义于标准库中</a><!-- ignore -->，如下:</p>
 <pre><code class="language-rust">enum Option&lt;T&gt; {
@@ -2899,7 +2899,7 @@ an <code>Option&lt;i32&gt;</code></span></p>
 <pre><code class="language-rust,ignore">None =&gt; None,
 </code></pre>
 <p>匹配上了！这里没有值来加一，所以程序结束并返回<code>=&gt;</code>右侧的值<code>None</code>，因为第一个分支就匹配到了，其他的分支将不再比较。</p>
-<p>将<code>match</code>与枚举相结合在很多场景中都是有用的。你会在 Rust 代码中看到很多这样的模式：<code>match</code>一个枚举，绑定其中的值到一个变量，接着根据其值执行代码。这在一开有点复杂，不过一旦习惯了，你会希望所有语言都拥有它！这一直都是用户的最爱。</p>
+<p>将<code>match</code>与枚举相结合在很多场景中都是有用的。你会在 Rust 代码中看到很多这样的模式：<code>match</code>一个枚举，绑定其中的值到一个变量，接着根据其值执行代码。这在一开始有点复杂，不过一旦习惯了，你会希望所有语言都拥有它！这一直是用户的最爱。</p>
 <a class="header" href="#匹配是穷尽的" name="匹配是穷尽的"><h3>匹配是穷尽的</h3></a>
 <p><code>match</code>还有另一方面需要讨论。考虑一下<code>plus_one</code>函数的这个版本：</p>
 <pre><code class="language-rust,ignore">fn plus_one(x: Option&lt;i32&gt;) -&gt; Option&lt;i32&gt; {
@@ -3239,7 +3239,7 @@ $ mv src/server.rs src/network
 │       ├── mod.rs
 │       └── server.rs
 </code></pre>
-<p>那么，当我们想要提取<code>network::server</code>模块时，为什么也必须将 <em>src/network.rs</em> 文件改名成 <em>src/network/mod.rs</em> 文件呢，还有为什么要将<code>network::server</code>的代码放入 <em>network</em> 目录的 <em>src/network/server.rs</em> 文件中，而不能将<code>network::server</code>模块提取到 <em>src/server.rs</em> 中呢？原因是如果 <em>server.rs</em> 文件在 <em>src</em> 目录中那么 Rust 就不能知道<code>server</code>应当是<code>network</code>的子模块。为了更清除的说明为什么 Rust 不知道，让我们考虑一下有着如下层级的另一个例子，它的所有定义都位于 <em>src/lib.rs</em> 中：</p>
+<p>那么，当我们想要提取<code>network::server</code>模块时，为什么也必须将 <em>src/network.rs</em> 文件改名成 <em>src/network/mod.rs</em> 文件呢，还有为什么要将<code>network::server</code>的代码放入 <em>network</em> 目录的 <em>src/network/server.rs</em> 文件中，而不能将<code>network::server</code>模块提取到 <em>src/server.rs</em> 中呢？原因是如果 <em>server.rs</em> 文件在 <em>src</em> 目录中那么 Rust 就不能知道<code>server</code>应当是<code>network</code>的子模块。为了更清楚得说明为什么 Rust 不知道，让我们考虑一下有着如下层级的另一个例子，它的所有定义都位于 <em>src/lib.rs</em> 中：</p>
 <pre><code>communicator
  ├── client
  └── network
@@ -3410,7 +3410,7 @@ some of which are incorrect</span></p>
 <p><code>try_me</code>函数位于项目的根模块。叫做<code>outermost</code>的模块是私有的，不过第二条私有性规则说明<code>try_me</code>函数允许访问<code>outermost</code>模块，因为<code>outermost</code>位于当前（根）模块，<code>try_me</code>也是。</p>
 <p><code>outermost::middle_function</code>的调用是正确的。因为<code>middle_function</code>是公有的，而<code>try_me</code>通过其父模块访问<code>middle_function</code>，<code>outermost</code>。根据上一段的规则我们可以确定这个模块是可访问的。</p>
 <p><code>outermost::middle_secret_function</code>的调用会造成一个编译错误。<code>middle_secret_function</code>是私有的，所以第二条（私有性）规则生效了。根模块既不是<code>middle_secret_function</code>的当前模块（<code>outermost</code>是），也不是<code>middle_secret_function</code>当前模块的子模块。</p>
-<p>叫做<code>inside</code>的模块是私有的且没有子模块，所以它只能被当前模块访问，<code>outermost</code>。这意味着<code>try_me</code>函数不允许调用<code>outermost::inside::inner_function</code>或<code>outermost::inside::secret_function</code>任何一个。</p>
+<p>叫做<code>inside</code>的模块是私有的且没有子模块，所以它只能被当前模块<code>outermost</code>访问。这意味着<code>try_me</code>函数不允许调用<code>outermost::inside::inner_function</code>或<code>outermost::inside::secret_function</code>任何一个。</p>
 <a class="header" href="#修改错误" name="修改错误"><h4>修改错误</h4></a>
 <p>这里有一些尝试修复错误的代码修改意见。在你尝试他们之前，猜测一下他们哪个能修复错误，接着编译查看你是否猜对了，并结合私有性规则理解为什么。</p>
 <ul>
@@ -3419,7 +3419,7 @@ some of which are incorrect</span></p>
 <li>如果在<code>inner_function</code>函数体中调用<code>::outermost::middle_secret_function()</code>？（开头的两个冒号意味着从根模块开始引用模块。）</li>
 </ul>
 <p>请随意设计更多的实验并尝试理解他们！</p>
-<p>接下来，让我们讨论一下使用<code>use</code>关键字来将项引入作用域。</p>
+<p>接下来，让我们讨论一下使用<code>use</code>关键字将模块项目引入作用域。</p>
 <a class="header" href="#导入命名" name="导入命名"><h2>导入命名</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch07-03-importing-names-with-use.md">ch07-03-importing-names-with-use.md</a>
@@ -3730,7 +3730,7 @@ let s = &quot;initial contents&quot;.to_string();
 <p>也可以使用<code>String::from</code>函数来从字符串字面值创建<code>String</code>。如下等同于使用<code>to_string</code>：</p>
 <pre><code class="language-rust">let s = String::from(&quot;initial contents&quot;);
 </code></pre>
-<p>因为字符串使用广泛，这里有很多不同的用于字符串的通用 API 可供选择。他们有些可能显得有些多于，不过都有其用武之地！在这个例子中，<code>String::from</code>和<code>.to_string</code>最终做了完全相同的工作，所以如何选择就是风格问题了。</p>
+<p>因为字符串使用广泛，这里有很多不同的用于字符串的通用 API 可供选择。他们有些可能显得有些多余，不过都有其用武之地！在这个例子中，<code>String::from</code>和<code>.to_string</code>最终做了完全相同的工作，所以如何选择就是风格问题了。</p>
 <p>记住字符串是 UTF-8 编码的，所以可以包含任何可以正确编码的数据：</p>
 <pre><code class="language-rust">let hello = &quot;السلام عليكم&quot;;
 let hello = &quot;Dobrý den&quot;;
@@ -3771,7 +3771,7 @@ let s3 = s1 + &amp;s2; // Note that s1 has been moved here and can no longer be 
 <pre><code class="language-rust,ignore">fn add(self, s: &amp;str) -&gt; String {
 </code></pre>
 <p>这并不是标准库中实际的签名；那个<code>add</code>使用泛型定义。这里的签名使用具体类型代替了泛型，这也正是当使用<code>String</code>值调用这个方法会发生的。第十章会讨论泛型。这个签名提供了理解<code>+</code>运算那奇怪的部分的线索。</p>
-<p>首先，<code>s2</code>使用了<code>&amp;</code>，意味着我们使用第二个字符串的<strong>引用</strong>与第一个字符串相加。这是因为<code>add</code>函数的<code>s</code>参数：只能将<code>&amp;str</code>和<code>String</code>相加，不能将两个<code>String</code>值相加。不过等一下——正如<code>add</code>的第二个参数所指定的，<code>&amp;s2</code>的类型是<code>&amp;String</code>而不是<code>&amp;str</code>。那么为什么代码还能编译呢？之所以能够在<code>add</code>调用中使用<code>&amp;s2</code>是因为<code>&amp;String</code>可以被<strong>强转</strong>（<em>coerced</em>）成 <code>&amp;str</code>——当<code>add</code>函数被调用时，Rust 使用了一个被成为<strong>解引用强制多态</strong>（<em>deref coercion</em>）的技术，你可以将其理解为它把<code>&amp;s2</code>变成了<code>&amp;s2[..]</code>以供<code>add</code>函数使用。第十五章会更深入的讨论解引用强制多态。因为<code>add</code>没有获取参数的所有权，所以<code>s2</code>在这个操作后仍然是有效的<code>String</code>。</p>
+<p>首先，<code>s2</code>使用了<code>&amp;</code>，意味着我们使用第二个字符串的<strong>引用</strong>与第一个字符串相加。这是因为<code>add</code>函数的<code>s</code>参数：只能将<code>&amp;str</code>和<code>String</code>相加，不能将两个<code>String</code>值相加。不过等一下——正如<code>add</code>的第二个参数所指定的，<code>&amp;s2</code>的类型是<code>&amp;String</code>而不是<code>&amp;str</code>。那么为什么代码还能编译呢？之所以能够在<code>add</code>调用中使用<code>&amp;s2</code>是因为<code>&amp;String</code>可以被<strong>强转</strong>（<em>coerced</em>）成 <code>&amp;str</code>——当<code>add</code>函数被调用时，Rust 使用了一个被称为<strong>解引用强制多态</strong>（<em>deref coercion</em>）的技术，你可以将其理解为它把<code>&amp;s2</code>变成了<code>&amp;s2[..]</code>以供<code>add</code>函数使用。第十五章会更深入的讨论解引用强制多态。因为<code>add</code>没有获取参数的所有权，所以<code>s2</code>在这个操作后仍然是有效的<code>String</code>。</p>
 <p>其次，可以发现签名中<code>add</code>获取了<code>self</code>的所有权，因为<code>self</code><strong>没有</strong>使用<code>&amp;</code>。这意味着上面例子中的<code>s1</code>的所有权将被移动到<code>add</code>调用中，之后就不再有效。所以虽然<code>let s3 = s1 + &amp;s2;</code>看起来就像它会复制两个字符串并创建一个新的字符串，而实际上这个语句会获取<code>s1</code>的所有权，附加上从<code>s2</code>中拷贝的内容，并返回结果的所有权。换句话说，它看起来好像生成了很多拷贝不过实际上并没有：这个实现比拷贝要更高效。</p>
 <p>如果想要级联多个字符串，<code>+</code>的行为就显得笨重了：</p>
 <pre><code class="language-rust">let s1 = String::from(&quot;tic&quot;);
@@ -4465,12 +4465,11 @@ of numbers</span></p>
 </code></pre>
 <p><span class="caption">Listing 10-2: Code to find the largest number in <em>two</em>
 lists of numbers</span></p>
-<p>虽然代码能够执行，但是重复的代码是冗余且已于出错的，并且意味着当更新逻辑时需要修改多处地方的代码。</p>
+<p>虽然代码能够执行，但是重复的代码是冗余且容易出错的，并且意味着当更新逻辑时需要修改多处地方的代码。</p>
 <!-- Are we safe assuming the reader will be familiar with the term
 "abstraction" in this context, or do we want to give a brief definition? -->
 <!-- Yes, our audience will be familiar with this term. /Carol -->
-<p>为了消除重复，我们可以创建一层抽象，在这个例子中将表现为一个获取任意整型列表作为参数并对其进行处理的函数。这将增加代码的简洁性并让我们将表达和推导寻找列表中最大值的这个概念与使用这个概念的特定位置相互独。
-立。</p>
+<p>为了消除重复，我们可以创建一层抽象，在这个例子中将表现为一个获取任意整型列表作为参数并对其进行处理的函数。这将增加代码的简洁性并让我们将表达和推导寻找列表中最大值的这个概念与使用这个概念的特定位置相互独立。</p>
 <p>在列表 10-3 的程序中将寻找最大值的代码提取到了一个叫做<code>largest</code>的函数中。这个程序可以找出两个不同数字列表的最大值，不过列表 10-1 中的代码只存在于一个位置：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust">fn largest(list: &amp;[i32]) -&gt; i32 {
@@ -4562,8 +4561,8 @@ fn main() {
 <p><span class="caption">Listing 10-4: Two functions that differ only in their
 names and the types in their signatures</span></p>
 <p>这里<code>largest_i32</code>和<code>largest_char</code>有着完全相同的函数体，所以能够将这两个函数变成一个来减少重复就太好了。所幸通过引入一个泛型参数就能实现！</p>
-<p>为了参数化要定义的函数的签名中的类型，我们需要像给函数的值参数起名那样为这类型参数起一个名字。这里选择了名称<code>T</code>。任何标识符抖可以作为类型参数名，选择<code>T</code>是因为 Rust 的类型命名规范是骆驼命名法（CamelCase）。另外泛型类型参数的规范也倾向于简短，经常仅仅是一个字母。<code>T</code>作为“type”的缩写是大部分 Rust 程序员的首选。</p>
-<p>当需要再函数体中使用一个参数时，必须再函数签名中声明这个参数以便编译器能知道函数体中这个名称的意义。同理，当在函数签名中使用一个类型参数时，必须在使用它之前就声明它。类型参数声明位于函数名称与参数列表中间的尖括号中。</p>
+<p>为了参数化要定义的函数的签名中的类型，我们需要像给函数的值参数起名那样为这类型参数起一个名字。这里选择了名称<code>T</code>。任何标识符都可以作为类型参数名，选择<code>T</code>是因为 Rust 的类型命名规范是骆驼命名法（CamelCase）。另外泛型类型参数的规范也倾向于简短，经常仅仅是一个字母。<code>T</code>作为“type”的缩写是大部分 Rust 程序员的首选。</p>
+<p>当需要再函数体中使用一个参数时，必须在函数签名中声明这个参数以便编译器能知道函数体中这个名称的意义。同理，当在函数签名中使用一个类型参数时，必须在使用它之前就声明它。类型参数声明位于函数名称与参数列表中间的尖括号中。</p>
 <p>我们将要定义的泛型版本的<code>largest</code>函数的签名看起来像这样：</p>
 <pre><code class="language-rust,ignore">fn largest&lt;T&gt;(list: &amp;[T]) -&gt; T {
 </code></pre>
@@ -4628,7 +4627,7 @@ fn main() {
 <p><span class="caption">Listing 10-6: A <code>Point</code> struct that holds <code>x</code> and <code>y</code>
 values of type <code>T</code></span></p>
 <p>其语法类似于函数定义中的泛型应用。首先，必须在结构体名称后面的尖括号中声明泛型参数的名称。接着在结构体定义中可以指定具体数据类型的位置使用泛型类型。</p>
-<p>注意<code>Point</code>的定义中是使用了要给泛型类型，我们想要表达的是结构体<code>Point</code>对于一些类型<code>T</code>是泛型的，而且无论这个泛型是什么，字段<code>x</code>和<code>y</code><strong>都是</strong>相同类型的。如果尝试创建一个有不同类型值的<code>Point</code>的实例，像列表 10-7 中的代码就不能编译：</p>
+<p>注意<code>Point</code>的定义中是使用了要给泛型类型，我们想要表达的是结构体<code>Point</code>对于一些类型<code>T</code>是泛型的，而且字段<code>x</code>和<code>y</code><strong>都是</strong>相同类型的，无论它具体是何类型。如果尝试创建一个有不同类型值的<code>Point</code>的实例，像列表 10-7 中的代码就不能编译：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">struct Point&lt;T&gt; {
     x: T,
@@ -4676,7 +4675,7 @@ fn main() {
     None,
 }
 </code></pre>
-<p>换句话说<code>Option&lt;T&gt;</code>是一个拥有泛型<code>T</code>的枚举。它有两个成员：<code>Some</code>，它存放了一个类型<code>T</code>的值，和不存在任何值的<code>None</code>。标准库中只有这一个定义来支持创建任何具体类型的枚举值。“一个可能的值”是一个比具体类型的值更抽象的概念，而 Rust 允许我们不引入重复就能表现抽象的概念。</p>
+<p>换句话说<code>Option&lt;T&gt;</code>是一个拥有泛型<code>T</code>的枚举。它有两个成员：<code>Some</code>，它存放了一个类型<code>T</code>的值，和不存在任何值的<code>None</code>。标准库中只有这一个定义来支持创建任何具体类型的枚举值。“一个可能的值”是一个比具体类型的值更抽象的概念，而 Rust 允许我们不引入重复代码就能表现抽象的概念。</p>
 <p>枚举也可以拥有多个泛型类型。第九章使用过的<code>Result</code>枚举定义就是一个这样的例子：</p>
 <pre><code class="language-rust">enum Result&lt;T, E&gt; {
     Ok(T),
@@ -4684,7 +4683,7 @@ fn main() {
 }
 </code></pre>
 <p><code>Result</code>枚举有两个泛型类型，<code>T</code>和<code>E</code>。<code>Result</code>有两个成员：<code>Ok</code>，它存放一个类型<code>T</code>的值，而<code>Err</code>则存放一个类型<code>E</code>的值。这个定义使得<code>Result</code>枚举能很方便的表达任何可能成功（返回<code>T</code>类型的值）也可能失败（返回<code>E</code>类型的值）的操作。回忆一下列表 9-2 中打开一个文件的场景，当文件被成功打开<code>T</code>被放入了<code>std::fs::File</code>类型而当打开文件出现问题时<code>E</code>被放入了<code>std::io::Error</code>类型。</p>
-<p>当发现代码中有多个只有存放的值的类型有所不同的结构体或枚举定义时，你就应该像之前的函数定义中那样引入泛型类型来减少重复。</p>
+<p>当发现代码中有多个只有存放的值的类型有所不同的结构体或枚举定义时，你就应该像之前的函数定义中那样引入泛型类型来减少重复代码。</p>
 <a class="header" href="#方法定义中的枚举数据类型" name="方法定义中的枚举数据类型"><h3>方法定义中的枚举数据类型</h3></a>
 <p>可以像第五章介绍的那样来为其定义中带有泛型的结构体或枚举实现方法。列表 10-9 中展示了列表 10-6 中定义的结构体<code>Point&lt;T&gt;</code>。接着我们在<code>Point&lt;T&gt;</code>上定义了一个叫做<code>x</code>的方法来返回字段<code>x</code>中数据的引用：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
@@ -4835,7 +4834,7 @@ the <code>NewsArticle</code> and <code>Tweet</code> types</span></p>
 println!(&quot;1 new tweet: {}&quot;, tweet.summary());
 </code></pre>
 <p>这会打印出<code>1 new tweet: horse_ebooks: of course, as you probably already know, people</code>。</p>
-<p>注意因为列表 10-12 中我们在相同的<code>lib.rs</code>力定义了<code>Summarizable</code> trait 和<code>NewsArticle</code>与<code>Tweet</code>类型，所以他们是位于同一作用域的。如果这个<code>lib.rs</code>是对应<code>aggregator</code> crate 的，而别人想要利用我们 crate 的功能外加为其<code>WeatherForecast</code>结构体实现<code>Summarizable</code> trait，在实现<code>Summarizable</code> trait 之前他们首先就需要将其导入其作用域中，如列表 10-13 所示：</p>
+<p>注意因为列表 10-12 中我们在相同的<code>lib.rs</code>里定义了<code>Summarizable</code> trait 和<code>NewsArticle</code>与<code>Tweet</code>类型，所以他们是位于同一作用域的。如果这个<code>lib.rs</code>是对应<code>aggregator</code> crate 的，而别人想要利用我们 crate 的功能外加为其<code>WeatherForecast</code>结构体实现<code>Summarizable</code> trait，在实现<code>Summarizable</code> trait 之前他们首先就需要将其导入其作用域中，如列表 10-13 所示：</p>
 <p><span class="filename">Filename: lib.rs</span></p>
 <pre><code class="language-rust,ignore">extern crate aggregator;
 
@@ -4916,14 +4915,14 @@ println!(&quot;1 new tweet: {}&quot;, tweet.summary());
 <p>这会打印出<code>1 new tweet: (Read more from @horse_ebooks...)</code>。</p>
 <p>注意在重载过的实现中调用默认实现是不可能的。</p>
 <a class="header" href="#trait-bounds" name="trait-bounds"><h3>trait bounds</h3></a>
-<p>现在我们定义了 trait 并在类型上实现了这些 trait，也可以对泛型类型参数使用 trait。我们可以限制泛型不再适用于任何类型，编译器会确保其被限制为那么实现了特定 trait 的类型，由此泛型就会拥有我们希望其类型所拥有的功能。这被称为指定泛型的 <em>trait bounds</em>。</p>
+<p>现在我们定义了 trait 并在类型上实现了这些 trait，也可以对泛型类型参数使用 trait。我们可以限制泛型不再适用于任何类型，编译器会确保其被限制为那些实现了特定 trait 的类型，由此泛型就会拥有我们希望其类型所拥有的功能。这被称为指定泛型的 <em>trait bounds</em>。</p>
 <p>例如在列表 10-12 中为<code>NewsArticle</code>和<code>Tweet</code>类型实现了<code>Summarizable</code> trait。我们可以定义一个函数<code>notify</code>来调用<code>summary</code>方法，它拥有一个泛型类型<code>T</code>的参数<code>item</code>。为了能够在<code>item</code>上调用<code>summary</code>而不出现错误，我们可以在<code>T</code>上使用 trait bounds 来指定<code>item</code>必须是实现了<code>Summarizable</code> trait 的类型：</p>
 <pre><code class="language-rust,ignore">pub fn notify&lt;T: Summarizable&gt;(item: T) {
     println!(&quot;Breaking news! {}&quot;, item.summary());
 }
 </code></pre>
 <p>trait bounds 连同泛型类型参数声明一同出现，位于尖括号中的冒号后面。由于<code>T</code>上的 trait bounds，我们可以传递任何<code>NewsArticle</code>或<code>Tweet</code>的实例来调用<code>notify</code>函数。列表 10-13 中使用我们<code>aggregator</code> crate 的外部代码也可以传递一个<code>WeatherForecast</code>的实例来调用<code>notify</code>函数，因为<code>WeatherForecast</code>同样也实现了<code>Summarizable</code>。使用任何其他类型，比如<code>String</code>或<code>i32</code>，来调用<code>notify</code>的代码将不能编译，因为这些类型没有实现<code>Summarizable</code>。</p>
-<p>可以通过<code>+</code>来为泛型指定多个 trait bounds。如果我们需要能够在函数中使用<code>T</code>类型的显示格式的同时也能使用<code>summary</code>方法，则可以使用 trait bounds <code>T: Summarizable + Display</code>。这意味着<code>T</code>可以是任何是实现了<code>Summarizable</code>和<code>Display</code>的类型。</p>
+<p>可以通过<code>+</code>来为泛型指定多个 trait bounds。如果我们需要能够在函数中使用<code>T</code>类型的显示格式的同时也能使用<code>summary</code>方法，则可以使用 trait bounds <code>T: Summarizable + Display</code>。这意味着<code>T</code>可以是任何实现了<code>Summarizable</code>和<code>Display</code>的类型。</p>
 <p>对于拥有多个泛型类型参数的函数，每一个泛型都可以有其自己的 trait bounds。在函数名和参数列表之间的尖括号中指定很多的 trait bound 信息将是难以阅读的，所以有另外一个指定 trait bounds 的语法，它将其移动到函数签名后的<code>where</code>从句中。所以相比这样写：</p>
 <pre><code class="language-rust,ignore">fn some_function&lt;T: Display + Clone, U: Clone + Debug&gt;(t: T, u: U) -&gt; i32 {
 </code></pre>
@@ -5063,7 +5062,7 @@ clear -->
 line and ends with the first closing curly brace on the 7th line. Do you think
 the text art comments work or should we make an SVG diagram that has nicer
 looking arrows and labels? /Carol -->
-<p>我们将<code>r</code>的声明周期标记为<code>'a</code>而将<code>x</code>的生命周期标记为<code>'b</code>。如你所见，内部的<code>'b</code>块要比外部的生命周期<code>'a</code>小得多。在编译时，Rust 比较这两个生命周期的大小，并发现<code>r</code>拥有声明周期<code>'a</code>，不过它引用了一个拥有生命周期<code>'b</code>的对象。程序被拒绝编译，因为生命周期<code>'b</code>比生命周期<code>'a</code>要小：引用者没有比被引用者存在的更久。</p>
+<p>我们将<code>r</code>的声明周期标记为<code>'a</code>而将<code>x</code>的生命周期标记为<code>'b</code>。如你所见，内部的<code>'b</code>块要比外部的生命周期<code>'a</code>小得多。在编译时，Rust 比较这两个生命周期的大小，并发现<code>r</code>拥有声明周期<code>'a</code>，不过它引用了一个拥有生命周期<code>'b</code>的对象。程序被拒绝编译，因为生命周期<code>'b</code>比生命周期<code>'a</code>要小：被引用的对象比它的引用者存活的时间更短。</p>
 <p>让我们看看列表 10-18 中这个并没有产生悬垂引用且可以正常编译的例子：</p>
 <pre><code class="language-rust">{
     let x = 5;            // -----+-- 'b
@@ -5143,7 +5142,7 @@ compile</span></p>
 </code></pre>
 <p>生命周期注解本身没有多少意义：生命周期注解告诉 Rust 多个引用的泛型生命周期参数如何相互联系。如果函数有一个生命周期<code>'a</code>的<code>i32</code>的引用的参数<code>first</code>，还有另一个同样是生命周期<code>'a</code>的<code>i32</code>的引用的参数<code>second</code>，这两个生命周期注解有相同的名称意味着<code>first</code>和<code>second</code>必须与这相同的泛型生命周期存在得一样久。</p>
 <a class="header" href="#函数签名中的生命周期注解" name="函数签名中的生命周期注解"><h3>函数签名中的生命周期注解</h3></a>
-<p>来看看我们编写的<code>longest</code>函数的上下文中的生命周期。就像泛型类型参数，泛型生命周期参数需要声明在函数名和参数列表间的加括号中。这里我们想要告诉 Rust 关于参数中的引用和返回值之间的限制是他们都必须拥有相同的生命周期，就像列表 10-21 中在每个引用中都加上了<code>'a</code>那样：</p>
+<p>来看看我们编写的<code>longest</code>函数的上下文中的生命周期。就像泛型类型参数，泛型生命周期参数需要声明在函数名和参数列表间的尖括号中。这里我们想要告诉 Rust 关于参数中的引用和返回值之间的限制是他们都必须拥有相同的生命周期，就像列表 10-21 中在每个引用中都加上了<code>'a</code>那样：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust">fn longest&lt;'a&gt;(x: &amp;'a str, y: &amp;'a str) -&gt; &amp;'a str {
     if x.len() &gt; y.len() {
@@ -5286,17 +5285,17 @@ type are references</span></p>
 <p>这里我们提到一些 Rust 的历史是因为更多的明确的模式将被合并和添加到编译器中是完全可能的。未来将会需要越来越少的生命周期注解。</p>
 <p>被编码进 Rust 引用分析的模式被称为<strong>生命周期省略规则</strong>（<em>lifetime elision rules</em>）。这并不是需要程序员遵守的规则；这些规则是一系列特定的场景，此时编译器会会考虑，如果代码符合这些场景，就不需要明确指定生命周期。</p>
 <p>这些规则并不提供完整的推断：如果 Rust 在明确遵守这些规则的前提下变量的生命周期仍然是模棱两可的话，它不会猜测剩余引用的生命周期应该是什么。在这种情况，编译器会给出一个错误，这可以通过增加对应引用之间相联系的生命周期注解来解决。</p>
-<p>首先，介绍一些定义定义：函数或方法的参数的生命周期被称为<strong>输入生命周期</strong>（<em>input lifetimes</em>），而返回值的生命周期被称为<strong>输出生命周期</strong>（<em>output lifetimes</em>）。</p>
-<p>现在介绍编译器用于判断引用何时不需要明确生命周期注解的规则。第一条规则适用于输入生命周期，而两条规则则适用于输出生命周期。如果编译器检查完这三条规则并仍然存在没有计算出生命周期的引用，编译器将会停止并生成错误。</p>
+<p>首先，介绍一些定义：函数或方法的参数的生命周期被称为<strong>输入生命周期</strong>（<em>input lifetimes</em>），而返回值的生命周期被称为<strong>输出生命周期</strong>（<em>output lifetimes</em>）。</p>
+<p>现在介绍编译器用于判断引用何时不需要明确生命周期注解的规则。第一条规则适用于输入生命周期，而后两条规则则适用于输出生命周期。如果编译器检查完这三条规则并仍然存在没有计算出生命周期的引用，编译器将会停止并生成错误。</p>
 <ol>
 <li>
-<p>每一个是引用的参数都有它自己的生命周期参数。话句话说就是，有一个引用参数的有一个生命周期参数：<code>fn foo&lt;'a&gt;(x: &amp;'a i32)</code>，有两个引用参数的函数有两个不同的生命周期参数，<code>fn foo&lt;'a, 'b&gt;(x: &amp;'a i32, y: &amp;'b i32)</code>，依此类推。</p>
+<p>每一个是引用的参数都有它自己的生命周期参数。话句话说就是，有一个引用参数的函数有一个生命周期参数：<code>fn foo&lt;'a&gt;(x: &amp;'a i32)</code>，有两个引用参数的函数有两个不同的生命周期参数，<code>fn foo&lt;'a, 'b&gt;(x: &amp;'a i32, y: &amp;'b i32)</code>，依此类推。</p>
 </li>
 <li>
-<p>如果只有一个输入生命周期参数，而且它被赋予所有输出生命周期参数：<code>fn foo&lt;'a&gt;(x: &amp;'a i32) -&gt; &amp;'a i32</code>。</p>
+<p>如果只有一个输入生命周期参数，那么它被赋给所有输出生命周期参数：<code>fn foo&lt;'a&gt;(x: &amp;'a i32) -&gt; &amp;'a i32</code>。</p>
 </li>
 <li>
-<p>如果方法有多个输入生命周期参数，不过其中之一是<code>&amp;self</code>或<code>&amp;mut self</code>，那么<code>self</code>的生命周期被赋予所有输出生命周期参数。这使得方法看起来更简洁。</p>
+<p>如果方法有多个输入生命周期参数，不过其中之一因为方法的缘故是<code>&amp;self</code>或<code>&amp;mut self</code>，那么<code>self</code>的生命周期被赋给所有输出生命周期参数。这使得方法写起来更简洁。</p>
 </li>
 </ol>
 <p>假设我们自己就是编译器并来计算列表 10-25 <code>first_word</code>函数的签名中的引用的生命周期。开始时签名中的引用并没有关联任何生命周期：</p>
@@ -5325,7 +5324,7 @@ the 3rd lifetime elision rule kicks in. It can also be confusing where lifetime
 parameters need to be declared and used since the lifetime parameters could go
 with the struct's fields or with references passed into or returned from
 methods. /Carol -->
-<p>当为带有生命周期的结构体实现方法时，其语法依然类似列表 10-10 中展示的泛型类型参数的语法：包括声明生命周期参数的位置和以及生命周期参数是否与结构体字段或方法的参数与返回值相关联。</p>
+<p>当为带有生命周期的结构体实现方法时，其语法依然类似列表 10-10 中展示的泛型类型参数的语法：包括声明生命周期参数的位置和生命周期参数是否与结构体字段或方法的参数与返回值相关联。</p>
 <p>（实现方法时）结构体字段的生命周期必须总是在<code>impl</code>关键字之后声明并在结构体名称之后被适用，因为这些生命周期是结构体类型的一部分。</p>
 <p><code>impl</code>块里的方法签名中，引用可能与结构体字段中的引用相关联，也可能是独立的。另外，生命周期省略规则也经常让我们无需在方法签名中使用生命周期注解。让我们看看一些使用列表 10-24 中定义的结构体<code>ImportantExcerpt</code>的例子。</p>
 <p>首先，这里有一个方法<code>level</code>。其唯一的参数是<code>self</code>的引用，而且返回值只是一个<code>i32</code>，并不引用任何值：</p>
@@ -5378,7 +5377,7 @@ fn longest_with_an_announcement&lt;'a, T&gt;(x: &amp;'a str, y: &amp;'a str, ann
 </code></pre>
 <p>这个是列表 10-21 中那个返回两个字符串 slice 中最长者的<code>longest</code>函数，不过带有一个额外的参数<code>ann</code>。<code>ann</code>的类型是泛型<code>T</code>，它可以被放入任何实现了<code>where</code>从句中指定的<code>Display</code> trait 的类型。这个额外的参数会在函数比较字符串 slice 的长度之前被打印出来，这也就是为什么<code>Display</code> trait bound 是必须的。因为生命周期也是泛型，生命周期参数<code>'a</code>和泛型类型参数<code>T</code>都位于函数名后的同一尖括号列表中。</p>
 <a class="header" href="#总结" name="总结"><h2>总结</h2></a>
-<p>这一章介绍了很多的内容！现在你知道了泛型类型参数、trait 和 trait bounds 以及 泛型生命周期类型，你已经准备编写既不重复又能适用于多种场景的代码了。泛型类型参数意味着代码可以适用于不同的类型。trait 和 trait bounds 保证了即使类型是泛型的，这些类型也会拥有所需要的行为。由生命周期注解所指定的引用生命周期之间的关系保证了这些灵活多变的代码不会出现悬垂引用。而所有的这一切，发生在运行时所以不会影响运行时效率！</p>
+<p>这一章介绍了很多的内容！现在你知道了泛型类型参数、trait 和 trait bounds 以及 泛型生命周期类型，你已经准备编写既不重复又能适用于多种场景的代码了。泛型类型参数意味着代码可以适用于不同的类型。trait 和 trait bounds 保证了即使类型是泛型的，这些类型也会拥有所需要的行为。由生命周期注解所指定的引用生命周期之间的关系保证了这些灵活多变的代码不会出现悬垂引用。而所有的这一切发生在编译时所以不会影响运行时效率！</p>
 <p>你可能不会相信，这个领域还有更多需要学习的内容：第十七章会讨论 trait 对象，这是另一种使用 trait 的方式。第十九章会涉及到生命周期注解更复杂的场景。第二十章讲解一些高级的类型系统功能。不过接下来，让我们聊聊如何在 Rust 中编写测试，来确保代码的所有功能能像我们希望的那样工作！</p>
 <a class="header" href="#测试" name="测试"><h1>测试</h1></a>
 <blockquote>
@@ -6085,7 +6084,7 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured
 <br>
 commit 55b294f20fc846a13a9be623bf322d8b364cee77</p>
 </blockquote>
-<p>正如之前提到的，测试是一个很广泛的学科，而且不同的开发者也采用不同的技术和组织。Rust 社区倾向于根据测试的两个主要分类来考虑问题：<strong>单元测试</strong>（<em>unit tests</em>）与<strong>集成测试</strong>（<em>unit tests</em>）。单元测试倾向于更小而更专注，在隔离的环境中一次测试一个模块。他们也可以测试私有接口。集成测试对于你的库来说则完全是外部的。他们与其他用户使用相同的方式使用你的代码，他们只针对共有接口而且每个测试都会测试多个模块。</p>
+<p>正如之前提到的，测试是一个很广泛的学科，而且不同的开发者也采用不同的技术和组织。Rust 社区倾向于根据测试的两个主要分类来考虑问题：<strong>单元测试</strong>（<em>unit tests</em>）与<strong>集成测试</strong>（<em>integration tests</em>）。单元测试倾向于更小而更专注，在隔离的环境中一次测试一个模块。他们也可以测试私有接口。集成测试对于你的库来说则完全是外部的。他们与其他用户使用相同的方式使用你的代码，他们只针对公有接口而且每个测试都会测试多个模块。</p>
 <p>这两类测试对于从独立和整体的角度保证你的库符合期望是非常重要的。</p>
 <a class="header" href="#单元测试" name="单元测试"><h3>单元测试</h3></a>
 <p>单元测试的目的是在与其他部分隔离的环境中测试每一个单元的代码，以便于快速而准确的定位何处的代码是否符合预期。单元测试位于 <em>src</em> 目录中，与他们要测试的代码存在于相同的文件中。传统做法是在每个文件中创建包含测试函数的<code>tests</code>模块，并使用<code>cfg(test)</code>标注模块。</p>
@@ -6355,7 +6354,7 @@ edited as such, can you check? -->
 12-2. We're not "setting" arguments here, we're saving the value in variables.
 I've hopefully cleared this up without needing to introduce repetition.
 /Carol-->
-<p>你可能注意到了 vector 的第一个值是&quot;target/debug/greprs&quot;，它是二进制我呢见的名称。其原因超出了本章介绍的范围，不过需要记住的是我们保存了所需的两个参数。</p>
+<p>你可能注意到了 vector 的第一个值是&quot;target/debug/greprs&quot;，它是我们二进制文件的名称。其原因超出了本章介绍的范围，不过需要记住的是我们保存了所需的两个参数。</p>
 <a class="header" href="#将参数值保存进变量" name="将参数值保存进变量"><h3>将参数值保存进变量</h3></a>
 <p>打印出参数 vector 中的值仅仅展示了可以访问程序中指定为命令行参数的值。但是这并不是我们想要做的，我们希望将这两个参数的值保存进变量这样就可以在程序使用这些值。让我们如列表 12-2 这样做：</p>
 <!-- By 'find the ones we care about' did you mean set particular arguments so
@@ -6460,7 +6459,7 @@ To tell your name the livelong day
 To an admiring bog!
 </code></pre>
 <p>好的！代码读取并打印出了文件的内容。虽然它还有一些瑕疵：<code>main</code>函数有着多个功能，同时也没有处理可能出现的错误。虽然我们的程序还很小，这些瑕疵并不是什么大问题。不过随着程序功能的丰富，将会越来越难以用简单的方法修复他们。在开发程序时，及早开始重构是一个最佳实践，因为重构少量代码时要容易的多，所以让我们现在就开始吧。</p>
-<a class="header" href="#读取文件" name="读取文件"><h2>读取文件</h2></a>
+<a class="header" href="#重构改进模块性和错误处理" name="重构改进模块性和错误处理"><h2>重构改进模块性和错误处理</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch12-03-improving-error-handling-and-modularity.md">ch12-03-improving-error-handling-and-modularity.md</a>
 <br>
@@ -6473,57 +6472,73 @@ commit b8e4fcbf289b82c12121b282747ce05180afb1fb</p>
 <p>第四，我们不停的使用<code>expect</code>来处理不同的错误，如果用户没有指定足够的参数来运行程序，他们会从 Rust 得到 &quot;index out of bounds&quot; 错误而这并不能明确的解释问题。如果所有的错误处理都位于一处这样将来的维护者在需要修改错误处理逻辑时就只需要咨询一处代码。将所有的错误处理都放在一处也有助于确保我们打印的错误信息对终端用户来说是有意义的。</p>
 <p>让我们通过重构项目来解决这些问题。</p>
 <a class="header" href="#二进制项目的关注分离" name="二进制项目的关注分离"><h3>二进制项目的关注分离</h3></a>
-<p>这类项目组织上的问题在很多相似类型的项目中很常见，所以 Rust 社区开发出一种关注分离的组织模式。这种模式可以用来组织任何用 Rust 构建的二进制项目，所以可以证明应该更早的开始这项重构，以为我们的项目符合这个模式。这个模式看起来像这样：</p>
+<p><code>main</code>函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一个类在<code>main</code>函数开始变得庞大时进行二进制程序的关注分离的指导性过程。这些过程有如下步骤：</p>
 <ol>
-<li>将程序拆分成 <em>main.rs</em> 和 <em>lib.rs</em>。</li>
-<li>将命令行参数解析逻辑放入 <em>main.rs</em>。</li>
-<li>将程序逻辑放入 <em>lib.rs</em>。</li>
-<li><code>main</code>函数的工作是：
+<li>将程序拆分成 <em>main.rs</em> 和 <em>lib.rs</em> 并将程序的逻辑放入 <em>lib.rs</em> 中。</li>
+<li>当命令行解析逻辑比较小时，可以保留在 <em>main.rs</em> 中。</li>
+<li>当命令行解析开始变得复杂时，也同样将其从 <em>main.rs</em> 提取到 <em>lib.rs</em>中。</li>
+<li>经过这些过程之后保留在<code>main</code>函数中的责任是：
 <ul>
-<li>解析参数</li>
-<li>设置所有配置性变量</li>
+<li>使用参数值调用命令行解析逻辑</li>
+<li>设置任何其他的配置</li>
 <li>调用 <em>lib.rs</em> 中的<code>run</code>函数</li>
-<li>如果<code>run</code>返回错误则处理这个错误</li>
+<li>如果<code>run</code>返回错误，则处理这个错误</li>
 </ul>
 </li>
 </ol>
-<p>好的！老实说这个模式好像还很复杂。这就是关注分离的所有内容：<em>main.rs</em> 负责实际的程序运行，而 <em>lib.rs</em> 处理所有真正的任务逻辑。让我们将程序重构成这种模式。首先，提取出一个目的只在于解析参数的函数。列表 12-4 中展示了一个新的开始，<code>main</code>函数调用了一个新函数<code>parse_config</code>，它仍然定义于 <em>src/main.rs</em> 中：</p>
+<p>这个模式的一切就是为了关注分离：<em>main.rs</em> 处理程序运行，而 <em>lib.rs</em> 处理所有的真正的任务逻辑。因为不能直接测试<code>main</code>函数，这个结构通过将所有的程序逻辑移动到 <em>lib.rs</em> 的函数中使得我们可以测试他们。仅仅保留在 <em>main.rs</em> 中的代码将足够小以便阅读就可以验证其正确性。</p>
+<!--Since main is already handling the parsing of arguments, why do we need to
+add a new function for it, can you say how that improves things? -->
+<!-- Sorry, the steps we had were unclear. We've tried rewording. /Carol -->
+<a class="header" href="#提取参数解析器" name="提取参数解析器"><h3>提取参数解析器</h3></a>
+<p>首先，我们将提取解析参数的功能。列表 12-5 中展示了新<code>main</code>函数的开头，它调用了新函数<code>parse_config</code>。目前它仍将定义在 <em>src/main.rs</em> 中：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">fn main() {
     let args: Vec&lt;String&gt; = env::args().collect();
 
-    let (search, filename) = parse_config(&amp;args);
-
-    println!(&quot;Searching for {}&quot;, search);
-    println!(&quot;In file {}&quot;, filename);
+    let (query, filename) = parse_config(&amp;args);
 
     // ...snip...
 }
 
 fn parse_config(args: &amp;[String]) -&gt; (&amp;str, &amp;str) {
-    let search = &amp;args[1];
+    let query = &amp;args[1];
     let filename = &amp;args[2];
 
-    (search, filename)
+    (query, filename)
 }
 </code></pre>
-<p><span class="caption">Listing 12-4: Extract a <code>parse_config</code> function from
+<p><span class="caption">Listing 12-5: Extract a <code>parse_config</code> function from
 <code>main</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>这看起来好像有点复杂，不过我们将一点一点的开展重构。在做出这些改变之后，再次运行程序并验证参数解析是否仍然正常。经常验证你的进展是一个好习惯，这样在遇到问题时就能更好地理解什么修改造成了错误。</p>
+<p>我们仍然将命令行参数收集进一个 vector，不过不同于在<code>main</code>函数中将索引 1 的参数值赋值给变量<code>query</code>和将索引 2 的值赋值给变量<code>filename</code>，我们将整个 vector 传递给<code>parse_config</code>函数。接着<code>parse_config</code>函数将包含知道哪个参数该放入哪个变量的逻辑，并将这些值返回到<code>main</code>。仍然在<code>main</code>中创建变量<code>query</code>和<code>filename</code>，不过<code>main</code>不再负责处理命令行参数与变量如何对应。</p>
+<p>这对我们这小程序可能有点大材小用，不过我们将采用小的、增量的步骤进行重构。在做出这些改变之后，再次运行程序并验证参数解析是否仍然正常。经常验证你的进展是一个好习惯，这样在遇到问题时能帮助你定位问题的成因。</p>
 <a class="header" href="#组合配置值" name="组合配置值"><h3>组合配置值</h3></a>
-<p>现在我们有了一个函数了，让我们接着完善它。我们代码还能设计的更好一些：函数返回了一个元组，不过接着立刻就解构成了单独的部分。这些代码本身没有问题，不过有一个地方表明仍有改善的余地：我们调用了<code>parse_config</code>方法。函数名中的<code>config</code>部分也表明了返回的两个值应该是组合在一起的，因为他们都是某个配置值的一部分。</p>
+<p>我们可以采取另一个小的步骤来进一步改善这个函数。现在函数返回一个元组，不过立刻又就将元组拆成了独立的部分。这是一个我们可能没有进行正确抽象的信号。</p>
+<p>另一个表明还有改进空间的迹象是<code>parse_config</code>的<code>config</code>部分，它暗示了我们返回的两个值是相关的并都是一个配置值的一部分。目前除了将这两个值组合进元组之外并没有表达这个数据结构的意义：我们可以将这两个值放入一个结构体并给每个字段一个有意义的名字。这会让未来的维护者更容易理解不同的值如何相互关联以及他们的目的。</p>
+<!-- above -- I'm not sure why this is a problem --- because they aren't
+currently bound together? And why does it imply that -->
 <blockquote>
-<p>注意：一些同学将当使用符合类型更为合适的时候使用基本类型当作一种称为<strong>基本类型偏执</strong>（<em>primitive obsession</em>）的反模式。</p>
+<p>注意：一些同学将这种拒绝使用相对而言更为合适的复合类型而使用基本类型的模式称为<strong>基本类型偏执</strong>（<em>primitive obsession</em>）。</p>
 </blockquote>
-<p>让我们引入一个结构体来存放所有的配置。列表 12-5 中展示了新增的<code>Config</code>结构体定义、重构后的<code>parse_config</code>和<code>main</code>函数中的相关更新：</p>
+<!-- Ah, I see, so the problems here stem from using simple types to do tasks
+inefficiently, when a more complex task could handle it in ways that improve...
+behavior? Readability? Can you say as much? -->
+<!-- I've tried to clarify above. Note that when Rust programmers talk about
+"efficiency", they usually mean "run-time performance", whereas here we're
+talking about code design and maintainability and not addressing performance
+at all. /Carol -->
+<p>列表 12-6 展示了新定义的结构体<code>Config</code>，它有字段<code>query</code>和<code>filename</code>。我们也改变了<code>parse_config</code>函数来返回一个<code>Config</code>结构体的实例，并更新<code>main</code>来使用结构体字段而不是单独的变量：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust,ignore">fn main() {
+<pre><code class="language-rust,should_panic"># use std::env;
+# use std::fs::File;
+#
+fn main() {
     let args: Vec&lt;String&gt; = env::args().collect();
 
     let config = parse_config(&amp;args);
 
-    println!(&quot;Searching for {}&quot;, config.search);
+    println!(&quot;Searching for {}&quot;, config.query);
     println!(&quot;In file {}&quot;, config.filename);
 
     let mut f = File::open(config.filename).expect(&quot;file not found&quot;);
@@ -6532,88 +6547,121 @@ fn parse_config(args: &amp;[String]) -&gt; (&amp;str, &amp;str) {
 }
 
 struct Config {
-    search: String,
+    query: String,
     filename: String,
 }
 
 fn parse_config(args: &amp;[String]) -&gt; Config {
-    let search = args[1].clone();
+    let query = args[1].clone();
     let filename = args[2].clone();
 
     Config {
-        search: search,
+        query: query,
         filename: filename,
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-5: Refactoring <code>parse_config</code> to return an
-instance of a <code>Config</code> struct</span></p>
+<p>Listing 12-6: Refactoring <code>parse_config</code> to return an instance of a <code>Config</code>
+struct</p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p><code>parse_config</code>的签名现在表明它返回一个<code>Config</code>值。在<code>parse_config</code>的函数体中，我们之前返回了<code>args</code>中<code>String</code>值引用的字符串 slice，不过<code>Config</code>定义为拥有两个有所有权的<code>String</code>值。因为<code>parse_config</code>的参数是一个<code>String</code>值的 slice，<code>Config</code>实例不能获取<code>String</code>值的所有权：这违反了 Rust 的借用规则，因为<code>main</code>函数中的<code>args</code>变量拥有这些<code>String</code>值并只允许<code>parse_config</code>函数借用他们。</p>
-<p>还有许多不同的方式可以处理<code>String</code>的数据；现在我们使用简单但低效率的方式，在字符串 slice 上调用<code>clone</code>方法。<code>clone</code>调用会生成一个字符串数据的完整拷贝，而且<code>Config</code>实例可以拥有它，不过这会消耗更多时间和内存来储存拷贝字符串数据的引用，不过拷贝数据让我们使我们的代码显得更加直白。</p>
+<p><code>parse_config</code>的签名现在表明它返回一个<code>Config</code>值。在<code>parse_config</code>的函数体中，之前返回了<code>args</code>中<code>String</code>值引用的字符串 slice，现在我们选择定义<code>Config</code>来使用拥有所有权的<code>String</code>值。<code>main</code>中的<code>args</code>变量是参数值的所有者并只允许<code>parse_config</code>函数借用他们，这意味着如果<code>Config</code>尝试获取<code>args</code>中值的所有权将违反 Rust 的借用规则。</p>
+<p>还有许多不同的方式可以处理<code>String</code>的数据，而最简单但有些不太高效的方式是调用这些值的<code>clone</code>方法。这会生成<code>Config</code>实例可以拥有的数据的完整拷贝，不过会比储存字符串数据的引用消耗更多的时间和内存。不过拷贝数据使得代码显得更加直白因为无需管理引用的生命周期，所以在这种情况下牺牲一小部分性能来换取简洁性的取舍是值得的。</p>
 <!-- PROD: START BOX -->
 <blockquote>
 <a class="header" href="#使用clone权衡取舍" name="使用clone权衡取舍"><h4>使用<code>clone</code>权衡取舍</h4></a>
-<p>由于其运行时消耗，许多 Rustacean 之间有一个趋势是倾向于不使用<code>clone</code>来解决所有权问题。在关于迭代器的第十三章中，我们将会学习如何更有效率的处理这种情况。现在，为了编写我们的程序拷贝一些字符串是没有问题。我们只进行了一次拷贝，而且文件名和要搜索的字符串都比较短。随着你对 Rust 更加熟练，将更轻松的省略这个权衡的步骤，不过现在调用<code>clone</code>是完全可以接受的。</p>
+<p>由于其运行时消耗，许多 Rustacean 之间有一个趋势是倾向于避免使用<code>clone</code>来解决所有权问题。在关于迭代器的第十三章中，我们将会学习如何更有效率的处理这种情况，不过现在，复制一些字符串来取得进展是没有问题的，因为只会进行一次这样的拷贝，而且文件名和要搜索的字符串都比较短。在第一轮编写时拥有一个可以工作但有点低效的程序要比尝试过度优化代码更好一些。随着你对 Rust 更加熟练，将能更轻松的直奔合适的方法，不过现在调用<code>clone</code>是完全可以接受的。</p>
 </blockquote>
 <!-- PROD: END BOX -->
-<p><code>main</code>函数更新为将<code>parse_config</code>返回的<code>Config</code>实例放入变量<code>config</code>中，并将分别使用<code>search</code>和<code>filename</code>变量的代码更新为使用<code>Config</code>结构体的字段。</p>
+<p>我们更新<code>main</code>将<code>parse_config</code>返回的<code>Config</code>实例放入变量<code>config</code>中，并更新之前分别使用<code>search</code>和<code>filename</code>变量的代码为现在的使用<code>Config</code>结构体的字段。</p>
+<p>现在代码更明确的表现了我们的意图，<code>query</code>和<code>filename</code>是相关联的并且他们的目的是配置程序如何工作的。任何使用这些值的代码就知道在<code>config</code>实例中对应目的的字段名中寻找他们。</p>
 <a class="header" href="#创建一个config构造函数" name="创建一个config构造函数"><h3>创建一个<code>Config</code>构造函数</h3></a>
-<p>现在让我们考虑一下<code>parse_config</code>的目的：这是一个创建<code>Config</code>示例的函数。我们已经见过了一个创建实例函数的规范：像<code>String::new</code>这样的<code>new</code>函数。列表 12-6 中展示了将<code>parse_config</code>转换为一个<code>Config</code>结构体关联函数<code>new</code>的代码：</p>
+<!-- Can you lay out what we intend to do in this section? I wasn't sure even
+at the end what we did and why --- why did we create it as parse_config to then
+change it to new? -->
+<!-- We're making small, incremental changes. In addition to being good
+software development practice, we were hoping that by changing one thing at a
+time, the process of improving code's design would be easier to follow rather
+than just jumping to the best solution. We extracted code into a function, then
+it was clearer that we should introduce a struct, then it was clear that the
+function we extracted is really a constructor of `Config` and should be written
+as such. This refactoring process should be familiar to software developers.
+I've tried to add a little recap to the start of this section, I hope that
+helps. /Carol -->
+<p>目前为止，我们将负责解析命令行参数的逻辑从<code>main</code>提取到了<code>parse_config</code>函数中，这帮助我们看清值<code>query</code>和<code>filename</code>是相互关联的并应该在代码中表现这种关系。接着我们增加了<code>Config</code>结构体来命名<code>query</code>和<code>filename</code>的相关目的，并能够从<code>parse_config</code>函数中将这些值的名称作为结构体字段名称返回。</p>
+<p>所以现在<code>parse_config</code>函数的目的是创建一个<code>Config</code>实例，我们可以将<code>parse_config</code>从一个普通函数变为一个叫做<code>new</code>的与结构体关联的函数。做出这个改变使得代码更符合习惯：可以像标准库中的<code>String</code>调用<code>String::new</code>来创建一个该类型的实例那样，将<code>parse_config</code>变为一个与<code>Config</code>关联的<code>new</code>函数。列表 12-7 展示了需要做出的修改：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust,ignore">fn main() {
+<pre><code class="language-rust,should_panic"># use std::env;
+#
+fn main() {
     let args: Vec&lt;String&gt; = env::args().collect();
 
     let config = Config::new(&amp;args);
 
-    println!(&quot;Searching for {}&quot;, config.search);
-    println!(&quot;In file {}&quot;, config.filename);
-
     // ...snip...
 }
 
+# struct Config {
+#     query: String,
+#     filename: String,
+# }
+#
 // ...snip...
 
 impl Config {
     fn new(args: &amp;[String]) -&gt; Config {
-        let search = args[1].clone();
+        let query = args[1].clone();
         let filename = args[2].clone();
 
         Config {
-            search: search,
+            query: query,
             filename: filename,
         }
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-6: Changing <code>parse_config</code> into
+<p><span class="caption">Listing 12-7: Changing <code>parse_config</code> into
 <code>Config::new</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>我们将<code>parse_config</code>的名字改为<code>new</code>并将其移动到<code>impl</code>块中。我们也更新了<code>main</code>中的调用代码。再次尝试编译并确保程序可以运行。</p>
-<a class="header" href="#从构造函数返回result" name="从构造函数返回result"><h3>从构造函数返回<code>Result</code></h3></a>
-<p>这是我们对这个方法最后的重构：还记得当 vector 含有少于三个项时访问索引 1 和 2 会 panic 并给出一个糟糕的错误信息的代码吗？让我们来修改它！列表 12-7 展示了如何在访问这些位置之前检查 slice 是否足够长，并使用一个更好的 panic 信息：</p>
+<p>这里将<code>main</code>中调用<code>parse_config</code>的地方更新为调用<code>Config::new</code>。我们将<code>parse_config</code>的名字改为<code>new</code>并将其移动到<code>impl</code>块中，这使得<code>new</code>函数与<code>Config</code>相关联。再次尝试编译并确保它可以工作。</p>
+<a class="header" href="#修复错误处理" name="修复错误处理"><h3>修复错误处理</h3></a>
+<p>现在我们开始修复错误处理。回忆一下之前提到过如果<code>args</code> vector 包含少于 3 个项并尝试访问 vector 中索引 1 或 索引 2 的值会造成程序 panic。尝试不带任何参数运行程序；这将看起来像这样：</p>
+<pre><code>$ cargo run
+    Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
+     Running `target/debug/greprs`
+thread 'main' panicked at 'index out of bounds: the len is 1
+but the index is 1',  /stable-dist-rustc/build/src/libcollections/vec.rs:1307
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+</code></pre>
+<p><code>index out of bounds: the len is 1 but the index is 1</code>是一个针对程序员的错误信息，然而这并不能真正帮助终端用户理解发生了什么和他们应该做什么。现在就让我们修复它吧。</p>
+<a class="header" href="#改善错误信息" name="改善错误信息"><h3>改善错误信息</h3></a>
+<p>在列表 12-8 中，在<code>new</code>函数中增加了一个检查在访问索引 1 和 2 之前检查 slice 是否足够长。如果 slice 不够长，我们使用一个更好的错误信息 panic 而不是<code>index out of bounds</code>信息：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">// ...snip...
 fn new(args: &amp;[String]) -&gt; Config {
     if args.len() &lt; 3 {
         panic!(&quot;not enough arguments&quot;);
     }
-
-    let search = args[1].clone();
     // ...snip...
-}
 </code></pre>
-<p><span class="caption">Listing 12-7: Adding a check for the number of
+<p><span class="caption">Listing 12-8: Adding a check for the number of
 arguments</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>通过在<code>new</code>中添加这额外的几行代码，再次尝试不带参数运行程序：</p>
+<p>这类似于列表 9-8 中的<code>Guess::new</code>函数，那里如果<code>value</code>参数超出了有效值的范围就调用<code>panic!</code>。不同于检查值的范围，这里检查<code>args</code>的长度至少是 3，而函数的剩余部分则可以假设这个条件成立的基础上运行。如果
+<code>args</code>少于 3 个项，这个条件将为真，并调用<code>panic!</code>立即终止程序。</p>
+<p>有了<code>new</code>中这几行额外的代码，再次不带任何参数运行程序并看看现在错误看起来像什么：</p>
 <pre><code>$ cargo run
     Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running `target\debug\greprs.exe`
-thread 'main' panicked at 'not enough arguments', src\main.rs:29
+     Running `target/debug/greprs`
+thread 'main' panicked at 'not enough arguments', src/main.rs:29
 note: Run with `RUST_BACKTRACE=1` for a backtrace.
 </code></pre>
-<p>这样就好多了！至少有个一个符合常理的错误信息。然而，还有一堆额外的信息我们并不希望提供给用户。可以通过改变<code>new</code>的签名来完善它。现在它只返回了一个<code>Config</code>，所有没有办法表示创建<code>Config</code>失败的情况。相反，可以如列表 12-8 所示返回一个<code>Result</code>：</p>
+<p>这个输出就好多了，现在有了一个合理的错误信息。然而，我们还有一堆额外的信息不希望提供给用户。所以在这里使用列表 9-8 中的技术可能不是最好的；无论如何<code>panic!</code>调用更适合程序问题而不是使用问题，正如第九章所讲到的。相反我们可以使用那一章学习的另一个技术：返回一个可以表明成功或错误的<code>Result</code>。</p>
+<!-- Below -- how does using new fix this, can you lay that our up front? -->
+<!-- I'm not sure what you mean, we're already using `new` and the fix continues
+to use `new`... /Carol -->
+<a class="header" href="#从new中返回result而不是调用panic" name="从new中返回result而不是调用panic"><h4>从<code>new</code>中返回<code>Result</code>而不是调用<code>panic!</code></h4></a>
+<p>我们可以选择返回一个<code>Result</code>值，它在成功时会包含一个<code>Config</code>的实例，而在错误时会描述问题。当<code>Config::new</code>与<code>main</code>交流时，在使用<code>Result</code>类型存在问题时可以使用 Rust 的信号方式。接着修改<code>main</code>将<code>Err</code>成员转换为对用户更友好的错误，而不是<code>panic!</code>调用产生的关于<code>thread 'main'</code>和<code>RUST_BACKTRACE</code>的文本。</p>
+<p>列表 12-9 展示了<code>Config::new</code>返回值和函数体中返回<code>Result</code>所需的改变：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">impl Config {
     fn new(args: &amp;[String]) -&gt; Result&lt;Config, &amp;'static str&gt; {
@@ -6621,25 +6669,28 @@ note: Run with `RUST_BACKTRACE=1` for a backtrace.
             return Err(&quot;not enough arguments&quot;);
         }
 
-        let search = args[1].clone();
+        let query = args[1].clone();
         let filename = args[2].clone();
 
         Ok(Config {
-            search: search,
+            query: query,
             filename: filename,
         })
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-8: Return a <code>Result</code> from <code>Config::new</code></span></p>
+<p><span class="caption">Listing 12-9: Return a <code>Result</code> from <code>Config::new</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>现在<code>new</code>函数返回一个<code>Result</code>，在成功时带有一个<code>Config</code>实例而在出现错误时带有一个<code>&amp;'static str</code>。回忆一下第十章“静态声明周期”中讲到<code>&amp;'static str</code>是一个字符串字面值，他也是现在我们的错误信息。</p>
+<!-- what does returning a Result rather than a Config do? -->
+<!-- This is what Chapter 9 was about, I've added a few more references
+to that chapter to reinforce the connection /Carol -->
+<p>现在<code>new</code>函数返回一个<code>Result</code>，在成功时带有一个<code>Config</code>实例而在出现错误时带有一个<code>&amp;'static str</code>。回忆一下第十章“静态声明周期”中讲到<code>&amp;'static str</code>是一个字符串字面值，也是目前的错误信息。</p>
 <p><code>new</code>函数体中有两处修改：当没有足够参数时不再调用<code>panic!</code>，而是返回<code>Err</code>值。同时我们将<code>Config</code>返回值包装进<code>Ok</code>成员中。这些修改使得函数符合其新的类型签名。</p>
-<a class="header" href="#confignew调用和错误处理" name="confignew调用和错误处理"><h3><code>Config::new</code>调用和错误处理</h3></a>
-<p>现在我们需要对<code>main</code>做一些修改，如列表 12-9 所示：</p>
+<p>通过让<code>Config::new</code>返回一个<code>Err</code>值，这就允许<code>main</code>函数处理<code>new</code>函数返回的<code>Result</code>值并在出现错误的情况更明确的结束进程。</p>
+<a class="header" href="#confignew调用并处理错误" name="confignew调用并处理错误"><h3><code>Config::new</code>调用并处理错误</h3></a>
+<p>为了处理错误情况并打印一个对用户友好的信息，我们需要像列表 12-10 那样更新<code>main</code>函数来处理现在<code>Config::new</code>返回的<code>Result</code>。另外还需要实现一些<code>panic!</code>替我们处理的问题：使用错误码 1 退出命令行工具。非零的退出状态是一个告诉调用程序的进程我们的程序以错误状态退出的惯例信号。</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust,ignore">// ...snip...
-use std::process;
+<pre><code class="language-rust,ignore">use std::process;
 
 fn main() {
     let args: Vec&lt;String&gt; = env::args().collect();
@@ -6649,31 +6700,46 @@ fn main() {
         process::exit(1);
     });
 
-    println!(&quot;Searching for {}&quot;, config.search);
-    println!(&quot;In file {}&quot;, config.filename);
-
     // ...snip...
 </code></pre>
-<p><span class="caption">Listing 12-9: Exiting with an error code if creating a
+<p><span class="caption">Listing 12-10: Exiting with an error code if creating a
 new <code>Config</code> fails</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>新增了一个<code>use</code>行来从标准库中导入<code>process</code>。在<code>main</code>函数中我们将处理<code>new</code>函数返回的<code>Result</code>值，并在其返回<code>Config::new</code>时以一种更加清楚的方式结束进程。</p>
-<p>这里使用了一个之前没有讲到的标准库中定义的<code>Result&lt;T, E&gt;</code>的方法：<code>unwrap_or_else</code>。当<code>Result</code>是<code>Ok</code>时其行为类似于<code>unwrap</code>：它返回<code>Ok</code>内部封装的值。与<code>unwrap</code>不同的是，当<code>Result</code>是<code>Err</code>时，它调用一个<strong>闭包</strong>（<em>closure</em>），也就是一个我们定义的作为参数传递给<code>unwrap_or_else</code>的匿名函数。第十三章会更详细的介绍闭包；这里需要理解的重要部分是<code>unwrap_or_else</code>会将<code>Err</code>的内部值传递给闭包中位于两道竖线间的参数<code>err</code>。使用<code>unwrap_or_else</code>允许我们进行一些自定义的非<code>panic!</code>的错误处理。</p>
-<p>上述的错误处理其实只有两行：我们打印出了错误，接着调用了<code>std::process::exit</code>。这个函数立刻停止程序的执行并将传递给它的数组作为返回码。依照惯例，零代表成功而任何其他数字表示失败。就结果来说这依然类似于列表 12-7 中的基于<code>panic!</code>的错误处理，但是不再会有额外的输出了，让我们试一试：</p>
+<!-- In the `main` function itself, we'll handle the `Result` value returned
+from the `new` function and exit the process in a cleaner way if `Config::new`
+returns an `Err` value.-->
+<!-- I moved this line above to the previous section, it seems to at least
+partially answer some of my earlier confusions, though I'm not following this
+as well as I'd like so not sure if I have this right, can you confirm either
+way whether that move makes sense? -->
+<!-- That's fine /Carol -->
+<p>在上面的列表中，使用了一个之前没有涉及到的方法：<code>unwrap_or_else</code>，它定义于标准库的<code>Result&lt;T, E&gt;</code>上。使用<code>unwrap_or_else</code>可以进行一些自定义的非<code>panic!</code>的错误处理。当<code>Result</code>是<code>Ok</code>时，这个方法的行为类似于<code>unwrap</code>：它返回<code>Ok</code>内部封装的值。然而，当<code>Result</code>是<code>Err</code>时，它调用一个<strong>闭包</strong>（<em>closure</em>），也就是一个我们定义的作为参数传递给<code>unwrap_or_else</code>的匿名函数。第十三章会更详细的介绍闭包。现在你需要理解的是<code>unwrap_or_else</code>会将<code>Err</code>的内部值，也就是列表 12-9 中增加的<code>not enough arguments</code>静态字符串的情况，传递给闭包中位于两道竖线间的参数<code>err</code>。闭包中的代码在其运行时可以使用这个<code>err</code>值。</p>
+<!--Can you give a high-level idea of what the closure does with it? -->
+<!-- Does with what? I've tried to elaborate in the above and below paragraphs,
+but I'm not sure exactly what's confusing /Carol -->
+<p>我们新增了一个<code>use</code>行来从标准库中导入<code>process</code>。在错误的情况闭包中将被运行的代码只有两行：我们打印出了<code>err</code>值，接着调用了<code>std::process::exit</code>（在开头增加了新的<code>use</code>行从标准库中导入了<code>process</code>）。<code>process::exit</code>会立即停止程序并将传递给它的数字作为返回状态码。这类似于列表 12-8 中使用的基于<code>panic!</code>的错误处理，除了不会在得到所有的额外输出了。让我们试试：</p>
 <pre><code>$ cargo run
    Compiling greprs v0.1.0 (file:///projects/greprs)
     Finished debug [unoptimized + debuginfo] target(s) in 0.48 secs
-     Running `target\debug\greprs.exe`
+     Running `target/debug/greprs`
 Problem parsing arguments: not enough arguments
 </code></pre>
-<p>非常好！现在输出就友好多了。</p>
-<a class="header" href="#run函数中的错误处理" name="run函数中的错误处理"><h3><code>run</code>函数中的错误处理</h3></a>
-<p>现在重构完了参数解析部分，让我们再改进一下程序的逻辑。列表 12-10 中展示了在<code>main</code>函数中调用提取出函数<code>run</code>之后的代码。<code>run</code>函数包含之前位于<code>main</code>中的部分代码：</p>
+<p>非常好！现在输出对于用户来说就友好多了。</p>
+<a class="header" href="#提取run函数" name="提取run函数"><h3>提取<code>run</code>函数</h3></a>
+<p>现在我们完成了配置解析的重构：让我们转向程序的逻辑。正如“二进制项目的关注分离”部分的讨论所留下的过程，我们将提取一个叫做<code>run</code>的函数来存放目前<code>main</code>函数中不属于设置配置或处理错误的所有逻辑。一旦完成这些，<code>main</code>函数将简明的足以通过观察来验证，而我们将能够为所有其他逻辑编写测试。</p>
+<!-- it contains ALL the function from main? Can you say why we're doing this,
+hw this improves it? What is the run function doing? I'm afraid I feel a bit in
+the dark here-->
+<!-- This is the pattern that we explained in the Separation of Concerns for
+Binary Projects section. I've added a reference back to that and reiterated
+some of the reasoning from there, but this section isn't introducing the
+concept of the `run` function holding the logic that was in `main` /Carol -->
+<p>列表 12-11 展示了提取出来的<code>run</code>函数。目前我们只进行小的增量式的提取函数的改进并仍将在 <em>src/main.rs</em> 中定义这个函数：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">fn main() {
     // ...snip...
 
-    println!(&quot;Searching for {}&quot;, config.search);
+    println!(&quot;Searching for {}&quot;, config.query);
     println!(&quot;In file {}&quot;, config.filename);
 
     run(config);
@@ -6690,10 +6756,12 @@ fn run(config: Config) {
 
 // ...snip...
 </code></pre>
-<p><span class="caption">Listing 12-10: Extracting a <code>run</code> functionality for the
+<p><span class="caption">Listing 12-11: Extracting a <code>run</code> function containing the
 rest of the program logic</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p><code>run</code>函数的内容是之前位于<code>main</code>中的几行，而且<code>run</code>函数获取一个<code>Config</code>作为参数。现在有了一个单独的函数了，我们就可以像列表 12-8 中的<code>Config::new</code>那样进行类似的改进了。列表 12-11 展示了另一个<code>use</code>语句将<code>std::error::Error</code>结构引入了作用域，还有使<code>run</code>函数返回<code>Result</code>的修改：</p>
+<p>现在<code>run</code>函数包含了<code>main</code>中从读取文件开始的剩余的所有逻辑。<code>run</code>函数获取一个<code>Config</code>实例作为参数。</p>
+<a class="header" href="#从run函数中返回错误" name="从run函数中返回错误"><h4>从<code>run</code>函数中返回错误</h4></a>
+<p>通过将剩余的逻辑分离进<code>run</code>函数而不是留在<code>main</code>中，就可以像列表 12-9 中的<code>Config::new</code>那样改进错误处理。不再通过通过<code>expect</code>允许程序 panic，<code>run</code>函数将会在出错时返回一个<code>Result&lt;T, E&gt;</code>。这让我们进一步以一种对用户友好的方式统一<code>main</code>中的错误处理。列表 12-12 展示了<code>run</code>签名和函数体中的变化：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">use std::error::Error;
 
@@ -6710,25 +6778,31 @@ fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
     Ok(())
 }
 </code></pre>
-<p><span class="caption">Listing 12-11: Changing the <code>run</code> function to return
+<p><span class="caption">Listing 12-12: Changing the <code>run</code> function to return
 <code>Result</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>这里有三个大的修改。第一个是现在<code>run</code>函数的返回值是<code>Result&lt;(), Box&lt;Error&gt;&gt;</code>类型的。之前，函数返回 unit 类型<code>()</code>，现在它仍然是<code>Ok</code>时的返回值。对于错误类型，我们将使用<code>Box&lt;Error&gt;</code>。这是一个<strong>trait 对象</strong>（<em>trait object</em>），第XX章会讲到。现在可以这样理解它：<code>Box&lt;Error&gt;</code>意味着函数返回了某个实现了<code>Error</code> trait 的类型，不过并没有指定具体的返回值类型。这样就比较灵活，因为在不同的错误场景可能有不同类型的错误返回值。<code>Box</code>是一个堆数据的智能指针，第十五章将会详细介绍<code>Box</code>。</p>
-<p>第二个改变是我们去掉了<code>expect</code>调用并替换为第9章讲到的<code>?</code>。不同于遇到错误就<code>panic!</code>，这会从函数中返回错误值并让调用者来处理它。</p>
-<p>第三个修改是现在成功时这个函数会返回一个<code>Ok</code>值。因为<code>run</code>函数签名中声明成功类型返回值是<code>()</code>，所以需要将 unit 类型值包装进<code>Ok</code>值中。<code>Ok(())</code>一开始看起来有点奇怪，不过这样使用<code>()</code>是表明我们调用<code>run</code>只是为了它的副作用的惯用方式；它并没有返回什么有意义的值。</p>
+<p>这里做出了三个大的改变。第一，改变了<code>run</code>函数的返回值为<code>Result&lt;(), Box&lt;Error&gt;&gt;</code>。之前这个函数返回 unit 类型<code>()</code>，现在它仍然保持作为<code>Ok</code>时的返回值。</p>
+<!-- is just the `Box` bit the trait object, or the whole `Box<Error>`
+syntax?-->
+<!-- The whole `Box<Error>` /Carol -->
+<p>对于错误类型，使用了<strong>trait 对象</strong><code>Box&lt;Error&gt;</code>（在开头使用了<code>use</code>语句将<code>std::error::Error</code>引入作用域）。第十七章会涉及 trait 对象。目前只需知道<code>Box&lt;Error&gt;</code>意味着函数会返回实现了<code>Error</code> trait 的类型，不过无需指定具体将会返回的值的类型。这提供了在不同的错误场景可能有不同类型的错误返回值的灵活性。</p>
+<p>第二个改变是去掉了<code>expect</code>调用并替换为第九章讲到的<code>?</code>。不同于遇到错误就<code>panic!</code>，这会从函数中返回错误值并让调用者来处理它。</p>
+<p>第三个修改是现在成功时这个函数会返回一个<code>Ok</code>值。因为<code>run</code>函数签名中声明成功类型返回值是<code>()</code>，这意味着需要将 unit 类型值包装进<code>Ok</code>值中。<code>Ok(())</code>一开始看起来有点奇怪，不过这样使用<code>()</code>是表明我们调用<code>run</code>只是为了它的副作用的惯用方式；它并没有返回什么有意义的值。</p>
 <p>上述代码能够编译，不过会有一个警告：</p>
 <pre><code>warning: unused result which must be used, #[warn(unused_must_use)] on by default
-  --&gt; src\main.rs:39:5
+  --&gt; src/main.rs:39:5
    |
 39 |     run(config);
    |     ^^^^^^^^^^^^
 </code></pre>
-<p>Rust 尝试告诉我们忽略<code>Result</code>，它有可能是一个错误值。让我们现在来处理它。我们将采用类似于列表 12-9 中处理<code>Config::new</code>错误的技巧，不过还有少许不同：</p>
+<p>Rust 提示我们的代码忽略了<code>Result</code>值，它可能表明这里存在一个错误。虽然我们没有检查这里是否有一个错误，而编译器提醒我们这里应该有一些错误处理代码！现在就让我们修正他们。</p>
+<a class="header" href="#处理main中run返回的错误" name="处理main中run返回的错误"><h4>处理<code>main</code>中<code>run</code>返回的错误</h4></a>
+<p>我们将检查错误并使用与列表 12-10 中处理错误类似的技术来优雅的处理他们，不过有一些细微的不同：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">fn main() {
     // ...snip...
 
-    println!(&quot;Searching for {}&quot;, config.search);
+    println!(&quot;Searching for {}&quot;, config.query);
     println!(&quot;In file {}&quot;, config.filename);
 
     if let Err(e) = run(config) {
@@ -6737,35 +6811,27 @@ fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
         process::exit(1);
     }
 }
-
-fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
-    let mut f = File::open(config.filename)?;
-
-    let mut contents = String::new();
-    f.read_to_string(&amp;mut contents)?;
-
-    println!(&quot;With text:\n{}&quot;, contents);
-
-    Ok(())
-}
 </code></pre>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>不同于<code>unwrap_or_else</code>，我们使用<code>if let</code>来检查<code>run</code>是否返回<code>Err</code>，如果是则调用<code>process::exit(1)</code>。为什么呢？这个例子和<code>Config::new</code>的区别有些微妙。对于<code>Config::new</code>我们关心两件事：</p>
-<ol>
-<li>检测出任何可能发生的错误</li>
-<li>如果没有出现错误创建一个<code>Config</code></li>
-</ol>
-<p>而在这个情况下，因为<code>run</code>在成功的时候返回一个<code>()</code>，唯一需要担心的就是第一件事：检测错误。如果我们使用了<code>unwrap_or_else</code>，则会得到<code>()</code>的返回值。它并没有什么用处。</p>
-<p>虽然两种情况下<code>if let</code>和<code>unwrap_or_else</code>的内容都是一样的：打印出错误并退出。</p>
+<p>我们使用<code>if let</code>来检查<code>run</code>是否返回一个<code>Err</code>值，不同于<code>unwrap_or_else</code>，并在出错时调用<code>process::exit(1)</code>。<code>run</code>并不返回像<code>Config::new</code>返回的<code>Config</code>实例那样需要<code>unwrap</code>的值。因为<code>run</code>在成功时返回<code>()</code>，而我们只关心发现一个错误，所以并不需要<code>unwrap_or_else</code>来返回未封装的值，因为它只会是<code>()</code>。</p>
+<p>不过两个例子中<code>if let</code>和<code>unwrap_or_else</code>的函数体都一样：打印出错误并退出。</p>
 <a class="header" href="#将代码拆分到库-crate" name="将代码拆分到库-crate"><h3>将代码拆分到库 crate</h3></a>
-<p>现在项目看起来好多了！还有一件我们尚未开始的工作：拆分 <em>src/main.rs</em> 并将一些代码放入 <em>src/lib.rs</em> 中。让我们现在就开始吧：将 <em>src/main.rs</em> 中的<code>run</code>函数移动到新建的 <em>src/lib.rs</em> 中。还需要移动相关的<code>use</code>语句和<code>Config</code>的定义，以及其<code>new</code>方法。现在 <em>src/lib.rs</em> 应该如列表 12-12 所示：</p>
+<p>现在项目看起来好多了！现在我们将要拆分 <em>src/main.rs</em> 并将一些代码放入 <em>src/lib.rs</em>，这样就能测试他们并拥有一个小的<code>main</code>函数。</p>
+<p>让我们将如下代码片段从 <em>src/main.rs</em> 移动到新文件 <em>src/lib.rs</em> 中：</p>
+<ul>
+<li><code>run</code>函数定义</li>
+<li>相关的<code>use</code>语句</li>
+<li><code>Config</code>的定义</li>
+<li><code>Config::new</code>函数定义</li>
+</ul>
+<p>现在 <em>src/lib.rs</em> 的内容应该看起来像列表 12-13：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><code class="language-rust,ignore">use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
 
 pub struct Config {
-    pub search: String,
+    pub query: String,
     pub filename: String,
 }
 
@@ -6775,11 +6841,11 @@ impl Config {
             return Err(&quot;not enough arguments&quot;);
         }
 
-        let search = args[1].clone();
+        let query = args[1].clone();
         let filename = args[2].clone();
 
         Ok(Config {
-            search: search,
+            query: query,
             filename: filename,
         })
     }
@@ -6796,11 +6862,12 @@ pub fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt;{
     Ok(())
 }
 </code></pre>
-<p><span class="caption">Listing 12-12: Moving <code>Config</code> and <code>run</code> into
+<p><span class="caption">Listing 12-13: Moving <code>Config</code> and <code>run</code> into
 <em>src/lib.rs</em></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-注意我们还需要使用公有的`pub`：在`Config`和其字段、它的`new`方法和`run`函数上。
-<p>现在在 <em>src/main.rs</em> 中，我们需要通过<code>extern crate greprs</code>来引入现在位于 <em>src/lib.rs</em> 的代码。接着需要增加一行<code>use greprs::Config</code>来引入<code>Config</code>到作用域，并对<code>run</code>函数加上 crate 名称前缀，如列表 12-13 所示：</p>
+<p>这里使用了公有的<code>pub</code>：在<code>Config</code>、其字段和其<code>new</code>方法，以及<code>run</code>函数上。现在我们有了一个拥有可以测试的公有 API 的库 crate 了。</p>
+<a class="header" href="#从二进制-crate-中调用库-crate" name="从二进制-crate-中调用库-crate"><h4>从二进制 crate 中调用库 crate</h4></a>
+<p>现在需要在 <em>src/main.rs</em> 中使用<code>extern crate greprs</code>将移动到 <em>src/lib.rs</em> 的代码引入二进制 crate 的作用域。接着我们将增加一个<code>use greprs::Config</code>行将<code>Config</code>类型引入作用域，并使用库 crate 的名称作为<code>run</code>函数的前缀，如列表 12-14 所示：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">extern crate greprs;
 
@@ -6817,7 +6884,7 @@ fn main() {
         process::exit(1);
     });
 
-    println!(&quot;Searching for {}&quot;, config.search);
+    println!(&quot;Searching for {}&quot;, config.query);
     println!(&quot;In file {}&quot;, config.filename);
 
     if let Err(e) = greprs::run(config) {
@@ -6827,54 +6894,47 @@ fn main() {
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-13: Bringing the <code>greprs</code> crate into the scope
+<p><span class="caption">Listing 12-14: Bringing the <code>greprs</code> crate into the scope
 of <em>src/main.rs</em></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>通过这些重构，所有代码应该都能运行了。运行几次<code>cargo run</code>来确保你没有破坏什么内容。好的！确实有很多的内容，不过已经为将来的成功奠定了基础。我们采用了一种更加优秀的方式来处理错误，并使得代码更模块化了一些。从现在开始几乎所有的工作都将在 <em>src/lib.rs</em> 中进行。</p>
-<p>让我们利用这新创建的模块的优势来进行一些在旧代码中难以开开展的工作，他们在新代码中却很简单：编写测试！</p>
+<p>通过这些重构，所有功能应该抖联系在一起并可以运行了。运行<code>cargo run</code>来确保一切都正确的衔接在一起。</p>
+<!-- any tips for if they do find something is broken, main places to check? Or
+just "diff your file against the XXX file in the book's resources to check
+where it went wrong"? -->
+<!-- We think general troubleshooting tips should be something we cover in
+Chapter 1; the tips should apply to any example in the book /Carol -->
+<p>哇哦！这可有很多的工作，不过我们为将来成功打下了基础。现在处理错误将更容易，同时代码也更模块化。从现在开始几乎所有的工作都将在 <em>src/lib.rs</em> 中进行。</p>
+<p>让我们利用这些新创建的模块的优势来进行一些在旧代码中难以展开的工作，他们在新代码中却很简单：编写测试！</p>
 <a class="header" href="#测试库的功能" name="测试库的功能"><h2>测试库的功能</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch12-04-testing-the-librarys-functionality.md">ch12-04-testing-the-librarys-functionality.md</a>
 <br>
-commit 3f2a1bd8dbb19cc48b210fc4fb35c305c8d81b56</p>
+commit b8e4fcbf289b82c12121b282747ce05180afb1fb</p>
 </blockquote>
-<p>现在为项目的核心功能编写测试将更加容易，因为我们将逻辑提取到了 <em>src/lib.rs</em> 中并将参数解析和错误处理都留在了 <em>src/main.rs</em> 里。现在我们可以直接使用多种参数调用代码并检查返回值而不用从命令行运行二进制文件了。</p>
-<p>我们将要编写的是一个叫做<code>grep</code>的函数，它获取要搜索的项以及文本并产生一个搜索结果列表。让我们从<code>run</code>中去掉那行<code>println!</code>（也去掉 <em>src/main.rs</em> 中的，因为再也不需要他们了），并使用之前收集的选项来调用新的<code>grep</code>函数。眼下我们只增加一个空的实现，和指定<code>grep</code>期望行为的测试。当然，这个测试对于空的实现来说是会失败的，不过可以确保代码是可以编译的并得到期望的错误信息。列表 12-14 展示了这些修改：</p>
+<p>现在我们将逻辑提取到了 <em>src/lib.rs</em> 并将所有的参数解析和错误处理留在了 <em>src/main.rs</em> 中，为代码的核心功能编写测试将更加容易。我们可以直接使用多种参数调用函数并检查返回值而无需从命令行运行二进制文件了。</p>
+<p>在这一部分，我们将遵循测试驱动开发（Test Driven Development, TTD）的模式。这是一个软件开发技术，它遵循如下步骤：</p>
+<ol>
+<li>编写一个会失败的测试，并运行它以确保其因为你期望的原因失败。</li>
+<li>编写或修改刚好足够的代码来使得新的测试通过。</li>
+<li>重构刚刚增加或修改的代码，并确保测试仍然能通过。</li>
+<li>重复上述步骤！</li>
+</ol>
+<p>这只是众多编写软件的方法之一，不过 TDD 有助于驱动代码的设计。在编写能使测试通过的代码之前编写测测试有助于在开发过程中保持高测试覆盖率。</p>
+<p>我们将测试驱动实现<code>greprs</code>实际在文件内容中搜索查询字符串并返回匹配的行列表的部分。我们将在一个叫做<code>search</code>的函数中增加这些功能。</p>
+<a class="header" href="#编写失败测试" name="编写失败测试"><h3>编写失败测试</h3></a>
+<p>首先，去掉 <em>src/lib.rs</em> 和 <em>src/main.rs</em> 中的<code>println!</code>语句，因为不再真的需要他们了。接着我们会像第十一章那样增加一个<code>test</code>模块和一个测试函数。测试函数指定了我们希望<code>search</code>函数拥有的行为：它会获取一个需要查询的字符串和用来查询的文本。列表 12-15 展示了这个测试：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust"># use std::error::Error;
-# use std::fs::File;
-# use std::io::prelude::*;
-#
-# pub struct Config {
-#     pub search: String,
-#     pub filename: String,
+<pre><code class="language-rust"># fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+#      vec![]
 # }
 #
-// ...snip...
-
-fn grep&lt;'a&gt;(search: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
-     vec![]
-}
-
-pub fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt;{
-    let mut f = File::open(config.filename)?;
-
-    let mut contents = String::new();
-    f.read_to_string(&amp;mut contents)?;
-
-    grep(&amp;config.search, &amp;contents);
-
-    Ok(())
-}
-
 #[cfg(test)]
 mod test {
-    use grep;
+    use super::*;
 
     #[test]
     fn one_result() {
-        let search = &quot;duct&quot;;
+        let query = &quot;duct&quot;;
         let contents = &quot;\
 Rust:
 safe, fast, productive.
@@ -6882,28 +6942,38 @@ Pick three.&quot;;
 
         assert_eq!(
             vec![&quot;safe, fast, productive.&quot;],
-            grep(search, contents)
+            search(query, contents)
         );
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-14: Creating a function where our logic will
-go and a failing test for that function</span></p>
+<p><span class="caption">Listing 12-15: Creating a failing test for the <code>search</code>
+function we wish we had</span></p>
+<p>这里选择使用 &quot;duct&quot; 作为这个测试中需要搜索的字符串。用来搜索的文本有三行，其中只有一行包含 &quot;duct&quot;。我们断言<code>search</code>函数的返回值只包含期望的那一行。</p>
+<p>我们还不能运行这个测试并看到它失败，因为它甚至都还不能编译！我们将增加足够的代码来使其能够编译：一个总是会返回空 vector 的<code>search</code>函数定义，如列表 12-16 所示。一旦有了它，这个测试应该能够编译并因为空 vector 并不匹配一个包含一行<code>&quot;safe, fast, productive.&quot;</code>的 vector 而失败。</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust">fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+     vec![]
+}
+</code></pre>
+<p><span class="caption">Listing 12-16: Defining just enough of the <code>search</code>
+function that our test will compile</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>注意需要在<code>grep</code>的签名中显式声明声明周期<code>'a</code>并用于<code>contents</code>参数和返回值。记住，生命周期参数用于指定函数参数于返回值的生命周期的关系。在这个例子中，我们表明返回的 vector 将包含引用参数<code>contents</code>的字符串 slice，而不是引用参数<code>search</code>的字符串 slice。换一种说法就是我们告诉 Rust 函数<code>grep</code>返回的数据将和传递给它的参数<code>contents</code>的数据存活的同样久。这是非常重要的！考虑为了使引用有效则 slice 引用的数据也需要保持有效，如果编译器认为我们是在创建<code>search</code>而不是<code>contents</code>的 slice，那么安全检查将是不正确的。如果尝试不用生命周期编译的话，我们将得到如下错误：</p>
+<p>注意需要在<code>search</code>的签名中显式定义一个显式生命周期<code>'a</code>并用于<code>contents</code>参数和返回值。回忆一下第十章中生命周期参数指定哪个参数的生命周期与返回值的生命周期相关联。在这个例子中，我们表明返回的 vector 中应该包含引用参数<code>contents</code>（而不是参数<code>query</code>） slice 的字符串 slice。</p>
+<p>换句话说，我们告诉 Rust 函数<code>search</code>返回的数据将与<code>search</code>函数中的参数<code>contents</code>的数据存在的一样久。这是非常重要的！为了使这个引用有效那么<strong>被</strong>slice 引用的数据也需要保持有效；如果编译器认为我们是在创建<code>query</code>而不是<code>contents</code>的字符串 slice，那么安全检查将是不正确的。</p>
+<p>如果尝试不用生命周期编译的话，我们将得到如下错误：</p>
 <pre><code>error[E0106]: missing lifetime specifier
-  --&gt; src\lib.rs:37:46
-   |
-37 | fn grep(search: &amp;str, contents: &amp;str) -&gt; Vec&lt;&amp;str&gt; {
-   |                                              ^ expected lifetime parameter
-   |
-   = help: this function's return type contains a borrowed value, but the
-       signature does not say whether it is borrowed from `search` or
-           `contents`
+ --&gt; src/lib.rs:5:47
+  |
+5 | fn search(query: &amp;str, contents: &amp;str) -&gt; Vec&lt;&amp;str&gt; {
+  |                                               ^ expected lifetime parameter
+  |
+  = help: this function's return type contains a borrowed value, but the
+  signature does not say whether it is borrowed from `query` or `contents`
 </code></pre>
 <p>Rust 不可能知道我们需要的是哪一个参数，所以需要告诉它。因为参数<code>contents</code>包含了所有的文本而且我们希望返回匹配的那部分文本，而我们知道<code>contents</code>是应该要使用生命周期语法来与返回值相关联的参数。</p>
-<p>在函数签名中将参数与返回值相关联是其他语言不会让你做的工作，所以不用担心这感觉很奇怪！掌握如何指定生命周期会随着时间的推移越来越容易，熟能生巧。你可能想要重新阅读上一部分或返回与第十章中生命周期语法部分的例子做对比。</p>
-<p>现在试试运行测试：</p>
+<p>其他语言中并不需要你在函数签名中将参数与返回值相关联，所以这么做可能仍然感觉有些陌生，随着时间的推移会越来越容易。你可能想要将这个例子与第十章中生命周期语法部分做对比。</p>
+<p>现在试尝试运行测试：</p>
 <pre><code>$ cargo test
 ...warnings...
     Finished debug [unoptimized + debuginfo] target(s) in 0.43 secs
@@ -6927,44 +6997,61 @@ test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured
 
 error: test failed
 </code></pre>
-<p>好的，测试失败了，这正是我们所期望的。修改代码来让测试通过吧！之所以会失败是因为我们总是返回一个空的 vector。如下是如何实现<code>grep</code>的步骤：</p>
+<p>好的，测试失败了，这正是我们所期望的。修改代码来让测试通过吧！</p>
+<a class="header" href="#编写使测试通过的代码" name="编写使测试通过的代码"><h3>编写使测试通过的代码</h3></a>
+<p>目前测试之所以会失败是因为我们总是返回一个空的 vector。为了修复并实现<code>search</code>，我们的程序需要遵循如下步骤：</p>
 <ol>
 <li>遍历每一行文本。</li>
 <li>查看这一行是否包含要搜索的字符串。
 <ul>
-<li>如果有，将这一行加入返回列表中</li>
-<li>如果没有，什么也不做</li>
+<li>如果有，将这一行加入返回列表中。</li>
+<li>如果没有，什么也不做。</li>
 </ul>
 </li>
 <li>返回匹配到的列表</li>
 </ol>
-<p>让我们一步一步的来，从遍历每行开始。字符串类型有一个有用的方法来处理这种情况，它刚好叫做<code>lines</code>：</p>
+<p>让我们一步一步的来，从遍历每行开始。</p>
+<a class="header" href="#使用lines方法遍历每一行" name="使用lines方法遍历每一行"><h4>使用<code>lines</code>方法遍历每一行</h4></a>
+<p>Rust 有一个有助于一行一行遍历字符串的方法，出于方便它被命名为<code>lines</code>，它如列表 12-17 这样工作：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust,ignore">fn grep&lt;'a&gt;(search: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+<pre><code class="language-rust,ignore">fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
     for line in contents.lines() {
         // do something with line
     }
 }
 </code></pre>
+<p><span class="caption">Listing 12-17: Iterating through each line in
+<code>contents</code></span></p>
 <!-- Will add wingdings in libreoffice /Carol -->
-<p>我们使用了一个<code>for</code>循环和<code>lines</code>方法来依次获得每一行。接下来，让我们看看这些行是否包含要搜索的字符串。幸运的是，字符串类型为此也有一个有用的方法<code>contains</code>！<code>contains</code>的用法看起来像这样：</p>
+<p><code>lines</code>方法返回一个迭代器。第十三张会深入了解迭代器，不过我们已经在列表 3-6 中见过使用迭代器的方法，在那里使用了一个<code>for</code>循环和迭代器在一个集合的每一项上运行一些代码。</p>
+<!-- so what does `lines` do on its own, if we need to use it in a for loop to
+work? -->
+<!-- It does nothing on its own, it returns an iterator for you to do something
+with. Here, the thing we're doing with it is using it with a `for` loop. I'm
+not sure exactly what you're asking or how to make the text clearer, but I
+added a reference to where we've done this in the book previously. /Carol -->
+<a class="header" href="#用查询字符串搜索每一行" name="用查询字符串搜索每一行"><h4>用查询字符串搜索每一行</h4></a>
+<p>接下来将会增加检查当前行是否包含查询字符串的功能。幸运的是，字符串类型为此也有一个有用的方法叫做<code>contains</code>！如列表 12-18 所示在<code>search</code>函数中加入<code>contains</code>方法：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust,ignore">fn grep&lt;'a&gt;(search: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+<pre><code class="language-rust,ignore">fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
     for line in contents.lines() {
-        if line.contains(search) {
+        if line.contains(query) {
             // do something with line
         }
     }
 }
 </code></pre>
+<p><span class="caption">Listing 12-18: Adding functionality to see if the line
+contains the string in <code>query</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>最终，我们需要一个方法来存储包含要搜索字符串的行。为此可以在<code>for</code>循环之前创建一个可变的 vector 并调用<code>push</code>方法来存放一个<code>line</code>。在<code>for</code>循环之后，返回这个 vector。列表 12-15 中为完整的实现：</p>
+<a class="header" href="#存储匹配的行" name="存储匹配的行"><h4>存储匹配的行</h4></a>
+<p>最后我们需要一个方法来存储包含查询字符串的行。为此可以在<code>for</code>循环之前创建一个可变的 vector 并调用<code>push</code>方法在 vector 中存放一个<code>line</code>。在<code>for</code>循环之后，返回这个 vector，如列表 12-19 所示：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust">fn grep&lt;'a&gt;(search: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+<pre><code class="language-rust,ignore">fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
     let mut results = Vec::new();
 
     for line in contents.lines() {
-        if line.contains(search) {
+        if line.contains(query) {
             results.push(line);
         }
     }
@@ -6972,10 +7059,10 @@ error: test failed
     results
 }
 </code></pre>
-<p><span class="caption">Listing 12-15: Fully functioning implementation of the
-<code>grep</code> function</span></p>
+<p><span class="caption">Listing 12-19: Storing the lines that match so that we
+can return them</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>尝试运行一下：</p>
+<p>现在<code>search</code>函数应该返回只包含<code>query</code>的那些行，而测试应该会通过。让我们运行测试：</p>
 <pre><code>$ cargo test
 running 1 test
 test test::one_result ... ok
@@ -6994,8 +7081,20 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
 </code></pre>
-<p>非常好！它可以工作了。现在测试通过了，我们可以考虑一下重构<code>grep</code>的实现并时刻保持其功能不变。这些代码并不坏，不过并没有利用迭代器的一些实用功能。第十三章将回到这个例子并探索迭代器和如何改进代码。</p>
-<p>现在<code>grep</code>函数是可以工作的，我们还需在在<code>run</code>函数中做最后一件事：还没有打印出结果呢！增加一个<code>for</code>循环来打印出<code>grep</code>函数返回的每一行：</p>
+<p>测试通过了，很好，它可以工作了！</p>
+<p>现在测试通过了，我们可以考虑一下重构<code>search</code>的实现并时刻保持测试通过来保持其功能不变的机会了。这些代码并不坏，不过并没有利用迭代器的一些实用功能。第十三章将回到这个例子并深入探索迭代器并看看如何改进代码。</p>
+<!-- If we aren't going into this here, maybe just keep it focused, there's a
+lot going on here as is -->
+<!-- The reason we mention refactoring here is that it's a key step in the TDD
+method that we were implicitly using before. Now that we've added text to the
+beginning of this section to explicitly mention that we're doing TDD and what
+the steps are, we want to address the "refactor" step. People who have some
+experience with Rust might also look at this example and wonder why we're not
+doing this in a different way, and be concerned that we're not teaching the
+best way possible. This paragraph reassures them that we know what we're doing
+and we're getting to the better way in Chapter 13. /Carol -->
+<a class="header" href="#在run函数中使用search函数" name="在run函数中使用search函数"><h4>在<code>run</code>函数中使用<code>search</code>函数</h4></a>
+<p>现在<code>search</code>函数是可以工作并测试通过了的，我们需要实际在<code>run</code>函数中调用<code>search</code>。需要将<code>config.query</code>值和<code>run</code>从文件中读取的<code>contents</code>传递给<code>search</code>函数。接着<code>run</code>会打印出<code>search</code>返回的每一行：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><code class="language-rust,ignore">pub fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
     let mut f = File::open(config.filename)?;
@@ -7003,7 +7102,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
     let mut contents = String::new();
     f.read_to_string(&amp;mut contents)?;
 
-    for line in grep(&amp;config.search, &amp;contents) {
+    for line in search(&amp;config.query, &amp;contents) {
         println!(&quot;{}&quot;, line);
     }
 
@@ -7011,42 +7110,53 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
 }
 </code></pre>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>现在程序应该能正常运行了！试试吧：</p>
-<pre><code>$ cargo run the poem.txt
+<p>这里再一次使用了<code>for</code>循环获取了<code>search</code>返回的每一行，而对每一行运行的代码将他们打印了出来。</p>
+<p>现在整个程序应该可以工作了！让我们试一试，首先使用一个只会在艾米莉·狄金森的诗中返回一行的单词 &quot;frog&quot;：</p>
+<pre><code>$ cargo run frog poem.txt
    Compiling greprs v0.1.0 (file:///projects/greprs)
     Finished debug [unoptimized + debuginfo] target(s) in 0.38 secs
-     Running `target\debug\greprs.exe the poem.txt`
-Then there's a pair of us - don't tell!
-To tell your name the livelong day
-
-$ cargo run a poem.txt
-    Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running `target\debug\greprs.exe a poem.txt`
-I'm nobody! Who are you?
-Then there's a pair of us - don't tell!
-They'd banish us, you know.
-How dreary to be somebody!
+     Running `target/debug/greprs frog poem.txt`
 How public, like a frog
-To tell your name the livelong day
-To an admiring bog!
 </code></pre>
-<p>好极了！我们创建了一个属于自己的经典工具，并学习了很多如何组织程序的知识。我们还学习了一些文件输入输出、生命周期、测试和命令行解析的内容。</p>
+<p>好的！接下来，像 &quot;the&quot; 这样会匹配多行的单词会怎么样呢：</p>
+<pre><code>$ cargo run the poem.txt
+    Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
+     Running `target/debug/greprs the poem.txt`
+Then there's a pair of us — don't tell!
+To tell your name the livelong day
+</code></pre>
+<p>最后，让我们确保搜索一个在诗中哪里都没有的单词时不会得到任何行，比如 &quot;monomorphization&quot;：</p>
+<pre><code>$ cargo run monomorphization poem.txt
+    Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
+     Running `target/debug/greprs monomorphization poem.txt`
+</code></pre>
+<p>非常好！我们创建了一个属于自己的经典工具，并学习了很多如何组织程序的知识。我们还学习了一些文件输入输出、生命周期、测试和命令行解析的内容。</p>
+<p>现在如果你希望的话请随意移动到第十三章。为了使这个项目章节更丰满，我们将简要的展示如何处理环境变量和打印到标准错误，这两者在编写命令行程序时都很有用。</p>
 <a class="header" href="#处理环境变量" name="处理环境变量"><h2>处理环境变量</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch12-05-working-with-environment-variables.md">ch12-05-working-with-environment-variables.md</a>
 <br>
-commit 3f2a1bd8dbb19cc48b210fc4fb35c305c8d81b56</p>
+commit 0db6a0a34886bf02feabcab8b430b5d332a8bdf5</p>
 </blockquote>
-<p>让我们再增加一个功能：大小写不敏感搜索。另外，这个设定将不是一个命令行参数：相反它将是一个环境变量。当然可以选择创建一个大小写不敏感的命令行参数，不过用户要求提供一个环境变量这样设置一次之后在整个终端会话中所有的搜索都将是大小写不敏感的了。</p>
-<a class="header" href="#实现并测试一个大小写不敏感grep函数" name="实现并测试一个大小写不敏感grep函数"><h3>实现并测试一个大小写不敏感<code>grep</code>函数</h3></a>
-<p>首先，让我们增加一个新函数，当设置了环境变量时会调用它。增加一个新测试并重命名已经存在的那个：</p>
-<pre><code class="language-rust,ignore">#[cfg(test)]
+<p>我们将用一个额外的功能来改进我们的工具：一个通过环境变量启用的大小写不敏感搜索的选项。我们将其设计为一个命令行参数并要求用户每次需要时都加上它，不过相反我们将使用环境变量。这允许用户设置环境变量一次之后在整个终端会话中所有的搜索都将是大小写不敏感的了。</p>
+<a class="header" href="#编写一个大小写不敏感search函数的失败测试" name="编写一个大小写不敏感search函数的失败测试"><h3>编写一个大小写不敏感<code>search</code>函数的失败测试</h3></a>
+<p>首先，增加一个新函数，当设置了环境变量时会调用它。</p>
+<!-- You mean, to turn the environment variable on? I'm not sure what we're
+doing here-->
+<!-- No, I'm not sure how this is unclear. We're adding a new function. We will
+call the new function when the user turns on the environment variable. Can you
+elaborate on what part of the above statement leads to the conclusion that the
+new function is going to turn the environment variable on? Can you suggest a
+rewording that makes the causality direction clearer? /Carol -->
+<p>这里将继续遵循上一部分开始使用的 TDD 过程，其第一步是再次编写一个失败测试。我们将为新的大小写不敏感搜索函数新增一个测试函数，并将老的测试函数从<code>one_result</code>改名为<code>case_sensitive</code>来更清除的表明这两个测试的区别，如列表 12-20 所示：</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust">#[cfg(test)]
 mod test {
-    use {grep, grep_case_insensitive};
+    use super::*;
 
     #[test]
     fn case_sensitive() {
-        let search = &quot;duct&quot;;
+        let query = &quot;duct&quot;;
         let contents = &quot;\
 Rust:
 safe, fast, productive.
@@ -7055,13 +7165,13 @@ Duct tape.&quot;;
 
         assert_eq!(
             vec![&quot;safe, fast, productive.&quot;],
-            grep(search, contents)
+            search(query, contents)
         );
     }
 
     #[test]
     fn case_insensitive() {
-        let search = &quot;rust&quot;;
+        let query = &quot;rUsT&quot;;
         let contents = &quot;\
 Rust:
 safe, fast, productive.
@@ -7070,20 +7180,25 @@ Trust me.&quot;;
 
         assert_eq!(
             vec![&quot;Rust:&quot;, &quot;Trust me.&quot;],
-            grep_case_insensitive(search, contents)
+            search_case_insensitive(query, contents)
         );
     }
 }
 </code></pre>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>我们将定义一个叫做<code>grep_case_insensitive</code>的新函数。它的实现与<code>grep</code>函数大体上相似，不过列表 12-16 展示了一些小的区别：</p>
+<p><span class="caption">Listing 12-20: Adding a new failing test for the case
+insensitive function we're about to add</span></p>
+<p>注意我们也改变了老测试中<code>query</code>和<code>contents</code>的值：将查询字符串改变为 &quot;duct&quot;，它将会匹配带有单词 productive&quot; 的行。还新增了一个含有文本 &quot;Duct tape&quot; 的行，它有一个大写的 D，这在大小写敏感搜索时不应该匹配 &quot;duct&quot;。我们修改这个测试以确保不会意外破坏已经实现的大小写敏感搜索功能；这个测试现在应该能通过并在处理大小写不敏感搜索时应该能一直通过。</p>
+<p>大小写不敏感搜索的新测试使用带有一些大写字母的 &quot;rUsT&quot; 作为其查询字符串。我们将要增加的<code>search_case_insensitive</code>的期望返回值是包含查询字符串 &quot;rust&quot; 的两行，&quot;Rust:&quot; 包含一个大写的 R 还有&quot;Trust me.&quot;包含一个小写的 r。这个测试现在会编译失败因为还没有定义<code>search_case_insensitive</code>函数；请随意增加一个总是返回空 vector 的骨架实现，正如列表 12-16 中<code>search</code>函数那样为了使测试编译并失败时所做的那样。</p>
+<a class="header" href="#实现search_case_insensitive函数" name="实现search_case_insensitive函数"><h3>实现<code>search_case_insensitive</code>函数</h3></a>
+<p><code>search_case_insensitive</code>函数，如列表 12-21 所示，将与<code>search</code>函数基本相同。区别是它会将<code>query</code>变量和每一<code>line</code>都变为小写，这样不管输入参数是大写还是小写，在检查该行是否包含查询字符串时都会是小写。</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust">fn grep_case_insensitive&lt;'a&gt;(search: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
-    let search = search.to_lowercase();
+<pre><code class="language-rust">fn search_case_insensitive&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+    let query = query.to_lowercase();
     let mut results = Vec::new();
 
     for line in contents.lines() {
-        if line.to_lowercase().contains(&amp;search) {
+        if line.to_lowercase().contains(&amp;query) {
             results.push(line);
         }
     }
@@ -7091,14 +7206,24 @@ Trust me.&quot;;
     results
 }
 </code></pre>
-<p><span class="caption">Listing 12-16: Implementing a <code>grep_case_insensitive</code>
-function by changing the search string and the lines of the contents to
-lowercase before comparing them</span></p>
+<p><span class="caption">Listing 12-21: Defining the <code>search_case_insensitive</code>
+function to lowercase both the query and the line before comparing them</span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>首先，将<code>search</code>字符串转换为小写，并存放于一个同名的覆盖变量中。注意现在<code>search</code>是一个<code>String</code>而不是字符串 slice，所以在将<code>search</code>传递给<code>contains</code>时需要加上 &amp;，因为<code>contains</code>获取一个字符串 slice。</p>
-<p>接着在检查每个<code>line</code>是否包含<code>search</code>之前增加了一个<code>to_lowercase</code>调用。因为将<code>line</code>和<code>search</code>都转换为小写，我们就可以无视大小写的匹配文件和命令行参数了。看看测试是否通过了：</p>
+<!-- why do we lowercase the search string? and why does it need to be a string
+rather than a slice? -->
+<!-- We explained this above, that in order to make the search case
+insensitive, we need to lowercase everything so that searches will always match
+no matter what case either the query or each line uses. It needs to be a
+`String` because we're creating new data, not referencing existing data, when
+we call `to_lowercase`. I've tried to make both of these points clearer, but
+I'm not sure exactly what was unclear about it before, so I'm not sure if I've
+helped. /Carol -->
+<p>首先我们将<code>query</code>字符串转换为小写，并将其储存（覆盖）到同名的变量中。对查询字符串调用<code>to_lowercase</code>是必需的这样不管用户的查询是&quot;rust&quot;、&quot;RUST&quot;、&quot;Rust&quot;或者&quot;rUsT&quot;，我们都将其当作&quot;rust&quot;处理并对大小写不敏感。</p>
+<p>注意<code>query</code>现在是一个<code>String</code>而不是字符串 slice，因为调用<code>to_lowercase</code>是在创建新数据，而不是引用现有数据。如果查询字符串是&quot;rUsT&quot;，这个字符串 slice 并不包含可供我们使用的小写的 u，所以必需分配一个包含&quot;rust&quot;的新<code>String</code>。因为<code>query</code>现在是一个<code>String</code>，当我们将<code>query</code>作为一个参数传递给<code>contains</code>方法时，需要增加一个 &amp; 因为<code>contains</code>的签名被定义为获取一个字符串 slice。</p>
+<p>接下来在检查每个<code>line</code>是否包含<code>search</code>之前增加了一个<code>to_lowercase</code>调用。这会将&quot;Rust:&quot;变为&quot;rust:&quot;并将&quot;Trust me.&quot;变为&quot;trust me.&quot;。现在我们将<code>line</code>和<code>query</code>都转换成了小写，这样就可以不管大小写的匹配文件中的文本和用户输入的查询了。</p>
+<p>让我们看看这个实现能否通过测试：</p>
 <pre><code>    Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running target\debug\deps\greprs-e58e9b12d35dc861.exe
+     Running target/debug/deps/greprs-e58e9b12d35dc861
 
 running 2 tests
 test test::case_insensitive ... ok
@@ -7106,7 +7231,7 @@ test test::case_sensitive ... ok
 
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured
 
-     Running target\debug\greprs-8a7faa2662b5030a.exe
+     Running target/debug/greprs-8a7faa2662b5030a
 
 running 0 tests
 
@@ -7118,27 +7243,45 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
 </code></pre>
-<p>好的！现在，我们必须真正的使用新的<code>grep_case_insensitive</code>函数。首先，在<code>Config</code>结构体中增加一个配置项：</p>
+<p>好的！现在，让我们在<code>run</code>函数中调用真正的新<code>search_case_insensitive</code>函数。首先，我们将在<code>Config</code>结构体中增加一个配置项来切换大小写敏感和大小写不敏感搜索。</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><code class="language-rust">pub struct Config {
-    pub search: String,
+    pub query: String,
     pub filename: String,
     pub case_sensitive: bool,
 }
 </code></pre>
 <!-- Will add ghosting in libreoffice /Carol -->
-<p>接着在<code>run</code>函数中检查这个选项，并根据<code>case_sensitive</code>函数的值来决定调用哪个函数：</p>
+<p>这里增加了<code>case_sensitive</code>字符来存放一个布尔值。接着我们需要<code>run</code>函数检查<code>case_sensitive</code>字段的值并使用它来决定是否调用<code>search</code>函数或<code>search_case_insensitive</code>函数，如列表 12-22所示：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust,ignore">pub fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt;{
+<pre><code class="language-rust"># use std::error::Error;
+# use std::fs::File;
+# use std::io::prelude::*;
+#
+# fn search&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+#      vec![]
+# }
+#
+# fn search_case_insensitive&lt;'a&gt;(query: &amp;str, contents: &amp;'a str) -&gt; Vec&lt;&amp;'a str&gt; {
+#      vec![]
+# }
+#
+# struct Config {
+#     query: String,
+#     filename: String,
+#     case_sensitive: bool,
+# }
+#
+pub fn run(config: Config) -&gt; Result&lt;(), Box&lt;Error&gt;&gt;{
     let mut f = File::open(config.filename)?;
 
     let mut contents = String::new();
     f.read_to_string(&amp;mut contents)?;
 
     let results = if config.case_sensitive {
-        grep(&amp;config.search, &amp;contents)
+        search(&amp;config.query, &amp;contents)
     } else {
-        grep_case_insensitive(&amp;config.search, &amp;contents)
+        search_case_insensitive(&amp;config.query, &amp;contents)
     };
 
     for line in results {
@@ -7148,80 +7291,90 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
     Ok(())
 }
 </code></pre>
+<p><span class="caption">Listing 12-22: Calling either <code>search</code> or
+<code>search_case_insensitive</code> based on the value in <code>config.case_sensitive</code></span></p>
 <!-- Will add ghosting in libreoffice /Carol -->
-<p>最后需要真正的检查环境变量。为了将标准库中的<code>env</code>模块引入作用域，在 <em>src/lib.rs</em> 开头增加一个<code>use</code>行：</p>
+<p>最后需要实际检查环境变量。处理环境变量的函数位于标准库的<code>env</code>模块中，所以我们需要在 <em>src/lib.rs</em> 的开头增加一个<code>use std::env;</code>行将这个模块引入作用域中。接着在<code>Config::new</code>中使用<code>env</code>模块的<code>var</code>方法检查一个叫做<code>CASE_INSENSITIVE</code>的环境变量，如列表 12-23 所示：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><code class="language-rust">use std::env;
-</code></pre>
-<p>并接着在<code>Config::new</code>中使用<code>env</code>模块的<code>vars</code>方法：</p>
-<p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust"># use std::env;
-#
 # struct Config {
-#     search: String,
+#     query: String,
 #     filename: String,
 #     case_sensitive: bool,
 # }
-#
+
+// ...snip...
+
 impl Config {
     pub fn new(args: &amp;[String]) -&gt; Result&lt;Config, &amp;'static str&gt; {
         if args.len() &lt; 3 {
             return Err(&quot;not enough arguments&quot;);
         }
 
-        let search = args[1].clone();
+        let query = args[1].clone();
         let filename = args[2].clone();
 
-        let mut case_sensitive = true;
-
-        for (name, _) in env::vars() {
-            if name == &quot;CASE_INSENSITIVE&quot; {
-                case_sensitive = false;
-            }
-        }
+        let case_sensitive = env::var(&quot;CASE_INSENSITIVE&quot;).is_err();
 
         Ok(Config {
-            search: search,
+            query: query,
             filename: filename,
             case_sensitive: case_sensitive,
         })
     }
 }
 </code></pre>
+<p><span class="caption">Listing 12-23: Checking for an environment variable named
+<code>CASE_INSENSITIVE</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
-<p>这里我们调用了<code>env::vars</code>，它与<code>env::args</code>的工作方式类似。区别是<code>env::vars</code>返回一个环境变量而不是命令行参数的迭代器。不同于使用<code>collect</code>来创建一个所有环境变量的 vector，我们使用<code>for</code>循环。<code>env::vars</code>返回一系列元组：环境变量的名称和其值。我们从来也不关心它的值，只关心它是否被设置了，所以可以使用<code>_</code>占位符来取代变量名来让 Rust 知道它不应该警告一个未使用的变量。最后，有一个默认为真的变量<code>case_sensitive</code>。如果我们找到了一个<code>CASE_INSENSITIVE</code>环境变量，就将<code>case_sensitive</code>设置为假。接着将其作为<code>Config</code>的一部分返回。</p>
-<p>尝试运行几次吧！</p>
-<pre><code>$ cargo run to poem.txt
+<p>这里创建了一个新变量<code>case_sensitive</code>。为了设置它的值，需要调用<code>env::var</code>函数并传递我们需要寻找的环境变量名称，<code>CASE_INSENSITIVE</code>。<code>env::var</code>返回一个<code>Result</code>，它在环境变量被设置时返回包含其值的<code>Ok</code>成员，并在环境变量未被设置时返回<code>Err</code>成员。我们使用<code>Result</code>的<code>is_err</code>方法来检查其是否是一个 error（也就是环境变量未被设置的情况），这也就意味着我们<strong>需要</strong>进行一个大小写敏感搜索。如果<code>CASE_INSENSITIVE</code>环境变量被设置为任何值，<code>is_err</code>会返回 false 并将进行大小写不敏感搜索。我们并不关心环境变量所设置的值，只关心它是否被设置了，所以检查<code>is_err</code>而不是<code>unwrap</code>、<code>expect</code>或任何我们已经见过的<code>Result</code>的方法。我们将变量<code>case_sensitive</code>的值传递给<code>Config</code>实例这样<code>run</code>函数可以读取其值并决定是否调用<code>search</code>或者列表 12-22 中实现的<code>search_case_insensitive</code>。</p>
+<p>让我们试一试吧！首先不设置环境变量并使用查询&quot;to&quot;运行程序，这应该会匹配任何全小写的单词&quot;to&quot;的行：</p>
+<pre><code class="language-text">$ cargo run to poem.txt
     Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running `target\debug\greprs.exe to poem.txt`
+     Running `target/debug/greprs to poem.txt`
 Are you nobody, too?
 How dreary to be somebody!
 </code></pre>
+<p>看起来程序仍然能够工作！现在将<code>CASE_INSENSITIVE</code>设置为 1 并仍使用相同的查询&quot;to&quot;，这回应该得到包含可能有大写字母的&quot;to&quot;的行：</p>
 <pre><code>$ CASE_INSENSITIVE=1 cargo run to poem.txt
     Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running `target\debug\greprs.exe to poem.txt`
+     Running `target/debug/greprs to poem.txt`
 Are you nobody, too?
 How dreary to be somebody!
 To tell your name the livelong day
 To an admiring bog!
 </code></pre>
-<p>好极了！<code>greprs</code>现在可以通过环境变量的控制来进行大小写不敏感搜索了。现在你已经知道如何处理命令行参数或环境变量了！</p>
-<p>一些程序允许对相同配置同时使用参数_和_环境变量。在这种情况下，程序来决定参数和环境变量的优先级。作为一个留给你的测试，尝试同时通过一个命令行参数来控制大小写不敏感搜索，并在程序遇到矛盾值时决定其优先级。</p>
+<p>好极了，我们也得到了包含&quot;To&quot;的行！现在<code>greprs</code>程序可以通过环境变量控制进行大小写不敏感搜索了。现在你知道了如何管理由命令行参数或环境变量设置的选项了！</p>
+<p>一些程序允许对相同配置同时使用参数<strong>和</strong>环境变量。在这种情况下，程序来决定参数和环境变量的优先级。作为一个留给你的测试，尝试同时通过一个命令行参数来控制大小写不敏感搜索，并在程序遇到矛盾值时决定其优先级。</p>
 <p><code>std::env</code>模块还包含了更多处理环境变量的实用功能；请查看官方文档来了解其可用的功能。</p>
 <a class="header" href="#输出到stderr而不是stdout" name="输出到stderr而不是stdout"><h2>输出到<code>stderr</code>而不是<code>stdout</code></h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch12-06-writing-to-stderr-instead-of-stdout.md">ch12-06-writing-to-stderr-instead-of-stdout.md</a>
 <br>
-commit 3f2a1bd8dbb19cc48b210fc4fb35c305c8d81b56</p>
+commit d09cfb51a239c0ebfc056a64df48fe5f1f96b207</p>
 </blockquote>
-<p>目前为止，我们将所有的输出都<code>println!</code>到了终端。这是可以的，不过大部分终端都提供了两种输出：“标准输出”对应大部分信息，而“标准错误”则用于错误信息。这使得处理类似于“将错误打印到终端而将其他信息输出到文件”的情况变得更容易。</p>
-<p>可以通过在命令行使用<code>&gt;</code>来将输出重定向到文件中，同时不使用任何参数运行来造成一个错误，就会发现我们的程序只能打印到<code>stdout</code>：</p>
+<p>目前为止，我们将所有的输出都<code>println!</code>到了终端。大部分终端都提供了两种输出：“标准输出”对应大部分信息，而“标准错误”则用于错误信息。这种区别是命令行程序所期望拥有的行为：例如它允许用户选择将程序正常输出定向到一个文件中并仍将错误信息打印到屏幕上。但是<code>println!</code>只能够打印到标准输出，所以我们必需使用其他方法来打印到标准错误。</p>
+<p>我们可以验证，目前所编写的<code>greprs</code>，所有内容都被打印到了标准输出，包括应该被写入标准错误的错误信息。可以通过故意造成错误来做到这一点，一个发生这种情况的方法是不使用任何参数运行程序。我们准备将标准输出重定向到一个文件中，不过不是标准错误。命令行程序期望以这种方式工作，因为如果输出是错误信息，它应该显示在屏幕上而不是被重定向到文件中。可以看出我们的程序目前并没有满足这个期望，通过使用<code>&gt;</code>并指定一个文件名，<em>output.txt</em>，这是期望将标注输出重定向的文件：</p>
 <pre><code>$ cargo run &gt; output.txt
 </code></pre>
-<p><code>&gt;</code>语法告诉 shell 将标准输出的内容写入到 <em>output.txt</em> 文件中而不是打印到屏幕上。然而，如果运行命令后打开 <em>output.txt</em> 就会发现错误：</p>
-<pre><code>Problem parsing arguments: not enough arguments
+<!-- why do we get an error here? Was that intentional? Does that mean it can't
+print stdout to a file? -->
+<!-- Yes, we're intentionally causing an error here to show that errors are
+currently going to the wrong place. It's showing that `println!` only prints
+to standard out, even when we're printing error messages that should go
+to standard error. /Carol-->
+<p><code>&gt;</code>语法告诉 shell 将标准输出的内容写入到 <em>output.txt</em> 文件中而不是打印到屏幕上。我们并没有看到期望的错误信息打印到屏幕上，所以这意味着它一定被写入了文件中。让我们看看 <em>output.txt</em> 包含什么：</p>
+<pre><code>Application error: No search string or filename found
 </code></pre>
-<p>我们希望这个信息被打印到屏幕上，而只有成功运行产生的输出写入到文件中。让我们如列表 12-17 中所示改变如何打印错误信息的方法：</p>
+<!-- I don't understand why we send this output to a file to then just say we
+want it to the screen, won't it do that by default? And what has this got to do
+with our use of println? I'm finding the motives here hard to follow -->
+<!-- The point of showing this is to demonstrate that our program is NOT doing
+the correct thing by default, we need to change the places we're calling
+`println!` with error messages to print to standard error instead. When to use
+stdout vs. stderr, and why you might want to redirect stdout but not stderr,
+is something our readers will be familiar with. /Carol -->
+<p>是的，这就是错误信息，这意味着它被打印到了标准输出。这并不是命令行程序所期望拥有的。像这样的错误信息被打印到标准错误，并当以这种方式重定向标注输出时只将运行成功时的数据打印到文件中。让我们像列表 12-23 所示改变错误信息如何被打印的。因为本章早些时候的进行的重构，所有打印错误信息的代码都在一个位置，在<code>main</code>中：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">extern crate greprs;
 
@@ -7232,8 +7385,8 @@ use std::io::prelude::*;
 use greprs::Config;
 
 fn main() {
-    let mut stderr = std::io::stderr();
     let args: Vec&lt;String&gt; = env::args().collect();
+    let mut stderr = std::io::stderr();
 
     let config = Config::new(&amp;args).unwrap_or_else(|err| {
         writeln!(
@@ -7241,12 +7394,10 @@ fn main() {
             &quot;Problem parsing arguments: {}&quot;,
             err
         ).expect(&quot;Could not write to stderr&quot;);
-
         process::exit(1);
     });
 
     if let Err(e) = greprs::run(config) {
-
         writeln!(
             &amp;mut stderr,
             &quot;Application error: {}&quot;,
@@ -7257,24 +7408,26 @@ fn main() {
     }
 }
 </code></pre>
-<p><span class="caption">Listing 12-17: Writing error messages to <code>stderr</code> instead
-of <code>stdout</code></span></p>
+<p><span class="caption">Listing 12-23: Writing error messages to <code>stderr</code> instead
+of <code>stdout</code> using <code>writeln!</code></span></p>
 <!-- Will add ghosting and wingdings in libreoffice /Carol -->
 <p>Rust 并没有类似<code>println!</code>这样的方便写入标准错误的函数。相反，我们使用<code>writeln!</code>宏，它有点像<code>println!</code>，不过它获取一个额外的参数。第一个参数是希望写入内容的位置。可以通过<code>std::io::stderr</code>函数获取一个标准错误的句柄。我们将一个<code>stderr</code>的可变引用传递给<code>writeln!</code>；它需要是可变的因为这样才能写入信息！第二个和第三个参数就像<code>println!</code>的第一个和第二参数：一个格式化字符串和任何需要插入的变量。</p>
-<p>让我们再次用相同方式运行程序，不带任何参数并用 <code>&gt;</code>重定向<code>stdout</code>：</p>
+<p>再次用相同方式运行程序，不带任何参数并用<code>&gt;</code>重定向<code>stdout</code>：</p>
 <pre><code>$ cargo run &gt; output.txt
-Problem parsing arguments: not enough arguments
+Application error: No search string or filename found
 </code></pre>
-<p>现在我们看到了屏幕上的错误信息，不过 <code>output.txt</code> 里什么也没有。如果我们使用正确的参数再次运行：</p>
+<p>现在我们看到了屏幕上的错误信息，不过<code>output.txt</code>里什么也没有，这也就是命令行程序所期望的行为。</p>
+<p>如果使用不会造成错误的参数再次运行程序，不过仍然将标准输出重定向到一个文件：</p>
 <pre><code>$ cargo run to poem.txt &gt; output.txt
 </code></pre>
-<p>终端将没有输出，不过 <code>output.txt</code> 将会包含其结果：</p>
+<p>我们并不会在终端看到任何输出，同时<code>output.txt</code>将会包含其结果：</p>
 <p><span class="filename">Filename: output.txt</span></p>
 <pre><code>Are you nobody, too?
 How dreary to be somebody!
 </code></pre>
+<p>这一部分展示了现在我们使用的成功时产生的标准输出和错误时产生的标准错误是恰当的。</p>
 <a class="header" href="#总结" name="总结"><h2>总结</h2></a>
-<p>在这一章，我们涉及了如果在 Rust 中进行常规的 I/O 操作。通过使用命令行参数、文件、环境变量和写入<code>stderr</code>的功能。现在你已经准备好编写命令行程序了。结合前几章的知识，你的代码将会是组织良好的，并能有效的将数据存储到合适的数据结构中、更好的处理错误，并且还是经过良好测试的。我们也接触了一个真实情况下需要生命周期注解来保证引用一直有效的场景。</p>
+<p>在这一章中，我们回顾了目前为止的一些主要章节并涉及了如何在 Rust 中进行常规的 I/O 操作。通过使用命令行参数、文件、环境变量和<code>writeln!</code>宏与<code>stderr</code>，现在你已经准备好编写命令行程序了。结合前几章的知识，你的代码将会是组织良好的，并能有效的将数据存储到合适的数据结构中、更好的处理错误，并且还是经过良好测试的。</p>
 <p>接下来，让我们探索如何利用一些 Rust 中受函数式编程语言影响的功能：闭包和迭代器。</p>
 <a class="header" href="#rust-中的函数式语言功能--迭代器和闭包" name="rust-中的函数式语言功能--迭代器和闭包"><h1>Rust 中的函数式语言功能 —— 迭代器和闭包</h1></a>
 <blockquote>
@@ -7344,7 +7497,7 @@ let add_one_v2 = |x: i32| -&gt; i32 { x + 1 }; // the full syntax for a closure
 let add_one_v3 = |x|             { x + 1 }; // a closure eliding types
 let add_one_v4 = |x|               x + 1  ; // without braces
 </code></pre>
-<p>定义闭包时并要求类型注解而在定义函数是要求的原因在于函数是显式暴露给用户的接口的一部分，所以为了严格的定义接口确保所有人都同意函数使用和返回的值类型是很重要的。但是闭包并不像函数那样用于暴露接口：他们存在于绑定中并直接被调用。强制标注类型就等于为了很小的优点而显著的降低了工程性（本末倒置）。</p>
+<p>定义闭包时不要求类型注解而在定义函数时要求的原因在于函数是显式暴露给用户的接口的一部分，所以为了严格的定义接口确保所有人都同意函数使用和返回的值类型是很重要的。但是闭包并不像函数那样用于暴露接口：他们存在于绑定中并直接被调用。强制标注类型就等于为了很小的优点而显著的降低了工程性（本末倒置）。</p>
 <p>不过闭包的定义确实会推断每一个参数和返回值的类型。例如，如果用<code>i8</code>调用列表 13-1 中没有类型注解的闭包，如果接着用<code>i32</code>调用同一闭包则会得到一个错误：</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust,ignore">let add_one = |x| x + 1;
@@ -7437,7 +7590,7 @@ add one to each number in a vector</span></p>
 <ol>
 <li>从 vector 中创建了一个迭代器。</li>
 <li>使用<code>map</code>适配器和一个闭包参数对每一个元素加一。</li>
-<li>使用<code>collect</code>适配器来消费迭代去并生成了一个新的 vector。</li>
+<li>使用<code>collect</code>适配器来消费迭代器并生成了一个新的 vector。</li>
 </ol>
 <p>这就是如何产生结果<code>[2, 3, 4]</code>的。如你所见，闭包是使用迭代器的很重要的一部分：他们提供了一个自定义类似<code>map</code>这样的迭代器适配器的行为的方法。</p>
 <a class="header" href="#迭代器是惰性的" name="迭代器是惰性的"><h3>迭代器是惰性的</h3></a>
@@ -7454,7 +7607,7 @@ nothing unless consumed, #[warn(unused_must_use)] on by default
 4 | v1.iter().map(|x| x + 1); // without collect
   | ^^^^^^^^^^^^^^^^^^^^^^^^^
 </code></pre>
-<p>这个警告是因为迭代器适配器实际上并不自己进行处理。他们需要一些其他方法来触发迭代器链的计算。我们称之为<strong>消费迭代器</strong>（<em>consuming adaptors</em>），而<code>collect</code>就是其中之一。</p>
+<p>这个警告是因为迭代器适配器实际上并不自己进行处理。他们需要一些其他方法来触发迭代器链的计算。我们称之为<strong>消费适配器</strong>（<em>consuming adaptors</em>），而<code>collect</code>就是其中之一。</p>
 <p>那么如何知道迭代器方法是否消费了迭代器呢？还有哪些适配器是可用的呢？为此，让我们看看<code>Iterator</code> trait。</p>
 <a class="header" href="#iterator-trait" name="iterator-trait"><h3><code>Iterator</code> trait</h3></a>
 <p>迭代器都实现了一个标准库中叫做<code>Iterator</code>的 trait。其定义看起来像这样：</p>
@@ -7464,7 +7617,7 @@ nothing unless consumed, #[warn(unused_must_use)] on by default
     fn next(&amp;mut self) -&gt; Option&lt;Self::Item&gt;;
 }
 </code></pre>
-<p>这里有一些还未讲到的新语法：<code>type Item</code>和<code>Self::Item</code>定义了这个 trait 的<strong>关联类型</strong>（<em>associated type</em>），第XX章会讲到关联类型。现在所有你需要知道就是这些代码表示<code>Iterator</code> trait 要求你也定义一个<code>Item</code>类型，而这个<code>Item</code>类型用作<code>next</code>方法的返回值。换句话说，<code>Item</code>类型将是迭代器返回的元素的类型。</p>
+<p>这里有一些还未讲到的新语法：<code>type Item</code>和<code>Self::Item</code>定义了这个 trait 的<strong>关联类型</strong>（<em>associated type</em>），第19章会讲到关联类型。现在所有你需要知道就是这些代码表示<code>Iterator</code> trait 要求你也定义一个<code>Item</code>类型，而这个<code>Item</code>类型用作<code>next</code>方法的返回值。换句话说，<code>Item</code>类型将是迭代器返回的元素的类型。</p>
 <p>让我们使用<code>Iterator</code> trait 来创建一个从一数到五的迭代器<code>Counter</code>。首先，需要创建一个结构体来存放迭代器的当前状态，它有一个<code>u32</code>的字段<code>count</code>。我们也定义了一个<code>new</code>方法，当然这并不是必须的。因为我们希望<code>Counter</code>能从一数到五，所以它总是从零开始：</p>
 <pre><code class="language-rust">struct Counter {
     count: u32,
@@ -7683,7 +7836,7 @@ commit 4f2dc564851dc04b271a2260c834643dfd86c724</p>
 <pre><code>test bench_grep_for  ... bench:  19,620,300 ns/iter (+/- 915,700)
 test bench_grep_iter ... bench:  19,234,900 ns/iter (+/- 657,200)
 </code></pre>
-<p>结果迭代器版本还要稍微快一点！这里我们将不会查看性能测试的代码，光是这一点并不是为了证明他们是完全等同的，而是提供了一个大体上比较这两种实现的方向。对于<strong>真正</strong>的性能测试，将会检查不同长度的文本、不同的搜索单词、不同长度的单词和所有其他的可变情况。这里所要表达的是：迭代器，作为一个高级的抽象，被编译成了与手写的底层代码大体一致性能代码。迭代器是 Rust 的<strong>零成本抽象</strong>（<em>zero-cost abstractions</em>）之一，它意味着抽象并不会强加运行时开销，它与本贾尼·斯特劳斯特卢普，C++ 的设计和实现者所定义的<strong>零开销</strong>（<em>zero-overhead</em>）如出一辙：</p>
+<p>结果迭代器版本还要稍微快一点！这里我们将不会查看性能测试的代码，我们的目的并不是为了证明他们是完全等同的，而是得出一个怎样比较这两种实现方式的基本思路。对于<strong>真正</strong>的性能测试，将会检查不同长度的文本、不同的搜索单词、不同长度的单词和所有其他的可变情况。这里所要表达的是：迭代器，作为一个高级的抽象，被编译成了与手写的底层代码大体一致性能代码。迭代器是 Rust 的<strong>零成本抽象</strong>（<em>zero-cost abstractions</em>）之一，它意味着抽象并不会强加运行时开销，它与本贾尼·斯特劳斯特卢普，C++ 的设计和实现者所定义的<strong>零开销</strong>（<em>zero-overhead</em>）如出一辙：</p>
 <blockquote>
 <p>In general, C++ implementations obey the zero-overhead principle: What you don’t use, you don’t pay for. And further: What you do use, you couldn’t hand code any better.</p>
 <ul>
@@ -7694,7 +7847,7 @@ test bench_grep_iter ... bench:  19,234,900 ns/iter (+/- 657,200)
 <li>本贾尼·斯特劳斯特卢普 &quot;Foundations of C++&quot;</li>
 </ul>
 </blockquote>
-<p>作为另一个例子，这里有一些来自于音频解码器的代码。这些代码使用迭代器链来对作用域中的三个变量进行了某种数学计算：一个叫<code>buffer</code>的数据 slice、一个 12 个系数列表的<code>coefficients</code>、和一个移位位数的<code>qlp_shift</code>。例子中声明了这些变量但并没有提供任何值；虽然这些代码在其上下文之外没有什么意义，不过仍是一个简洁的现实中的例子，来展示 Rust 如何将高级概念转换为底层代码：</p>
+<p>作为另一个例子，这里有一些来自于音频解码器的代码。这些代码使用迭代器链来对作用域中的三个变量进行了某种数学计算：一个叫<code>buffer</code>的数据 slice、一个有12个元素的数组<code>coefficients</code>、和一个代表移位位数的<code>qlp_shift</code>。例子中声明了这些变量但并没有提供任何值；虽然这些代码在其上下文之外没有什么意义，不过仍是一个简洁的现实中的例子，来展示 Rust 如何将高级概念转换为底层代码：</p>
 <pre><code class="language-rust,ignore">let buffer: &amp;mut [i32];
 let coefficients: [i64; 12];
 let qlp_shift: i16;
@@ -7857,7 +8010,7 @@ fn main() {
 </code></pre>
 <p><span class="caption">Listing 14-3: A program using the <code>art</code> crate's items
 with its internal structure exported</span></p>
-<p>使用并不需要知道<code>PrimaryColor</code>和<code>SecondaryColor</code>位于<code>kinds</code>模块中和<code>mix</code>位于<code>utils</code>模块中；这些结构对于内部组织是有帮助的，不过对于外部的观点来说没有什么意义。</p>
+<p>库的用户并不需要知道<code>PrimaryColor</code>和<code>SecondaryColor</code>位于<code>kinds</code>模块中和<code>mix</code>位于<code>utils</code>模块中；这些结构对于内部组织是有帮助的，不过对于外部的观点来说没有什么意义。</p>
 <p>为此，可以选择在列表 14-2 中增加如下<code>pub use</code>语句来将这些类型重新导出到顶级结构，如列表 14-4 所示：</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><code class="language-rust,ignore">//! # Art
@@ -7907,7 +8060,7 @@ Please see http://doc.crates.io/manifest.html#package-metadata for how to
 upload metadata
 </code></pre>
 <p>我们可以在包的 <em>Cargo.toml</em> 文件中包含更多的信息。其中一些字段是可选的，不过描述和 license 是发布所必须的，因为这样人们才能知道 crate 是干什么的已经在什么样的条款下可以使用他们。</p>
-<p>描述连同 crate 一起出现在搜索结果和 crate 页面中。描述通常是一两句话。<code>license</code>字段获取一个 license 标识符值，其可能的值由 Linux 基金会的<a href="http://spdx.org/licenses/">Software Package Data Exchange (SPDX)</a>指定。如果你想要使用一个并存在于此的 license，则不使用<code>license</code>值，使用<code>license-file</code>来指定项目中包含你想要使用的 license 的文本的文件名。</p>
+<p>描述连同 crate 一起出现在搜索结果和 crate 页面中。描述通常是一两句话。<code>license</code>字段获取一个 license 标识符值，其可能的值由 Linux 基金会的<a href="http://spdx.org/licenses/">Software Package Data Exchange (SPDX)</a>指定。如果你想要使用一个不存在于SPDX的 license，则不使用<code>license</code>值，使用<code>license-file</code>来指定项目中包含你想要使用的 license 的文本的文件名。</p>
 <p>关于项目所适用的 license 的指导超出了本书的范畴。很多 Rust 社区成员选择与 Rust 自身相同的 license，它是一个双许可的<code>MIT/Apache-2.0</code>，这表明可以通过斜杠来分隔指定多个 license。所以一个准备好发布的项目的 <em>Cargo.toml</em> 文件看起来像这样：</p>
 <pre><code class="language-toml">[package]
 name = &quot;guessing_game&quot;
@@ -8051,7 +8204,7 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured
 </code></pre>
-<p>等等，零个测试？我们不是刚增加了一个吗？如果我们观察输出，就不难发现在工作空间中的<code>cargo test</code>只运行顶层 crate 的测试。为了运行其他 crate 的测试，需要使用<code>-p</code>参数来表明我们希望与逆行测试包的测试：</p>
+<p>等等，零个测试？我们不是刚增加了一个吗？如果我们观察输出，就不难发现在工作空间中的<code>cargo test</code>只运行顶层 crate 的测试。为了运行其他 crate 的测试，需要使用<code>-p</code>参数来表明我们希望运行指定包的测试：</p>
 <pre><code>$ cargo test -p add-one
     Finished debug [unoptimized + debuginfo] target(s) in 0.0 secs
      Running target/debug/deps/add_one-abcabcabc
@@ -8107,7 +8260,7 @@ commit 4f2dc564851dc04b271a2260c834643dfd86c724</p>
 <ul>
 <li><code>Box&lt;T&gt;</code>，用于在堆上分配值</li>
 <li><code>Rc&lt;T&gt;</code>，一个引用计数类型，其数据可以有多个所有者</li>
-<li><code>RefCell&lt;T&gt;</code>，其本身并不是只能指针，不过它管理智能指针<code>Ref</code>和<code>RefMut</code>的访问，在运行时而不是在编译时执行借用规则。</li>
+<li><code>RefCell&lt;T&gt;</code>，其本身并不是智能指针，不过它管理智能指针<code>Ref</code>和<code>RefMut</code>的访问，在运行时而不是在编译时执行借用规则。</li>
 </ul>
 <p>同时我们还将涉及：</p>
 <ul>
@@ -8293,7 +8446,7 @@ struct that holds mp3 file data and metadata</span></p>
 <li>从<code>&amp;mut T</code>到<code>&amp;U</code>当<code>T: Deref&lt;Target=U&gt;</code>。</li>
 </ul>
 <p>头两个情况除了可变性之外是相同的：如果有一个<code>&amp;T</code>，而<code>T</code>实现了返回<code>U</code>类型的<code>Deref</code>，可以直接得到<code>&amp;U</code>。对于可变引用也是一样。最后一个有些微妙：如果有一个可变引用，它也可以强转为一个不可变引用。反之则是_不可能_的：不可变引用永远也不能强转为可变引用。</p>
-<p><code>Deref</code> trait 对于只能指针模式十分重要的原因在于智能指针可以被看作普通引用并用于期望使用引用的地方。例如，无需重新编写方法和函数来直接获取智能指针。</p>
+<p><code>Deref</code> trait 对于智能指针模式十分重要的原因在于智能指针可以被看作普通引用并用于期望使用引用的地方。例如，无需重新编写方法和函数来直接获取智能指针。</p>
 <a class="header" href="#drop-trait-运行清理代码" name="drop-trait-运行清理代码"><h2><code>Drop</code> Trait 运行清理代码</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch15-03-drop.md">ch15-03-drop.md</a>
@@ -9514,33 +9667,36 @@ commit 55b294f20fc846a13a9be623bf322d8b364cee77</p>
 <br>
 commit 759801361bde74b47e81755fff545c66020e6e63</p>
 </blockquote>
-<p>面向对象编程是一种起源于20世纪60年代Simula的模式化编程的方式，然后在90年代在C++语言开始流行。为了描述OOP有很多种复杂的定义：在一些定义下，Rust是面向对象的；在其他定义下，Rust不是。在本章节中，我们会探索一些被普遍认为是面向对象的特性和这些特性是如何转换为Rust的方言的。</p>
+<p>面向对象编程（Object-Oriented Programming）是一种起源于 20 世纪 60 年代的 Simula 编程语言的模式化编程方式，然后在 90 年代随着 C++ 语言开始流行。为了描述 OOP 有很多种复杂的定义：在一些定义下，Rust 是面向对象的；在其他定义下，Rust 不是。在本章节中，我们会探索一些被普遍认为是面向对象的特性和这些特性是如何转换为 Rust 方言的。</p>
 <a class="header" href="#什么是面向对象" name="什么是面向对象"><h2>什么是面向对象？</h2></a>
 <blockquote>
 <p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch17-01-what-is-oo.md">ch17-01-what-is-oo.md</a>
 <br>
-commit 46334522e22d6217b392451cff8b4feca2d69d79</p>
+commit 2a9b2a1b019ad6d4832ff3e56fbcba5be68b250e</p>
 </blockquote>
-<p>关于一门语言是否需要是面向对象，在编程社区内并达成一致意见。Rust被很多不同的编程模式影响，我们探索了13章提到的函数式编程的特性。面向对象编程语言的一些特性往往是对象、封装和继承。我们看一下每个的含义和Rust是否支持它们。</p>
+<p>关于一门语言是否需要是面向对象，在编程社区内并未达成一致意见。Rust 被很多不同的编程模式影响，我们探索了十三章提到的函数式编程的特性。面向对象编程语言的一些特性往往是对象、封装和继承。我们看一下这每一个概念的含义以及 Rust 是否支持他们。</p>
 <a class="header" href="#对象包含数据和行为" name="对象包含数据和行为"><h2>对象包含数据和行为</h2></a>
 <p><code>Design Patterns: Elements of Reusable Object-Oriented Software</code>这本书被俗称为<code>The Gang of Four book</code>，是面向对象编程模式的目录。它这样定义面向对象编程：</p>
 <blockquote>
-<p>面向对象的程序是由对象组成的。一个对象包数据和操作这些数据的程序。程序通常被称为方法或操作。</p>
+<p>Object-oriented programs are made up of objects. An <em>object</em> packages both
+data and the procedures that operate on that data. The procedures are
+typically called <em>methods</em> or <em>operations</em>.</p>
+<p>面向对象的程序是由对象组成的。一个<strong>对象</strong>包数据和操作这些数据的过程。这些过程通常被称为<strong>方法</strong>或<strong>操作</strong>。</p>
 </blockquote>
-<p>在这个定一下，Rust是面向对象的：结构体和枚举包含数据和impl块提供了在结构体和枚举上的方法。虽然带有方法的结构体和枚举不称为对象，但是他们提供了和对象相同的功能，使用了<code>Gang of Four</code>定义的对象。</p>
+<p>在这个定义下，Rust 是面向对象的：结构体和枚举包含数据而 impl 块提供了在结构体和枚举之上的方法。虽然带有方法的结构体和枚举并不被<strong>称为</strong>对象，但是他们提供了与对象相同的功能，参考 Gang of Four 所定义的对象。</p>
 <a class="header" href="#隐藏了实现细节的封装" name="隐藏了实现细节的封装"><h2>隐藏了实现细节的封装</h2></a>
-<p>通常与面向对象编程相关的另一个方面是封装的思想：对象的实现细节不能被使用对象的代码获取到。唯一与对象交互的方式是通过对象提供的public API，使用对象的代码无法深入到对象内部并直接改变数据或者行为。封装使得改变和重构对象的内部，无需改变使用对象的代码。</p>
-<p>就像我们在第7张讨论的那样，我们可以使用pub关键字来决定模块、类型函数和方法是public的（默认情况下一切都是private）。比如，我们可以定义一个结构体<code>AveragedCollection</code>包含一个<code>i32</code>类型的vector。结构体也可以有一个字段，该字段保存了vector中所有值的平均值。这样，希望知道结构体中的vector的平均值的人可以随着获取到，而无需自己计算。<code>AveragedCollection</code> 会为我们缓存平均值结果。 Listing 17-1有<code>AveragedCollection</code> 结构体的定义。</p>
-<p>Filename: src/lib.rs</p>
-<pre><code>pub struct AveragedCollection {
+<p>另一个通常与面向对象编程相关的方面是<strong>封装</strong>的思想：对象的实现细节不能被使用对象的代码获取到。唯一与对象交互的方式是通过对象提供的公有 API；使用对象的代码无法深入到对象内部并直接改变数据或者行为。封装使得改变和重构对象的内部时无需改变使用对象的代码。</p>
+<p>就像我们在第七章讨论的那样，可以使用<code>pub</code>关键字来决定模块、类型函数和方法是公有的，而默认情况下一切都是私有的。比如，我们可以定义一个包含一个<code>i32</code>类型的 vector 的结构体<code>AveragedCollection</code>。结构体也可以有一个字段，该字段保存了 vector 中所有值的平均值。这样，希望知道结构体中的 vector 的平均值的人可以随时获取它，而无需自己计算。<code>AveragedCollection</code>会为我们缓存平均值结果。列表 17-1 有<code>AveragedCollection</code>结构体的定义：</p>
+<p><span class="filename">文件名: src/lib.rs</span></p>
+<pre><code class="language-rust">pub struct AveragedCollection {
     list: Vec&lt;i32&gt;,
     average: f64,
 }
 </code></pre>
-<p><code>AveragedCollection</code>结构体维护了一个Integer列表和集合中所有元素的平均值。</p>
-<p>注意，结构体本身被标记为pub，这样其他代码可以使用这个结构体，但是在结构体内部的字段仍然是private。这是非常重要的，因为我们希望保证变量被增加到列表或者被从列表删除时，也会同时更新平均值。我们通过在结构体上实现add、remove和average方法来做到这一点（ Listing 17-2:）：</p>
-<p>Filename: src/lib.rs</p>
-<pre><code># pub struct AveragedCollection {
+<p><span class="caption">列表 17-1: <code>AveragedCollection</code>结构体维护了一个整型列表和集合中所有元素的平均值。</span></p>
+<p>注意，结构体自身被标记为<code>pub</code>，这样其他代码可以使用这个结构体，但是在结构体内部的字段仍然是私有的。这是非常重要的，因为我们希望保证变量被增加到列表或者被从列表删除时，也会同时更新平均值。我们通过在结构体上实现<code>add</code>、<code>remove</code>和<code>average</code>方法来做到这一点，如列表 17-2 所示：</p>
+<p><span class="filename">文件名: src/lib.rs</span></p>
+<pre><code class="language-rust"># pub struct AveragedCollection {
 #     list: Vec&lt;i32&gt;,
 #     average: f64,
 # }
@@ -9571,20 +9727,323 @@ impl AveragedCollection {
     }
 }
 </code></pre>
-<p>Listing 17-2:在<code>AveragedCollection</code>结构体上实现了add、remove和average  public方法</p>
+<p><span class="caption">列表 17-2: 在<code>AveragedCollection</code>结构体上实现了<code>add</code>、<code>remove</code>和<code>average</code>公有方法</span></p>
+<p>公有方法<code>add</code>、<code>remove</code>和<code>average</code>是修改<code>AveragedCollection</code>实例的唯一方式。当使用<code>add</code>方法把一个元素加入到<code>list</code>或者使用<code>remove</code>方法来删除它时，这些方法的实现同时会调用私有的<code>update_average</code>方法来更新<code>average</code>字段。因为<code>list</code>和<code>average</code>是私有的，没有其他方式来使得外部的代码直接向<code>list</code>增加或者删除元素，直接操作<code>list</code>可能会引发<code>average</code>字段不同步。<code>average</code>方法返回<code>average</code>字段的值，这使得外部的代码只能读取<code>average</code>而不能修改它。</p>
+<p>因为我们已经封装好了<code>AveragedCollection</code>的实现细节，将来可以轻松改变类似数据结构这些方面的内容。例如，可以使用<code>HashSet</code>代替<code>Vec</code>作为<code>list</code>字段的类型。只要<code>add</code>、<code>remove</code>和<code>average</code>公有函数的签名保持不变，使用<code>AveragedCollection</code>的代码就无需改变。如果将<code>List</code>暴露给外部代码时，未必都是这样，因为<code>HashSet</code>和<code>Vec</code>使用不同的方法增加或移除项，所以如果要想直接修改<code>list</code>的话，外部的代码可能不得不修改。</p>
+<p>如果封装是一个语言被认为是面向对象语言所必要的方面的话，那么 Rust 就满足这个要求。在代码中不同的部分使用或者不使用<code>pub</code>决定了实现细节的封装。</p>
+<a class="header" href="#作为类型系统的继承和作为代码共享的继承" name="作为类型系统的继承和作为代码共享的继承"><h2>作为类型系统的继承和作为代码共享的继承</h2></a>
+<p><strong>继承</strong>（<em>Inheritance</em>）是一个很多编程语言都提供的机制，一个对象可以定义为继承另一个对象的定义，这使其可以获得父对象的数据和行为，而不用重新定义。一些人定义面向对象语言时，认为继承是一个特色。</p>
+<p>如果一个语言必须有继承才能被称为面向对象的语言的话，那么 Rust 就不是面向对象的。无法定义一个结构体继承自另外一个结构体，从而获得父结构体的成员和方法。然而，如果你过去常常在你的编程工具箱使用继承，根据你希望使用继承的原因，Rust 提供了其他的解决方案。</p>
+<p>使用继承有两个主要的原因。第一个是为了重用代码：一旦为一个类型实现了特定行为，继承可以对一个不同的类型重用这个实现。相反 Rust 代码可以使用默认 trait 方法实现来进行共享，在列表 10-14 中我们见过在<code>Summarizable</code> trait 上增加的<code>summary</code>方法的默认实现。任何实现了<code>Summarizable</code> trait 的类型都可以使用<code>summary</code>方法而无须进一步实现。这类似于父类有一个方法的实现，而通过继承子类也拥有这个方法的实现。当实现<code>Summarizable</code> trait 时也可以选择覆盖<code>summary</code>的默认实现，这类似于子类覆盖从父类继承的方法实现。</p>
+<p>第二个使用继承的原因与类型系统有关：用来表现子类型可以在父类型被使用的地方使用。这也被称为<strong>多态</strong>（<em>polymorphism</em>），意味着如果多种对象有一个相同的形态大小，它们可以替代使用。</p>
+<!-- PROD: START BOX -->
+<blockquote>
+<p>虽然很多人使用“多态”来描述继承，但是它实际上是一种特殊的多态，称为“子类型多态”。也有很多种其他形式的多态，在 Rust 中带有泛型参数的 trait bound 也是多态，更具体的说是“参数多态”。不同类型多态的确切细节在这里并不关键，所以不要过于担心细节，只需要知道 Rust 有多种多态相关的特色就好，不同于很多其他 OOP 语言。</p>
+</blockquote>
+<!-- PROD: END BOX -->
+<p>为了支持这种模式，Rust 有 <strong>trait 对象</strong>（<em>trait objects</em>），这样我们可以指定给任何类型的值，只要值实现了一种特定的 trait。</p>
+<p>继承最近在很多编程语言的设计方案中失宠了。使用继承来实现代码重用需要共享比你需要共享的代码。子类不应该总是共享它们的父类的所有特色，但是继承意味着子类得到了它父类所有的数据和行为。这使得程序的设计更加不灵活，并产生了无意义的方法调用或子类，或者由于方法并不适用于子类不过必需从父类继承而造成错误的可能性。另外，一些语言只允许子类继承一个父类，这进一步限制了程序设计的灵活性。</p>
+<p>因为这些原因，Rust 选择了一个另外的途径，使用 trait 对象替代继承。让我们看一下在 Rust 中 trait 对象是如何实现多态的。</p>
+<a class="header" href="#为使用不同类型的值而设计的-trait-对象" name="为使用不同类型的值而设计的-trait-对象"><h2>为使用不同类型的值而设计的 trait 对象</h2></a>
+<blockquote>
+<p><a href="https://github.com/rust-lang/book/blob/master/second-edition/src/ch17-02-trait-objects.md">ch17-02-trait-objects.md</a>
+<br>
+commit 67876e3ef5323ce9d394f3ea6b08cb3d173d9ba9</p>
+</blockquote>
+<p>在第八章，我们谈到了 vector 的局限是 vector 只能存储同种类型的元素。在列表 8-1 中有一个例子，其中定义了一个有存放整型、浮点型和文本的成员的枚举类型<code>SpreadsheetCell</code>，这样就可以在每一个单元格储存不同类型的数据并使得 vector 仍让代表一行单元格。这在那类代码被编译时就知晓需要可交换处理的数据的类型是一个固定集合的情况下是可行的。</p>
+<!-- The code example I want to reference did not have a listing number; it's
+the one with SpreadsheetCell. I will go back and add Listing 8-1 next time I
+get Chapter 8 for editing. /Carol -->
+<p>有时，我们想我们使用的类型集合是可扩展的，可以被使用我们的库的程序员扩展。比如很多图形化接口工具有一个条目列表，从这个列表迭代和调用draw方法在每个条目上。我们将要创建一个库crate，包含称为<code>rust_gui</code>的CUI库的结构体。我们的GUI库可以包含一些给开发者使用的类型，比如<code>Button</code>或者<code>TextField</code>。使用<code>rust_gui</code>的程序员会创建更多可以在屏幕绘图的类型：一个程序员可能会增加<code>Image</code>，另外一个可能会增加<code>SelectBox</code>。我们不会在本章节实现一个完善的GUI库，但是我们会展示如何把各部分组合在一起。</p>
+<p>当要写一个<code>rust_gui</code>库时，我们不知道其他程序员要创建什么类型，所以我们无法定义一个<code>enum</code>来包含所有的类型。我们知道的是<code>rust_gui</code>需要有能力跟踪所有这些不同类型的大量的值，需要有能力在每个值上调用<code>draw</code>方法。我们的GUI库不需要确切地知道当调用<code>draw</code>方法时会发生什么，只要值有可用的方法供我们调用就可以。</p>
+<p>在有继承的语言里，我们可能会定义一个名为<code>Component</code>的类，该类上有一个<code>draw</code>方法。其他的类比如<code>Button</code>、<code>Image</code>和<code>SelectBox</code>会从<code>Component</code>继承并继承<code>draw</code>方法。它们会各自覆写<code>draw</code>方法来自定义行为，但是框架会把所有的类型当作是<code>Component</code>的实例，并在它们上调用<code>draw</code>。</p>
+<a class="header" href="#定义一个带有自定义行为的trait" name="定义一个带有自定义行为的trait"><h3>定义一个带有自定义行为的Trait</h3></a>
+<p>不过，在Rust语言中，我们可以定义一个名为<code>Draw</code>的trait，其上有一个名为<code>draw</code>的方法。我们定义一个带有<em>trait对象</em>的vector，绑定了一种指针的trait，比如<code>&amp;</code>引用或者一个<code>Box&lt;T&gt;</code>智能指针。</p>
+<p>我们提到，我们不会调用结构体和枚举的对象，从而区分于其他语言的对象。在结构体的数据或者枚举的字段和<code>impl</code>块中的行为是分开的，而其他语言则是数据和行为被组合到一个概念里。Trait对象更像其他语言的对象，在这种场景下，他们组合了由指针组成的数据到实体对象，该对象带有在trait中定义的方法行为。但是，trait对象是和其他语言是不同的，因为我们不能向一个trait对象增加数据。trait对象不像其他语言那样有用：它们的目的是允许从公有的行为上抽象。</p>
+<p>trait定义了在给定场景下我们所需要的行为。在我们会使用一个实体类型或者一个通用类型的地方，我们可以把trait当作trait对象使用。Rust的类型系统会保证我们为trait对象带入的任何值会实现trait的方法。我们不需要在编译阶段知道所有可能的类型，我们可以把所有的实例统一对待。Listing 17-03展示了如何定义一个名为<code>Draw</code>的带有<code>draw</code>方法的trait。</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust">pub trait Draw {
+    fn draw(&amp;self);
+}
+</code></pre>
+<p><span class="caption">Listing 17-3:<code>Draw</code> trait的定义</span></p>
+<!-- NEXT PARAGRAPH WRAPPED WEIRD INTENTIONALLY SEE #199 -->
+<p>因为我们已经在第10章讨论过如何定义trait，你可能比较熟悉。下面是新的定义：Listing 17-4有一个名为<code>Screen</code>的结构体，里面有一个名为<code>components</code>的vector，<code>components</code>的类型是Box<Draw>。<code>Box&lt;Draw&gt;</code>是一个trait对象：它是一个任何<code>Box</code>内部的实现了<code>Draw</code>trait的类型的替身。</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust"># pub trait Draw {
+#     fn draw(&amp;self);
+# }
+#
+pub struct Screen {
+    pub components: Vec&lt;Box&lt;Draw&gt;&gt;,
+}
+</code></pre>
+<p><span class="caption">Listing 17-4: 定义一个<code>Screen</code>结构体，带有一个含有实现了<code>Draw</code>trait的<code>components</code> vector成员</p>
+<p></span></p>
+<p>在<code>Screen</code>结构体上，我们将要定义一个<code>run</code>方法，该方法会在它的<code>components</code>上调用<code>draw</code>方法，如Listing 17-5所示：</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust"># pub trait Draw {
+#     fn draw(&amp;self);
+# }
+#
+# pub struct Screen {
+#     pub components: Vec&lt;Box&lt;Draw&gt;&gt;,
+# }
+#
+impl Screen {
+    pub fn run(&amp;self) {
+        for component in self.components.iter() {
+            component.draw();
+        }
+    }
+}
+</code></pre>
+<p><span class="caption">Listing 17-5:在<code>Screen</code>上实现一个<code>run</code>方法，该方法在每个组件上调用<code>draw</code>方法
+</span></p>
+<p>这是区别于定义一个使用带有trait绑定的通用类型参数的结构体。通用类型参数一次只能被一个实体类型替代，而trait对象可以在运行时允许多种实体类型填充trait对象。比如，我们已经定义了<code>Screen</code>结构体使用通用类型和一个trait绑定，如Listing 17-6所示：</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust"># pub trait Draw {
+#     fn draw(&amp;self);
+# }
+#
+pub struct Screen&lt;T: Draw&gt; {
+    pub components: Vec&lt;T&gt;,
+}
+
+impl&lt;T&gt; Screen&lt;T&gt;
+    where T: Draw {
+    pub fn run(&amp;self) {
+        for component in self.components.iter() {
+            component.draw();
+        }
+    }
+}
+</code></pre>
+<p><span class="caption">Listing 17-6: 一种<code>Screen</code>结构体的替代实现，它的<code>run</code>方法使用通用类型和trait绑定
+</span></p>
+<p>这个例子只能使我们有一个<code>Screen</code>实例，这个实例有一个组件列表，所有的组件类型是<code>Button</code>或者<code>TextField</code>。如果你有同种的集合，那么可以优先使用通用和trait绑定，这是因为为了使用具体的类型，定义是在编译阶段是单一的。</p>
+<p>而如果使用内部有<code>Vec&lt;Box&lt;Draw&gt;&gt;</code> trait对象的列表的<code>Screen</code>结构体，<code>Screen</code>实例可以同时包含<code>Box&lt;Button&gt;</code>和<code>Box&lt;TextField&gt;</code>的<code>Vec</code>。我们看它是怎么工作的，然后讨论运行时性能的实现。</p>
+<a class="header" href="#来自我们或者库使用者的实现" name="来自我们或者库使用者的实现"><h3>来自我们或者库使用者的实现</h3></a>
+<p>现在，我们增加一些实现了<code>Draw</code>trait的类型。我们会再次提供<code>Button</code>，实际上实现一个GUI库超出了本书的范围，所以<code>draw</code>方法的内部不会有任何有用的实现。为了想象一下实现可能的样子，<code>Button</code>结构体可能有 width<code>、</code>height<code>和</code>label`字段，如Listing 17-7所示：</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust"># pub trait Draw {
+#     fn draw(&amp;self);
+# }
+#
+pub struct Button {
+    pub width: u32,
+    pub height: u32,
+    pub label: String,
+}
+
+impl Draw for Button {
+    fn draw(&amp;self) {
+        // Code to actually draw a button
+    }
+}
+</code></pre>
+<p><span class="caption">Listing 17-7: 实现了<code>Draw</code> trait的<code>Button</code> 结构体</span></p>
+<p>在<code>Button</code>上的 <code>width</code>、<code>height</code>和<code>label</code>会和其他组件不同，比如<code>TextField</code>可能有<code>width</code>、<code>height</code>,
+<code>label</code>和 <code>placeholder</code>字段。每个我们可以在屏幕上绘制的类型会实现<code>Draw</code>trait，在<code>draw</code>方法中使用不同的代码，定义了如何绘制<code>Button</code>（GUI代码的具体实现超出了本章节的范围）。除了<code>Draw</code> trait，<code>Button</code>可能也有另一个<code>impl</code>块，包含了当按钮被点击的时候的响应方法。这类方法不适用于<code>TextField</code>这样的类型。</p>
+<p>有时，使用我们的库决定了实现一个包含<code>width</code>、<code>height</code>和<code>options``SelectBox</code>结构体。它们在<code>SelectBox</code>类型上实现了<code>Draw</code>trait，如 Listing 17-8所示：</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><code class="language-rust,ignore">extern crate rust_gui;
+use rust_gui::Draw;
+
+struct SelectBox {
+    width: u32,
+    height: u32,
+    options: Vec&lt;String&gt;,
+}
+
+impl Draw for SelectBox {
+    fn draw(&amp;self) {
+        // Code to actually draw a select box
+    }
+}
+</code></pre>
+<p><span class="caption">Listing 17-8: 另外一个crate中，在<code>SelectBox</code>结构体上使用<code>rust_gui</code>和实现了<code>Draw</code> trait
+</span></p>
+<p>我们的库的使用者现在可以写他们的<code>main</code>函数来创建一个<code>Screen</code>实例，然后通过把自身放入<code>Box&lt;T&gt;</code>变成trait对象，向screen增加<code>SelectBox</code> 和<code>Button</code>。它们可以在每个<code>Screen</code>实例上调用<code>run</code>方法，这会调用每个组件的<code>draw</code>方法。 Listing 17-9展示了实现：</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><code class="language-rust,ignore">use rust_gui::{Screen, Button};
+
+fn main() {
+    let screen = Screen {
+        components: vec![
+            Box::new(SelectBox {
+                width: 75,
+                height: 10,
+                options: vec![
+                    String::from(&quot;Yes&quot;),
+                    String::from(&quot;Maybe&quot;),
+                    String::from(&quot;No&quot;)
+                ],
+            }),
+            Box::new(Button {
+                width: 50,
+                height: 10,
+                label: String::from(&quot;OK&quot;),
+            }),
+        ],
+    };
+
+    screen.run();
+}
+</code></pre>
+<p><span class="caption">Listing 17-9: 使用trait对象来存储实现了相同trait的不同类型
+</span></p>
+<p>虽然我们不知道有些人可能有一天会增加<code>SelectBox</code>类型，但是我们的<code>Screen</code> 有能力操作<code>SelectBox</code>和绘制，因为<code>SelectBox</code>实现了<code>Draw</code>类型，这意味着它实现了<code>draw</code>方法。</p>
+<p>只关心值响应的消息，而不关心值的具体类型，这类似于动态类型语言中的<em>duck typing</em>：如果它像鸭子一样走路，像鸭子一样叫，那么它肯定是只鸭子！在Listing 17-5的<code>Screen</code>的<code>run</code>方法的实现中，<code>run</code>不需要知道每个组件的具体类型。它也不检查是否一个组件是<code>Button</code>或者<code>SelectBox</code>的实例，只是调用组件的<code>draw</code>方法即可。通过指定<code>Box&lt;Draw&gt;</code>作为<code>components</code>vector中的值类型，我们定义了：<code>Screen</code>需要可以被调用其<code>draw</code>方法的值。</p>
+<p>使用trait对象和支持duck typing的Rust类型系统的好处是，我们永远不需要在运行时检查一个值是否实现了一个特殊方法，或者担心因为调用了一个值没有实现方法而遇到错误。如果值没有实现trait对象需要的trait，Rust不会编译我们的代码。</p>
+<p>比如，Listing 17-10展示了当我们创建一个把<code>String</code>当做其成员的<code>Screen</code>时发生的情况：</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><code class="language-rust,ignore">extern crate rust_gui;
+use rust_gui::Draw;
+
+fn main() {
+    let screen = Screen {
+        components: vec![
+            Box::new(String::from(&quot;Hi&quot;)),
+        ],
+    };
+
+    screen.run();
+}
+</code></pre>
+<p><span class="caption">Listing 17-10: 尝试使用一种没有实现trait对象的trait的类型</p>
+<p></span></p>
+<p>我们会遇到这个错误，因为<code>String</code>没有实现 <code>Draw</code>trait：</p>
+<pre><code class="language-text">error[E0277]: the trait bound `std::string::String: Draw` is not satisfied
+  --&gt;
+   |
+ 4 |             Box::new(String::from(&quot;Hi&quot;)),
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `Draw` is not
+   implemented for `std::string::String`
+   |
+   = note: required for the cast to the object type `Draw`
+</code></pre>
+<p>这个报错让我们知道，或者我们传入了本来不想传给<code>Screen</code>的东西，我们应该传入一个不同的类型，或者是我们应该在<code>String</code>上实现<code>Draw</code>，这样，<code>Screen</code>才能调用它的<code>draw</code>方法。</p>
+<a class="header" href="#trait对象执行动态分发" name="trait对象执行动态分发"><h3>Trait对象执行动态分发</h3></a>
+<p>回忆一下第10章，我们讨论过当我们使用通用类型的trait绑定时，编译器执行单类型的处理过程：在我们需要使用通用类型参数的地方，编译器为每个实体类型产生了非通用的函数实现和方法。由于非单类型而产生的代码是 <em>static dispatch</em>：当方法被调用，代码会执行在编译阶段就决定的方法，这样寻找那段代码是非常快速的。</p>
+<p>当我们使用trait对象，编译器不能执行单类型的，因为我们不知道可能被代码调用的类型。而，当方法被调用的时候，Rust跟踪可能被使用的代码，然后在运行时找出为了方法被调用时该使用哪些代码。这也是我们熟知的<em>dynamic dispatch</em>，当运行时的查找发生时是比较耗费资源的。动态分发也防止编译器选择内联函数的代码，这样防止了一些优化。虽然我们写代码时得到了额外的代码灵活性，不过，这是一个权衡考虑。</p>
+<a class="header" href="#trait-对象需要对象安全" name="trait-对象需要对象安全"><h3>Trait 对象需要对象安全</h3></a>
+<!-- Liz: we're conflicted on including this section. Not being able to use a
+trait as a trait object because of object safety is something that
+beginner/intermediate Rust developers run into sometimes, but explaining it
+fully is long and complicated. Should we just cut this whole section? Leave it
+(and finish the explanation of how to fix the error at the end)? Shorten it to
+a quick caveat, that just says something like "Some traits can't be trait
+objects. Clone is an example of one. You'll get errors that will let you know
+if a trait can't be a trait object, look up object safety if you're interested
+in the details"? Thanks! /Carol -->
+<p>Not all traits can be made into trait objects; only <em>object safe</em> traits can. A
+trait is object safe as long as both of the following are true:</p>
+<ul>
+<li>The trait does not require <code>Self</code> to be <code>Sized</code></li>
+<li>All of the trait's methods are object safe.</li>
+</ul>
+<p><code>Self</code> is a keyword that is an alias for the type that we're implementing
+traits or methods on. <code>Sized</code> is a marker trait like the <code>Send</code> and <code>Sync</code>
+traits that we talked about in Chapter 16. <code>Sized</code> is automatically implemented
+on types that have a known size at compile time, such as <code>i32</code> and references.
+Types that do not have a known size include slices (<code>[T]</code>) and trait objects.</p>
+<p><code>Sized</code> is an implicit trait bound on all generic type parameters by default.
+Most useful operations in Rust require a type to be <code>Sized</code>, so making <code>Sized</code>
+a default requirement on trait bounds means we don't have to write <code>T: Sized</code>
+with most every use of generics. If we want to be able to use a trait on
+slices, however, we need to opt out of the <code>Sized</code> trait bound, and we can do
+that by specifying <code>T: ?Sized</code> as a trait bound.</p>
+<p>Traits have a default bound of <code>Self: ?Sized</code>, which means that they can be
+implemented on types that may or may not be <code>Sized</code>. If we create a trait <code>Foo</code>
+that opts out of the <code>Self: ?Sized</code> bound, that would look like the following:</p>
+<pre><code class="language-rust">trait Foo: Sized {
+    fn some_method(&amp;self);
+}
+</code></pre>
+<p>The trait <code>Sized</code> is now a <em>super trait</em> of trait <code>Foo</code>, which means trait
+<code>Foo</code> requires types that implement <code>Foo</code> (that is, <code>Self</code>) to be <code>Sized</code>.
+We're going to talk about super traits in more detail in Chapter 19.</p>
+<p>The reason a trait like <code>Foo</code> that requires <code>Self</code> to be <code>Sized</code> is not allowed
+to be a trait object is that it would be impossible to implement the trait
+<code>Foo</code> for the trait object <code>Foo</code>: trait objects aren't sized, but <code>Foo</code>
+requires <code>Self</code> to be <code>Sized</code>. A type can't be both sized and unsized at the
+same time!</p>
+<p>For the second object safety requirement that says all of a trait's methods
+must be object safe, a method is object safe if either:</p>
+<ul>
+<li>It requires <code>Self</code> to be <code>Sized</code> or</li>
+<li>It meets all three of the following:
+<ul>
+<li>It must not have any generic type parameters</li>
+<li>Its first argument must be of type <code>Self</code> or a type that dereferences to
+the Self type (that is, it must be a method rather than an associated
+function and have <code>self</code>, <code>&amp;self</code>, or <code>&amp;mut self</code> as the first argument)</li>
+<li>It must not use <code>Self</code> anywhere else in the signature except for the
+first argument</li>
+</ul>
+</li>
+</ul>
+<p>Those rules are a bit formal, but think of it this way: if your method requires
+the concrete <code>Self</code> type somewhere in its signature, but an object forgets the
+exact type that it is, there's no way that the method can use the original
+concrete type that it's forgotten. Same with generic type parameters that are
+filled in with concrete type parameters when the trait is used: the concrete
+types become part of the type that implements the trait. When the type is
+erased by the use of a trait object, there's no way to know what types to fill
+in the generic type parameters with.</p>
+<p>An example of a trait whose methods are not object safe is the standard
+library's <code>Clone</code> trait. The signature for the <code>clone</code> method in the <code>Clone</code>
+trait looks like this:</p>
+<pre><code class="language-rust">pub trait Clone {
+    fn clone(&amp;self) -&gt; Self;
+}
+</code></pre>
+<p><code>String</code> implements the <code>Clone</code> trait, and when we call the <code>clone</code> method on
+an instance of <code>String</code> we get back an instance of <code>String</code>. Similarly, if we
+call <code>clone</code> on an instance of <code>Vec</code>, we get back an instance of <code>Vec</code>. The
+signature of <code>clone</code> needs to know what type will stand in for <code>Self</code>, since
+that's the return type.</p>
+<p>If we try to implement <code>Clone</code> on a trait like the <code>Draw</code> trait from Listing
+17-3, we wouldn't know whether <code>Self</code> would end up being a <code>Button</code>, a
+<code>SelectBox</code>, or some other type that will implement the <code>Draw</code> trait in the
+future.</p>
+<p>The compiler will tell you if you're trying to do something that violates the
+rules of object safety in regards to trait objects. For example, if we had
+tried to implement the <code>Screen</code> struct in Listing 17-4 to hold types that
+implement the <code>Clone</code> trait instead of the <code>Draw</code> trait, like this:</p>
+<pre><code class="language-rust,ignore">pub struct Screen {
+    pub components: Vec&lt;Box&lt;Clone&gt;&gt;,
+}
+</code></pre>
+<p>We'll get this error:</p>
+<pre><code class="language-text">error[E0038]: the trait `std::clone::Clone` cannot be made into an object
+ --&gt;
+  |
+2 |     pub components: Vec&lt;Box&lt;Clone&gt;&gt;,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `std::clone::Clone` cannot be
+  made into an object
+  |
+  = note: the trait cannot require that `Self : Sized`
+</code></pre>
+<!-- If we are including this section, we would explain how to fix this
+problem. It involves adding another trait and implementing Clone manually for
+that trait. Because this section is getting long, I stopped because it feels
+like we're off in the weeds with an esoteric detail that not everyone will need
+to know about. /Carol -->
 
                 </div>
 
                 <!-- Mobile navigation buttons -->
-                
 
-                
+
+
 
             </div>
 
-            
 
-            
+
+
 
         </div>
 
@@ -9597,7 +10056,7 @@ impl AveragedCollection {
         </script>
 
         <!-- Livereload script (if served using the cli tool) -->
-        
+
 
         <script src="highlight.js"></script>
         <script src="book.js"></script>

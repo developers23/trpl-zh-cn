@@ -118,7 +118,7 @@ fn value_in_cents(coin: Coin) -> i32 {
 }
 ```
 
-如果调用`value_in_cents(Coin::Quarter(UsState::Alaska))`，`coin`将是`Coin::Quarter(UsState::Alaska)`。当将值与每个分支相比较时，没有分支会匹配知道遇到`Coin::Quarter(state)`。这时，`state`绑定的将会是值`UsState::Alaska`。接着就可以在`println!`表达式中使用这个绑定了，像这样就可以获取`Coin`枚举的`Quarter`成员中内部的州的值。
+如果调用`value_in_cents(Coin::Quarter(UsState::Alaska))`，`coin`将是`Coin::Quarter(UsState::Alaska)`。当将值与每个分支相比较时，没有分支会匹配直到遇到`Coin::Quarter(state)`。这时，`state`绑定的将会是值`UsState::Alaska`。接着就可以在`println!`表达式中使用这个绑定了，像这样就可以获取`Coin`枚举的`Quarter`成员中内部的州的值。
 
 ### 匹配`Option<T>`
 
@@ -171,7 +171,7 @@ None => None,
 
 匹配上了！这里没有值来加一，所以程序结束并返回`=>`右侧的值`None`，因为第一个分支就匹配到了，其他的分支将不再比较。
 
-将`match`与枚举相结合在很多场景中都是有用的。你会在 Rust 代码中看到很多这样的模式：`match`一个枚举，绑定其中的值到一个变量，接着根据其值执行代码。这在一开有点复杂，不过一旦习惯了，你会希望所有语言都拥有它！这一直都是用户的最爱。
+将`match`与枚举相结合在很多场景中都是有用的。你会在 Rust 代码中看到很多这样的模式：`match`一个枚举，绑定其中的值到一个变量，接着根据其值执行代码。这在一开始有点复杂，不过一旦习惯了，你会希望所有语言都拥有它！这一直是用户的最爱。
 
 ### 匹配是穷尽的
 
